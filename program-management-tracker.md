@@ -11,7 +11,7 @@ The status table has cells with the following meanings:
 
 **Workstream** | **Status** | **Notes**
 ---------------|------------|----------
-[Attracting users](1) | YELLOW | Open source dev intake needs work; SRE concepts learning path needed; improvement blocked on website changes
+[Attracting users](1) | ![YELLOW](https://github.com/operate-first/community/raw/main/pm-resources/yellow-100x50.png) | Open source dev intake needs work; SRE concepts learning path needed; improvement blocked on website changes
 Messaging | CHARTREUSE | Needs community mailing list discussions and decision to finalize
 Website changes | YELLOW | Info arch is designed; need to build out the new layout
 Contributor experience | YELLOW | New contributor experience is rough and confusing; Community Handbook effort should help but we are blocked on the mailing list discussion and consensus to use the Community Handbook approach
