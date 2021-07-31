@@ -4,7 +4,9 @@ This repository is used by all members of the Operate First community for managi
 
 ## Bootstrapping
 
-This repository is the home to an initiative to bring a formal _community architecture_ process to the Operate First efforts. This initiative is in the beginning stages (bootstrapping) of defining and performing this work.
+This repository is the home to efforts to bring a formal _community architecture_ process to the Operate First initiative.
+The scope of this initiative is large enough with a multi-community impact to warrant going from an organic community effort to a managed community.
+This initiative is in the beginning stages (bootstrapping) of defining and performing this work.
 
 # Contributing
 
