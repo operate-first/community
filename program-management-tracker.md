@@ -27,7 +27,7 @@ The status table has cells with the following meanings:
 [Event planning](11) | ![GREEN](/pm-resources/green-100x50.png) | Work underway to produce content and  presentations for Open Source Summit, All Things Open, and SRECon.
 [Brand review](12) | ![YELLOW](/pm-resources/yellow-100x50.png) | Need an open source designer.
 [Help wanted](13) | ![CHARTREUSE](/pm-resources/chartreuse-100x50.png) | Fairly simple process, just beginning to use. Need to document how to use it, and spread the word about using these, as well as getting it into the Community Handbook.
-[Good first issue](14) ![CHARTREUSE](/pm-resources/chartreuse-100x50.png) | Fairly simple process, just beginning to use. Need to document how to use it, and spread the word about using these, as well as getting it into the Community Handbook.
+[Good first issue](14) | ![CHARTREUSE](/pm-resources/chartreuse-100x50.png) | Fairly simple process, just beginning to use. Need to document how to use it, and spread the word about using these, as well as getting it into the Community Handbook.
 
 [1]:https://github.com/orgs/operate-first/projects/16?card_filter_query=label%3Aarea%2Fuser
 [2]:https://github.com/orgs/operate-first/projects/16?card_filter_query=label%3Akind%2Fmarketing
