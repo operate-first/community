@@ -21,11 +21,13 @@ The status table has cells with the following meanings:
 [Governance](5) | ![RED](/pm-resources/red-100x50.png) | No work done on this, very important work start soon. Blocked on community mailing list.
 [Metrics plan](6) | ![YELLOW](/pm-resources/yellow-100x50.png) | We have a baseline but don't know what questions we want to ask. We need to work on this soon before we start serious efforts to attract users and contributors.
 [Documentation plan](7) | ![YELLOW](/pm-resources/yellow-100x50.png) | Project overall has the right idea, the Community Handbook should help a lot. User documentation needs organizing, gap analysis, and a plan.
-[Marketing plan](8) | ![CHARTREUSE](/pm-resources/chartreuse-100x50.png) | Needs to be converted entirely into a community document and see the project board is filled properly with all the aspects
 [Infrastructure (visibility, resources)](9) | ![CHARTREUSE](/pm-resources/chartreuse-100x50.png) | All there, more visibility; more hardware needed but coming soon.
+[Marketing plan](8) | ![CHARTREUSE](/pm-resources/chartreuse-100x50.png) | Needs to be converted entirely into a community document and see the project board is filled properly with all the aspects
 [Learning paths](10) | ![GREEN](/pm-resources/green-100x50.png) | A lot of internal alignment happening, will be looking to start SRE community of practice at OI Labs soon
 [Event planning](11) | ![GREEN](/pm-resources/green-100x50.png) | Work underway to produce content and  presentations for Open Source Summit, All Things Open, and SRECon.
 [Brand review](12) | ![YELLOW](/pm-resources/yellow-100x50.png) | Need an open source designer.
+[Help wanted](13) | ![CHARTREUSE](/pm-resources/chartreuse-100x50.png) | Fairly simple process, just beginning to use. Need to document how to use it, and spread the word about using these, as well as getting it into the Community Handbook.
+[Good first issue](14) ![CHARTREUSE](/pm-resources/chartreuse-100x50.png) | Fairly simple process, just beginning to use. Need to document how to use it, and spread the word about using these, as well as getting it into the Community Handbook.
 
 [1]:https://github.com/orgs/operate-first/projects/16?card_filter_query=label%3Aarea%2Fuser
 [2]:https://github.com/orgs/operate-first/projects/16?card_filter_query=label%3Akind%2Fmarketing
@@ -39,3 +41,5 @@ The status table has cells with the following meanings:
 [10]:https://github.com/orgs/operate-first/projects/16?card_filter_query=label%3Akind%2Ftraining
 [11]:https://github.com/orgs/operate-first/projects/16?card_filter_query=label%3Aarea%2Fcommunity+label%3Akind%2Fmarketing
 [12]:https://github.com/orgs/operate-first/projects/16?card_filter_query=label%3Aarea%2Fcommunity+label%3Akind%2Fmarketing
+[13]:https://github.com/orgs/operate-first/projects/16?card_filter_query=label%3A%22help+wanted%22
+[14]:https://github.com/orgs/operate-first/projects/16?card_filter_query=label%3A%22good+first+issue%22
