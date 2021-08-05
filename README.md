@@ -2,6 +2,8 @@
 
 This repository is used by all members of the Operate First community for managing the ongoing support and sustaining the community of persons and organizations around this initiative.
 
+We plan and keep track of our efforts on the (Community Project Board)[https://github.com/orgs/operate-first/projects/16], which is drives the status of the (program management page)[https://github.com/operate-first/community/blob/main/program-management-tracker.md].
+
 ## Bootstrapping
 
 This repository is the home to efforts to bring a formal _community architecture_ process to the Operate First initiative.
