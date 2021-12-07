@@ -1,26 +1,14 @@
-# strawgovernance `DRAFT WIP`
+---
+title: Governance 1.0 DRAFT WIP
+description: Governance 1.0 discussion draft
+---
+# Governance 1.0 `DRAFT WIP`
 
-Elements to complete:
-- 1.0 lightweight features (Minimal Viable Governance)
-  - SIGs
-  - Working Groups
-  - Code of Conduct
-  - Principles
-  - Community membership
-  - Community groups
-  - Architectural Decision Records
-  - Community Handbook DRAFT
-- 1.1 oversight creation
-  - lightweight elections for Technical Steering Committee
-  - Addition of committees, working groups, and sub-projects
-  - Addition of Values
-  - Community Handbook RELEASED
-    - Contains full contributor get started information
-  -
-----
+This document contains a work in progress (WIP) draft of the initial governance of the Op1st project (Governance 1.0).
+
+It also has a roadmap for additions coming in the next iteration of governance (Governane 1.1).
+
 ## Op1st Community Governance 1.0 (MVG)
-
-Welcome, overview
 
 A healthy open source project is one that demonstrates open practices, uses open infrastructure, and cultivates an open culture with the goal of becoming more sustainable.
 
