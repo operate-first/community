@@ -68,6 +68,31 @@ The purpose of a SIG is to own and develop a set of subprojects.
 
 A SIG can have its own policy for contribution, described in a README or CONTRIBUTING file in the SIG folder in this repo (e.g. sig-community/CONTRIBUTING.md), and its own mailing list, chat channel, etc.
 
+#### Initiating SIGs
+
+In order to get things started in a way to encourage transparency and participation, we are going to only initiate two SIGs to start, the Community SIG (`sig-community`) and the Operations SIG (`sig-ops`).
+These two SIGs are immediately empowered through this governance to create new SIGs and/or subprojects.
+
+To create subprojects, a SIG only needs to have consensus within itself.
+
+To create a new SIG:
+
+1. A SIG recognizes there is a need for a new SIG.
+2. For example, the Community SIG decides to create the Data Science SIG right away, to formalize the already existing activity there.
+3. Once the individual SIG is in consensus, the proposal is brought to all SIGs.
+4. With all SIGs in consensus, the new SIG is formally created.
+
+A similar process is followed when the Community SIG is ready to present recommendations for Governance 1.1 that creates committees.
+
+#### Deprecating SIGs
+
+This section is intentionally incomplete for the Governance 1.0.
+The reason is social: while it makes sense to have initiating a SIG to be relatively easy, we want to take more care with deprecating or closing a SIG.
+
+This is a topic the Community SIG can put on the priority agenda to resolve soon after forming, so the process is created within the space of community input and voices.
+
+If it is not resolved in a patch to 1.0 it must be delivered in the Governance 1.1 minor update.
+
 #### Governance 1.1 future groups
 [These descriptions](https://github.com/kubernetes/community#governance) are borrowed from [Kubernetes governance around community groups](https://github.com/kubernetes/community/blob/master/governance.md#community-groups).
 They are good-enough placeholders for discussions.
