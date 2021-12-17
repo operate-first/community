@@ -47,6 +47,7 @@ We are opening the Governance 1.0 directly borrowing from the [Kubernetes commun
 This doc outlines the various responsibilities of contributor roles in Op1st.
 The Op1st project is subdivided into subprojects under SIGs.
 Responsibilities for most roles are scoped to these subprojects.
+"[Ownership, roles and responsibilities](https://stumblingabout.com/2011/01/27/ownership-roles-and-responsibilities/)" is a good external reference for understanding how the project roles interact.
 
 | Role | Responsibilities | Requirements | Defined by |
 | -----| ---------------- | ------------ | -------|
