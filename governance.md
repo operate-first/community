@@ -26,8 +26,8 @@ These are the Op1st community principles we adhere to:
   - This is crucial to fulfilling our mission around open sourcing operations
 2. **Welcoming and respectful** : We intend to be an open, welcoming, and inclusive community.
 Diversity is our strength.
-We have and follow a Code of Conduct.
-  - We currently follow the OpenInfra Foundation Code of Conduct as a member of the OpenInfra Labs.
+We have and follow a [Code of Conduct](https://operate-first.cloud/community/code_of_conduct/).
+  - We currently follow the [OpenInfra Foundation Code of Conduct](https://www.openstack.org/legal/community-code-of-conduct/) as a member of the OpenInfra Labs.
 3. **Open Design** : We follow a transparent and open process for planning and designing any content, services, and features of Op1st.
 Ideas and contributions are accepted according to their technical merit and alignment with project objectives, scope, and design principles.
 4. **Open Work** : Two of our core tools for successful community building are transparency and accessibility.
