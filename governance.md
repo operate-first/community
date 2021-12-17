@@ -6,7 +6,7 @@ description: Governance 1.0 discussion draft
 
 This document contains a work in progress (WIP) draft of the initial governance of the Op1st project (Governance 1.0).
 
-It also has a roadmap for additions coming in the next iteration of governance (Governane 1.1).
+It also has a roadmap for additions coming in the next iteration of governance (Governance 1.1).
 
 ## Op1st Community Governance 1.0 (MVG)
 
