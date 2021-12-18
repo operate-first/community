@@ -6,14 +6,31 @@ description: Governance 1.0 discussion draft
 
 This document contains a work in progress (WIP) draft of the initial governance of the Op1st project (Governance 1.0).
 
-It also has a roadmap for additions coming in the next iteration of governance (Governance 1.1).
+It also has a roadmap for additions coming in the next iteration of governance (Governane 1.1).
+
+## Summmary
+
+The community works in special interest groups (SIGs), that form around a common topic.
+
+SIGs are operated by consensus and can self-organize.
+One common organizational structure is for the group to appoint a chair and vice-chair by consensus.
+The chair and vice-chair organize and run meetings, and take charge of getting the group to consensus.
+
+The overall project is operated by all SIGs in consensus.
+The future roadmap includes the idea of committees, which are elected or selected bodies that operate outside of the SIG structure and may direct the project above and beyond the SIGs.
+For example, a future Technical Steering Committee might decide all overall technical directions based on the advice and consent of the SIGs.
+
+To start, we are initiating the Community SIG and the Operations SIG. All parts of the project fall under these SIGs.
+The SIGs then self-organize and decide to sub-divide into further SIGs and to form subprojects within one or more SIGs to actually do things.
+
+The subprojects are where the work happens, and the SIGs organize and guide their subprojects.
 
 ## Op1st Community Governance 1.0 (MVG)
 
 A healthy open source project is one that demonstrates open practices, uses open infrastructure, and cultivates an open culture with the goal of becoming more sustainable.
 
 ### Principles
-As a new community with a vision to grow, we are following in the footsteps of many massively scaled and successful projects. We want to take care to learn from those who came before us, while forging our own path into the challenges we've chosen to undertake.
+As a new cloud-native community growing up at the footsteps of massively scaled and successful projects such as Kubernetes and OpenInfra, we want to be careful to learn from those who came before us, while forging our own path into the challenges we've chosen to undertake.
 
 To stand up this Governance for a 1.0 good-enough minimal-viable-governance (MVG), we are looking to our key predecessors for some of our starting points.
 As an initial set of principles we are combining elements of the [Kubernetes community principles](https://github.com/kubernetes/community/blob/master/governance.md#principles) and the [OpenInfra Foundations Four Opens](https://openinfra.dev/four-opens/).
@@ -26,8 +43,8 @@ These are the Op1st community principles we adhere to:
   - This is crucial to fulfilling our mission around open sourcing operations
 2. **Welcoming and respectful** : We intend to be an open, welcoming, and inclusive community.
 Diversity is our strength.
-We have and follow a [Code of Conduct](https://operate-first.cloud/community/code_of_conduct/).
-  - We currently follow the [OpenInfra Foundation Code of Conduct](https://www.openstack.org/legal/community-code-of-conduct/) as a member of the OpenInfra Labs.
+We have and follow a Code of Conduct.
+  - We currently follow the OpenInfra Foundation Code of Conduct as a member of the OpenInfra Labs.
 3. **Open Design** : We follow a transparent and open process for planning and designing any content, services, and features of Op1st.
 Ideas and contributions are accepted according to their technical merit and alignment with project objectives, scope, and design principles.
 4. **Open Work** : Two of our core tools for successful community building are transparency and accessibility.
@@ -47,7 +64,6 @@ We are opening the Governance 1.0 directly borrowing from the [Kubernetes commun
 This doc outlines the various responsibilities of contributor roles in Op1st.
 The Op1st project is subdivided into subprojects under SIGs.
 Responsibilities for most roles are scoped to these subprojects.
-"[Ownership, roles and responsibilities](https://stumblingabout.com/2011/01/27/ownership-roles-and-responsibilities/)" is a good external reference for understanding how the project roles interact.
 
 | Role | Responsibilities | Requirements | Defined by |
 | -----| ---------------- | ------------ | -------|
@@ -94,15 +110,13 @@ This is a topic the Community SIG can put on the priority agenda to resolve soon
 
 If it is not resolved in a patch to 1.0 it must be delivered in the Governance 1.1 minor update.
 
-#### Governance 1.1 future groups
+#### Governance 1.1 potential future groups
 [These descriptions](https://github.com/kubernetes/community#governance) are borrowed from [Kubernetes governance around community groups](https://github.com/kubernetes/community/blob/master/governance.md#community-groups).
-They are good-enough placeholders for discussions.
+They are only placeholders for discussions, lightly edited.
 
-* **Committees** are named sets of people that are chartered to take on sensitive topics. This group is encouraged to be as open as possible while achieving its mission but, because of the nature of the topics discussed, private communications are allowed. Examples of committees include the Technical Steering Committee or an overarching Steering Committee, and things like security or code of conduct.
-* **Subprojects** Each SIG can have a set of subprojects. These are smaller groups that can work independently. Some subprojects will be part of the main Kubernetes deliverables while others will be more speculative and live in the kubernetes-sigs github org.
+* **Subprojects** Each SIG can (or may? or should?) have a set of subprojects. These are smaller groups that can work independently. Some subprojects will be part of the main project Op1st deliverables while others will be more speculative.
 * **Working Groups** are temporary groups that are formed to address issues that cross SIG boundaries. Working groups do not own any code or other long term artifacts. Working groups can report back and act through involved SIGs.
-* **User Groups** are groups for facilitating communication and discovery of information related to topics that have long term relevance to large groups of Kubernetes users. They do not have ownership of parts of the Kubernetes code base.
-See the full governance doc for more details on these groups.
+* **User Groups** are groups for facilitating communication and discovery of information related to topics that have long term relevance to large groups of Op1st users. They do not have ownership of parts of the Op1st code base, but they may contribute to other types of content and open works.
 
 ### Decision making
 
