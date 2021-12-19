@@ -49,7 +49,7 @@ We have and follow a Code of Conduct.
 Ideas and contributions are accepted according to their technical merit and alignment with project objectives, scope, and design principles.
 4. **Open Work** : Two of our core tools for successful community building are transparency and accessibility.
 To support that, work and collaboration must be done in public to the greatest degree possible.
-Refer to the section on Community Groups and SIGs in particular for details on how this is performed.
+Refer to the section on [Community Groups](#community-groups) and [SIGs](#sigs) in particular for details on how this is performed.
 5. **Truly Open Community** : The best way to build a sustainable open source community is to ensure the community is a cohesive, inclusive, and equitable place where all the voices are heard and anyone can rise to leadership positions.
 
 ### Code of Conduct
