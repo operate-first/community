@@ -54,7 +54,8 @@ Refer to the section on [Community Groups](#community-groups) and [SIGs](#sigs) 
 
 ### Code of Conduct
 
-We are using the [upstream OpenInfra Foundation Code of Conduct](https://openinfra.dev/legal/code-of-conduct) until we can convene the new Community SIG to lead an open effort to create our own, modern code of conduct.
+We are using the [upstream OpenInfra Foundation Code of Conduct](https://openinfra.dev/legal/code-of-conduct)(CoC).
+In creating the next Governance 1.1 we will have an actual process to make decisions as a community. We can then either formally ratify this same CoC, or the Community SIG can convene a cross-project working group to discuss and decide an inclusive and equitable process for a new code of conduct.
 
 ### Community membership
 **Note:** This document is a work in progress, especially these membership guidelines
