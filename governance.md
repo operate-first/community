@@ -58,13 +58,28 @@ We are using the [upstream OpenInfra Foundation Code of Conduct](https://openinf
 In creating the next Governance 1.1 we will have an actual process to make decisions as a community. We can then either formally ratify this same CoC, or the Community SIG can convene a cross-project working group to discuss and decide an inclusive and equitable process for a new code of conduct.
 
 ### Community membership
-**Note:** This document is a work in progress, especially these membership guidelines
+> :notebook: **Note** This document is a work in progress, especially these membership guidelines
 
 We are opening the Governance 1.0 directly borrowing from the [Kubernetes community group definitions](https://github.com/kubernetes/community/blob/master/community-membership.md), then reviewing and refining for the Governance 1.1.
 
-This doc outlines the various responsibilities of contributor roles in Op1st.
+This section outlines the various responsibilities of contributor roles in Op1st.
 The Op1st project is subdivided into subprojects under SIGs.
 Responsibilities for most roles are scoped to these subprojects.
+
+A contribution can take many, many forms, such as: documentation, code, best-practices content, marketing materials, running a meeting, helping a user in chat, operating a cluster, responding to a `help wanted` flag, reviewing and commenting on contributions of all these types when in a proposed-state (a _pull request_ or _PR_), giving a talk at a conference, staffing a booth at a conference, and so forth.
+For a longer list, refer to this chapter, "[What Is A Contribution?](https://www.theopensourceway.org/the_open_source_way-guidebook-2.0.html#_what_is_a_contribution)", which includes these definitions:
+
+> An open source **Contribution**
+>
+> Any original, intentional, and substantive object given freely to an open source community, under the licensing of that community. A contribution can come from an individual or a community.
+
+> An open source **Contributor**
+>
+> Any individual person involved in making Contributions to the community. Communities are interpersonal by their nature. They consist of humans, not organizations. Organizations can send their members, staff, leaders, and so forth out to make contributions to a community as a contributor
+
+One reason this project runs so many processes through a git workflow is to raise the visibility on all types of contributions and contributor roles.
+These interactions by a contributor help qualify and quantify their activities.
+It is never a full picture of one's activities, but it is a useful and helpful one.
 
 | Role | Responsibilities | Requirements | Defined by |
 | -----| ---------------- | ------------ | -------|
