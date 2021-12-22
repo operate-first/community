@@ -96,7 +96,7 @@ Governance 1.1 will therefore include details on new community groups (subprojec
 
 #### SIGs
 Special Interest Groups (SIGs) are persistent open groups that focus on a part of the project. SIGs must have open and transparent proceedings.
-Anyone is welcome to participate and contribute provided they follow the Op1st Code of Conduct.
+Anyone is welcome to participate and contribute provided they follow the Op1st [Code of Conduct](https://www.operate-first.cloud/code_of_conduct).
 The purpose of a SIG is to own and develop a set of subprojects.
 
 A SIG can have its own policy for contribution, described in a README or CONTRIBUTING file in the SIG folder in this repo (e.g. sig-community/CONTRIBUTING.md), and its own mailing list, chat channel, etc.
