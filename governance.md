@@ -142,7 +142,7 @@ To accomplish this balance, we are using a _consensus decision model_ that gives
 There are two types of consensus models we use, the lightweight and the full:
 
 * **Lightweight consensus** occurs when a decision does not have wide or sweeping effects and is considered approved if no one raises any blocking objections after several days.
-In practice, an email is sent to a SIG or main community list, and if no one raises an objection after three days, the proposal passes.
+In practice, a proposal email with sufficient detail is sent to a SIG or main community list, and if no one raises an objection after three working days (i.e., Saturdays and Sundays are not counted), the proposal passes.
 * **Full consensus** decisions require 3 yes votes (+1) and no objections (-1’s) and votes should be left open for at least 72 hours.
 All -1s votes require reason/ explanation, -1’s with no substantiation may be overturned.
 Thus a single -1 vote can block achieving consensus, so it forces the group to take care of the blocking person rather than outvoting.
