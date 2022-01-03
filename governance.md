@@ -209,7 +209,7 @@ This section contains content being worked on for the next iteration, Governance
 
 ### Addition of committees, subprojects, and working Groups
 
-TBD
+It is the purview of the initiating Community SIG to manage the Governance 1.1 process, including the responsibility to decide which types of groups get added, how they are created and ended, and where future responsibility for these type of decisions shifts once Governance 1.1 is ratified.
 
 ### Selecting initial "Technical Steering Committee"
 
