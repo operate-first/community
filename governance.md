@@ -143,7 +143,11 @@ There are two types of consensus models we use, the lightweight and the full:
 
 * **Lightweight consensus** occurs when a decision does not have wide or sweeping effects and is considered approved if no one raises any blocking objections after several days.
 In practice, a proposal email with sufficient detail is sent to a SIG or main community list, and if no one raises an objection after three working days (i.e., Saturdays and Sundays are not counted), the proposal passes.
-* **Full consensus** decisions require 3 yes votes (+1) and no objections (-1’s) and votes should be left open for at least 72 hours.
+* **Full consensus** decisions require 3 yes votes (+1) and no objections (-1’s) and votes should be left open for at least 72 hours (not counting weekend days) to ensure all voices are heard.
+72 hours is a minimum and should be increased for decisions with a likely broad impact, that involve contentious issues, or for any other reason that increases fairness in reaching consensus.
+Specifically, these rules must **not** be used to intentionally or accidentally disenfranchise contributors.
+For example, if a 72 hour window goes over a weekend and means a significant decision closes on a Monday, it may disenfranchise contributors who cannot watch the project daily.
+In such cases, a full calendar week is a fair minimum window for decision making, balancing the needs to give people enough time and to keep the process moving along.
 All -1s votes require reason/ explanation, -1’s with no substantiation may be overturned.
 Thus a single -1 vote can block achieving consensus, so it forces the group to take care of the blocking person rather than outvoting.
 
