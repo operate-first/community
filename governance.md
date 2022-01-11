@@ -40,7 +40,8 @@ As an initial set of principles we are combining elements of the [Kubernetes com
 Our mission requires us to use open source principles in ways beyond licensing the code we write, but at the core we are an open source community and want to adhere to the best possible principles for creating an open, welcoming, and inclusive community.
 
 These are the Op1st community principles we adhere to:
-1. **Open Source** : Any content we create is released under an open source license. Content includes software, documentations, configuration files, and training materials.
+1. **Open Source** : Any content we create is released under an open work license. Content includes but is not limited to all software, documentations, configuration files, data, and training materials.
+"All software" includes the code necessary to operate software, AKA _operational code_. 
   - This is crucial to fulfilling our mission around open sourcing operations
 2. **Welcoming and respectful** : We intend to be an open, welcoming, and inclusive community.
 Diversity is our strength.
