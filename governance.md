@@ -31,7 +31,7 @@ The subprojects are where the work happens, and the SIGs organize and guide thei
 A healthy open source project is one that demonstrates open practices, uses open infrastructure, and cultivates an open culture with the goal of becoming more sustainable.
 
 ### Principles
-As a new cloud-native community growing up at the footsteps of massively scaled and successful projects such as Kubernetes and OpenInfra, we want to be careful to learn from those who came before us, while forging our own path into the challenges we've chosen to undertake.
+As a new community with a vision to grow, we are following in the footsteps of many massively scaled and successful projects. We want to take care to learn from those who came before us, while forging our own path into the challenges we've chosen to undertake.
 
 To stand up this Governance for a 1.0 good-enough minimal-viable-governance (MVG), we are looking to our key predecessors for some of our starting points.
 As an initial set of principles we are combining elements of the [Kubernetes community principles](https://github.com/kubernetes/community/blob/master/governance.md#principles) and the [OpenInfra Foundations Four Opens](https://openinfra.dev/four-opens/).
