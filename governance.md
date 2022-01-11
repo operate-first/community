@@ -4,7 +4,8 @@ description: Governance 1.0 discussion draft
 ---
 # Governance 1.0 `DRAFT WIP`
 
-This document contains a work in progress (WIP) draft of the initial governance of the Op1st project (Governance 1.0).
+This document contains a work in progress (WIP) draft of the initial governance (Governance 1.0) for the community-formed project around the _[Operate First concept](https://openinfralabs.org/operate-first-manifesto/)_.
+In this document, the community and project are referred to by the shorthand _Op1st_ (spoken as "op first").
 
 It also has a roadmap for additions coming in the next iteration of the governance (Governane 1.1).
 
