@@ -7,7 +7,7 @@ description: Governance 1.0 discussion draft
 This document contains a work in progress (WIP) draft of the initial governance (Governance 1.0) for the community-formed project around the _[Operate First concept](https://openinfralabs.org/operate-first-manifesto/)_.
 In this document, the community and project are referred to by the shorthand _Op1st_ (spoken as "op first").
 
-It also has a roadmap for additions coming in the next iteration of the governance (Governane 1.1).
+It also has a roadmap for additions coming in the next iteration of the governance (Governance 1.1).
 
 ## Summmary
 
@@ -41,7 +41,7 @@ Our mission requires us to use open source principles in ways beyond licensing t
 
 These are the Op1st community principles we adhere to:
 1. **Open Source** : Any content we create is released under an open work license. Content includes but is not limited to all software, documentations, configuration files, data, and training materials.
-"All software" includes the code necessary to operate software, AKA _operational code_. 
+"All software" includes the code necessary to operate software, AKA _operational code_.
   - This is crucial to fulfilling our mission around open sourcing operations
 2. **Welcoming and respectful** : We intend to be an open, welcoming, and inclusive community.
 Diversity is our strength.
