@@ -1,0 +1,1991 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Operate First Community Metrics &#8212; Operate First Community</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="shortcut icon" href="../_static/favicon.png"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/icon.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Operate First Community</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../README.html">
+   Operate First community planning repository
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../glossary.html">
+   Operate First Glossary
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../governance.html">
+   Operate First Community Governance 1.0
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/metrics/community_metrics.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/operate-first/community"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/operate-first/community/issues/new?title=Issue%20on%20page%20%2Fmetrics/community_metrics.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/operate-first/community/main?urlpath=tree/./metrics/community_metrics.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Operate First Community Metrics
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#connect-to-augur-database">
+   Connect to Augur Database
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#retrieve-available-respositories">
+     Retrieve Available Respositories
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#contributors">
+   Contributors
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#internal-vs-external-contributors">
+     Internal vs External Contributors
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#issues">
+   Issues
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#issues-created-over-time">
+     Issues Created Over Time
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#issues-created-by-external-vs-internal-contributors">
+       Issues Created by External vs Internal Contributors
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#prs">
+   PRs
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#prs-created-over-time">
+     PRs Created Over Time
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#prs-created-by-external-vs-internal-contributors">
+     PRs Created By External vs Internal Contributors
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#conclusion">
+   Conclusion
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Operate First Community Metrics</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Operate First Community Metrics
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#connect-to-augur-database">
+   Connect to Augur Database
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#retrieve-available-respositories">
+     Retrieve Available Respositories
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#contributors">
+   Contributors
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#internal-vs-external-contributors">
+     Internal vs External Contributors
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#issues">
+   Issues
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#issues-created-over-time">
+     Issues Created Over Time
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#issues-created-by-external-vs-internal-contributors">
+       Issues Created by External vs Internal Contributors
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#prs">
+   PRs
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#prs-created-over-time">
+     PRs Created Over Time
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#prs-created-by-external-vs-internal-contributors">
+     PRs Created By External vs Internal Contributors
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#conclusion">
+   Conclusion
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="operate-first-community-metrics">
+<h1>Operate First Community Metrics<a class="headerlink" href="#operate-first-community-metrics" title="Permalink to this headline">¶</a></h1>
+<p>In this notebook, we would like to analyze the Operate First Community by collecting and visualizing GitHub metrics from <a class="reference external" href="https://github.com/chaoss/augur">Augur</a>. Augur is a software suite for collecting and measuring structured data about free and open-source software (FOSS) communities. It gathers trace data for a group of repositories or a GitHub organization, normalizes it into a data model, and provides a variety of metrics about the said data.</p>
+<p>Some of the metrics we would like to focus in this notebook are:</p>
+<ol class="simple">
+<li><p><strong>Community Vitality (Size &amp; Growth)</strong> - All the metrics that can be used to measure both the size and growth of the community such as number of users, number of contributors, number of projects deployed on Operate First, how many new users do we onboard every month, number of issues submitted over time, number of PRs merged over time etc</p></li>
+<li><p><strong>Impact</strong> - Metrics that can be used to understand the impact made by the Operate First community such as how many upstream issues were opened, upstream contributions etc</p></li>
+</ol>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Import required packages</span>
+<span class="kn">import</span> <span class="nn">psycopg2</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span> 
+<span class="kn">import</span> <span class="nn">sqlalchemy</span> <span class="k">as</span> <span class="nn">salc</span>
+<span class="kn">import</span> <span class="nn">json</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+<span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">pyplot</span> <span class="k">as</span> <span class="n">plt</span>
+<span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span><span class="p">,</span> <span class="n">timezone</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">rc</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;figure.figsize&#39;</span><span class="p">:(</span><span class="mi">15</span><span class="p">,</span><span class="mi">5</span><span class="p">)})</span>
+
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;config_temp.json&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">config_file</span><span class="p">:</span>
+    <span class="n">config</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">config_file</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="connect-to-augur-database">
+<h1>Connect to Augur Database<a class="headerlink" href="#connect-to-augur-database" title="Permalink to this headline">¶</a></h1>
+<p>We will need to connect to the Augur database which has been configured to fetch the Operate First GitHub data. The database configurations need to be specified in the <code class="docutils literal notranslate"><span class="pre">config.json</span></code> file. The database schema we will be using is the <code class="docutils literal notranslate"><span class="pre">augur_data</span></code> schema. You can learn more about the schema here: <a class="reference external" href="https://github.com/sandiego-rh/sandiego/blob/master/schema.png">https://github.com/sandiego-rh/sandiego/blob/master/schema.png</a>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">database_connection_string</span> <span class="o">=</span> <span class="s1">&#39;postgresql+psycopg2://</span><span class="si">{}</span><span class="s1">:</span><span class="si">{}</span><span class="s1">@</span><span class="si">{}</span><span class="s1">:</span><span class="si">{}</span><span class="s1">/</span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">config</span><span class="p">[</span><span class="s1">&#39;user&#39;</span><span class="p">],</span> <span class="n">config</span><span class="p">[</span><span class="s1">&#39;password&#39;</span><span class="p">],</span> <span class="n">config</span><span class="p">[</span><span class="s1">&#39;host&#39;</span><span class="p">],</span> <span class="n">config</span><span class="p">[</span><span class="s1">&#39;port&#39;</span><span class="p">],</span> <span class="n">config</span><span class="p">[</span><span class="s1">&#39;database&#39;</span><span class="p">])</span>
+
+<span class="n">dbschema</span><span class="o">=</span><span class="s1">&#39;augur_data&#39;</span>
+<span class="n">engine</span> <span class="o">=</span> <span class="n">salc</span><span class="o">.</span><span class="n">create_engine</span><span class="p">(</span>
+    <span class="n">database_connection_string</span><span class="p">,</span>
+    <span class="n">connect_args</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;options&#39;</span><span class="p">:</span> <span class="s1">&#39;-csearch_path=</span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">dbschema</span><span class="p">)})</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="retrieve-available-respositories">
+<h2>Retrieve Available Respositories<a class="headerlink" href="#retrieve-available-respositories" title="Permalink to this headline">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">repolist</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">()</span>
+<span class="n">repo_query</span> <span class="o">=</span> <span class="n">salc</span><span class="o">.</span><span class="n">sql</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">             SET SCHEMA &#39;augur_data&#39;;</span>
+<span class="s2">             SELECT a.rg_name,</span>
+<span class="s2">                a.repo_group_id,</span>
+<span class="s2">                b.repo_name,</span>
+<span class="s2">                b.repo_id,</span>
+<span class="s2">                b.forked_from,</span>
+<span class="s2">                b.repo_archived,</span>
+<span class="s2">                b.repo_git</span>
+<span class="s2">            FROM</span>
+<span class="s2">                repo_groups a,</span>
+<span class="s2">                repo b</span>
+<span class="s2">            WHERE</span>
+<span class="s2">                a.repo_group_id = b.repo_group_id</span>
+<span class="s2">            ORDER BY</span>
+<span class="s2">                rg_name,</span>
+<span class="s2">                repo_name;</span>
+<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
+<span class="n">repolist</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_sql</span><span class="p">(</span><span class="n">repo_query</span><span class="p">,</span> <span class="n">con</span><span class="o">=</span><span class="n">engine</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">repolist</span><span class="p">)</span>
+<span class="n">repolist</span><span class="o">.</span><span class="n">dtypes</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>rg_name</th>
+      <th>repo_group_id</th>
+      <th>repo_name</th>
+      <th>repo_id</th>
+      <th>forked_from</th>
+      <th>repo_archived</th>
+      <th>repo_git</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>operate-first</td>
+      <td>25155</td>
+      <td>alertmanager-github-receiver</td>
+      <td>25434</td>
+      <td>m-lab/alertmanager-github-receiver</td>
+      <td>0</td>
+      <td>https://github.com/operate-first/alertmanager-...</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>operate-first</td>
+      <td>25155</td>
+      <td>alerts</td>
+      <td>25431</td>
+      <td>Parent not available</td>
+      <td>0</td>
+      <td>https://github.com/operate-first/alerts</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>operate-first</td>
+      <td>25155</td>
+      <td>apps</td>
+      <td>25450</td>
+      <td>Parent not available</td>
+      <td>0</td>
+      <td>https://github.com/operate-first/apps</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>operate-first</td>
+      <td>25155</td>
+      <td>argocd-apps</td>
+      <td>25454</td>
+      <td>Parent not available</td>
+      <td>0</td>
+      <td>https://github.com/operate-first/argocd-apps</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>operate-first</td>
+      <td>25155</td>
+      <td>blueprint</td>
+      <td>25442</td>
+      <td>Parent not available</td>
+      <td>0</td>
+      <td>https://github.com/operate-first/blueprint</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>operate-first</td>
+      <td>25155</td>
+      <td>common</td>
+      <td>25436</td>
+      <td>Parent not available</td>
+      <td>0</td>
+      <td>https://github.com/operate-first/common</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>operate-first</td>
+      <td>25155</td>
+      <td>community</td>
+      <td>25430</td>
+      <td>Parent not available</td>
+      <td>0</td>
+      <td>https://github.com/operate-first/community</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>operate-first</td>
+      <td>25155</td>
+      <td>community-handbook</td>
+      <td>25455</td>
+      <td>Parent not available</td>
+      <td>0</td>
+      <td>https://github.com/operate-first/community-han...</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>operate-first</td>
+      <td>25155</td>
+      <td>continuous-delivery</td>
+      <td>25445</td>
+      <td>Parent not available</td>
+      <td>0</td>
+      <td>https://github.com/operate-first/continuous-de...</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>operate-first</td>
+      <td>25155</td>
+      <td>continuous-deployment</td>
+      <td>25453</td>
+      <td>Parent not available</td>
+      <td>0</td>
+      <td>https://github.com/operate-first/continuous-de...</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>operate-first</td>
+      <td>25155</td>
+      <td>curator</td>
+      <td>25443</td>
+      <td>Parent not available</td>
+      <td>0</td>
+      <td>https://github.com/operate-first/curator</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>operate-first</td>
+      <td>25155</td>
+      <td>espresso-series</td>
+      <td>25444</td>
+      <td>Parent not available</td>
+      <td>0</td>
+      <td>https://github.com/operate-first/espresso-series</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>operate-first</td>
+      <td>25155</td>
+      <td>example-acm-install</td>
+      <td>25440</td>
+      <td>Parent not available</td>
+      <td>0</td>
+      <td>https://github.com/operate-first/example-acm-i...</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>operate-first</td>
+      <td>25155</td>
+      <td>hetzner-baremetal-openshift</td>
+      <td>25451</td>
+      <td>Parent not available</td>
+      <td>0</td>
+      <td>https://github.com/operate-first/hetzner-barem...</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>operate-first</td>
+      <td>25155</td>
+      <td>hitchhikers-guide</td>
+      <td>25452</td>
+      <td>Parent not available</td>
+      <td>0</td>
+      <td>https://github.com/operate-first/hitchhikers-g...</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>operate-first</td>
+      <td>25155</td>
+      <td>installplan-operator</td>
+      <td>25432</td>
+      <td>Parent not available</td>
+      <td>1</td>
+      <td>https://github.com/operate-first/installplan-o...</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>operate-first</td>
+      <td>25155</td>
+      <td>odh-dashboard</td>
+      <td>25447</td>
+      <td>opendatahub-io/odh-dashboard</td>
+      <td>0</td>
+      <td>https://github.com/operate-first/odh-dashboard</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>operate-first</td>
+      <td>25155</td>
+      <td>operate-first</td>
+      <td>25433</td>
+      <td>Parent not available</td>
+      <td>0</td>
+      <td>https://github.com/operate-first/operate-first...</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>operate-first</td>
+      <td>25155</td>
+      <td>operate-first-twitter</td>
+      <td>25441</td>
+      <td>Parent not available</td>
+      <td>0</td>
+      <td>https://github.com/operate-first/operate-first...</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>operate-first</td>
+      <td>25155</td>
+      <td>opfcli</td>
+      <td>25449</td>
+      <td>Parent not available</td>
+      <td>0</td>
+      <td>https://github.com/operate-first/opfcli</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>operate-first</td>
+      <td>25155</td>
+      <td>SRE</td>
+      <td>25437</td>
+      <td>Parent not available</td>
+      <td>0</td>
+      <td>https://github.com/operate-first/SRE</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>operate-first</td>
+      <td>25155</td>
+      <td>sre-apprenticeship</td>
+      <td>25438</td>
+      <td>Parent not available</td>
+      <td>0</td>
+      <td>https://github.com/operate-first/sre-apprentic...</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>operate-first</td>
+      <td>25155</td>
+      <td>support</td>
+      <td>25448</td>
+      <td>Parent not available</td>
+      <td>0</td>
+      <td>https://github.com/operate-first/support</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>operate-first</td>
+      <td>25155</td>
+      <td>template</td>
+      <td>25439</td>
+      <td>Parent not available</td>
+      <td>0</td>
+      <td>https://github.com/operate-first/template</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>operate-first</td>
+      <td>25155</td>
+      <td>toolbox</td>
+      <td>25435</td>
+      <td>Parent not available</td>
+      <td>0</td>
+      <td>https://github.com/operate-first/toolbox</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>operate-first</td>
+      <td>25155</td>
+      <td>workshop-apps</td>
+      <td>25446</td>
+      <td>Parent not available</td>
+      <td>0</td>
+      <td>https://github.com/operate-first/workshop-apps</td>
+    </tr>
+  </tbody>
+</table>
+</div></div><div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>rg_name          object
+repo_group_id     int64
+repo_name        object
+repo_id           int64
+forked_from      object
+repo_archived     int64
+repo_git         object
+dtype: object
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Make Operate First repo lists to filter for following sql queries</span>
+<span class="n">repo_id_name</span> <span class="o">=</span> <span class="n">repolist</span><span class="p">[</span><span class="n">repolist</span><span class="p">[</span><span class="s1">&#39;rg_name&#39;</span><span class="p">]</span><span class="o">==</span><span class="s2">&quot;operate-first&quot;</span><span class="p">][[</span><span class="s1">&#39;repo_id&#39;</span><span class="p">,</span> <span class="s1">&#39;repo_git&#39;</span><span class="p">]]</span>
+<span class="n">repo_id_list</span> <span class="o">=</span> <span class="n">repo_id_name</span><span class="p">[</span><span class="s1">&#39;repo_id&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Number of repositories in Operate First Organization:&quot;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">repo_id_list</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Number of repositories in Operate First Organization: 26
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">repolist_columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;repo_id&#39;</span><span class="p">,</span> <span class="s1">&#39;repo_name&#39;</span><span class="p">]</span>
+<span class="n">repolist</span> <span class="o">=</span> <span class="n">repolist</span><span class="p">[</span><span class="n">repolist_columns</span><span class="p">]</span>
+<span class="n">repolist</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>repo_id</th>
+      <th>repo_name</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>25434</td>
+      <td>alertmanager-github-receiver</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>25431</td>
+      <td>alerts</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>25450</td>
+      <td>apps</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>25454</td>
+      <td>argocd-apps</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>25442</td>
+      <td>blueprint</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<p>Now that we have each of the Operate First repositories and their associated repository IDs, we can start fetching the different types of metrics and analyzing them by categories such as Contributors, Issues and PRs.</p>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="contributors">
+<h1>Contributors<a class="headerlink" href="#contributors" title="Permalink to this headline">¶</a></h1>
+<p>In order to measure the size and growth of the Operate First community, we can look at our contributor population base and identify the trend in the growth of our community. We can also further distinguish between “internal” and “external” contributors.</p>
+<ol class="simple">
+<li><p>Internal Contributors - Core contributors part of the Operate First team</p></li>
+<li><p>External Contributors - All contributors outside of the Operare First team</p></li>
+</ol>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Identify the list of internal contributors</span>
+<span class="n">internal_contributors</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Aakanksha Duggal&#39;</span><span class="p">,</span><span class="s1">&#39;Alice Saparov&#39;</span><span class="p">,</span><span class="s1">&#39;Anand Sanmukhani&#39;</span><span class="p">,</span><span class="s1">&#39;Bill Burns&#39;</span><span class="p">,</span><span class="s1">&#39;Christoph Görn&#39;</span><span class="p">,</span><span class="s1">&#39;Francesco Murdaca&#39;</span><span class="p">,</span><span class="s1">&#39;Fridolín Pokorný&#39;</span><span class="p">,</span><span class="s1">&#39;Gagan Kumar&#39;</span><span class="p">,</span><span class="s1">&#39;Harshad Reddy Nalla&#39;</span><span class="p">,</span><span class="s1">&#39;Heidi Picher Dempsey&#39;</span><span class="p">,</span><span class="s1">&#39;Hema Veeradhi&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;Humair&#39;</span><span class="p">,</span><span class="s1">&#39;Isabel Zimmerman&#39;</span><span class="p">,</span><span class="s1">&#39;Karanraj Chauhan&#39;</span><span class="p">,</span><span class="s1">&#39;Karsten Wade&#39;</span><span class="p">,</span><span class="s1">&#39;Lars Kellogg-Stedman&#39;</span><span class="p">,</span><span class="s1">&#39;LeihaoChen&#39;</span><span class="p">,</span><span class="s1">&#39;Marcel Hild&#39;</span><span class="p">,</span><span class="s1">&#39;Margaret Haley&#39;</span><span class="p">,</span><span class="s1">&#39;Michael Clifford&#39;</span><span class="p">,</span><span class="s1">&#39;Michal Drla&#39;</span><span class="p">,</span><span class="s1">&#39;Oindrilla Chatterjee&#39;</span><span class="p">,</span><span class="s1">&#39;Operate First&#39;</span><span class="p">,</span><span class="s1">&#39;Shrey&#39;</span><span class="p">,</span><span class="s1">&#39;Surbhi Kanthed&#39;</span><span class="p">,</span><span class="s1">&#39;Surya Prakash Pathak&#39;</span><span class="p">,</span><span class="s1">&#39;Thoth Bot&#39;</span><span class="p">,</span><span class="s1">&#39;Tom Coufal&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Now, we will fetch the data from the <code class="docutils literal notranslate"><span class="pre">contributors</span></code> table which contains information pertaining to the contributors such as their names, GitHub ID, contributor ID etc.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">contributors</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">()</span>
+
+<span class="n">repo_query</span> <span class="o">=</span> <span class="n">salc</span><span class="o">.</span><span class="n">sql</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">             SET SCHEMA &#39;augur_data&#39;;</span>
+<span class="s2">             SELECT * FROM contributors</span>
+<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
+
+<span class="n">contributors</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_sql</span><span class="p">(</span><span class="n">repo_query</span><span class="p">,</span> <span class="n">con</span><span class="o">=</span><span class="n">engine</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Retain only relevant columns of interest</span>
+<span class="n">contributors_columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;cntrb_id&#39;</span><span class="p">,</span> <span class="s1">&#39;cntrb_full_name&#39;</span><span class="p">,</span> <span class="s1">&#39;gh_user_id&#39;</span><span class="p">]</span>
+<span class="n">contributors</span> <span class="o">=</span> <span class="n">contributors</span><span class="p">[</span><span class="n">contributors_columns</span><span class="p">]</span>
+<span class="c1"># Add another column to identify whether a user is an internal or external contributor</span>
+<span class="n">contributors</span><span class="p">[</span><span class="s1">&#39;cntrb_internal&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">contributors</span><span class="p">[</span><span class="s1">&#39;cntrb_full_name&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">internal_contributors</span><span class="p">)</span>
+<span class="c1">#contributors = contributors.dropna()</span>
+<span class="n">contributors</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>cntrb_id</th>
+      <th>cntrb_full_name</th>
+      <th>gh_user_id</th>
+      <th>cntrb_internal</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1</td>
+      <td>None</td>
+      <td>1</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>277109</td>
+      <td>Tom Coufal</td>
+      <td>7453394</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>277111</td>
+      <td>Karsten Wade</td>
+      <td>112760</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>277112</td>
+      <td>Anand Sanmukhani</td>
+      <td>22333506</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>277113</td>
+      <td>Margaret Haley</td>
+      <td>71036291</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>129</th>
+      <td>277242</td>
+      <td>Fabian Martinez</td>
+      <td>46371672</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>130</th>
+      <td>277243</td>
+      <td>Randy George</td>
+      <td>29308236</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>131</th>
+      <td>277244</td>
+      <td>Harshad Sharma</td>
+      <td>1664125</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>132</th>
+      <td>277245</td>
+      <td>nb.qubits</td>
+      <td>32827533</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>133</th>
+      <td>277246</td>
+      <td>Bartlomiej Plotka</td>
+      <td>6950331</td>
+      <td>False</td>
+    </tr>
+  </tbody>
+</table>
+<p>134 rows × 4 columns</p>
+</div></div></div>
+</div>
+<div class="section" id="internal-vs-external-contributors">
+<h2>Internal vs External Contributors<a class="headerlink" href="#internal-vs-external-contributors" title="Permalink to this headline">¶</a></h2>
+<p>Let’s see the distribution of internal vs external contributors</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">contributors</span><span class="p">[</span><span class="s1">&#39;cntrb_internal&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>False    108
+True      26
+Name: cntrb_internal, dtype: int64
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">cntrb_groups</span> <span class="o">=</span> <span class="n">contributors</span><span class="p">[</span><span class="s1">&#39;gh_user_id&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="n">contributors</span><span class="o">.</span><span class="n">cntrb_internal</span><span class="p">)</span><span class="o">.</span><span class="n">agg</span><span class="p">(</span><span class="s1">&#39;count&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">labels</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;External&quot;</span><span class="p">,</span><span class="s2">&quot;Internal&quot;</span><span class="p">]</span>
+<span class="n">cntrb_groups</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">pie</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span><span class="mi">8</span><span class="p">),</span><span class="n">autopct</span><span class="o">=</span><span class="s1">&#39;</span><span class="si">%1.1f%%</span><span class="s1">&#39;</span><span class="p">,</span><span class="n">startangle</span><span class="o">=</span><span class="mi">90</span><span class="p">,</span><span class="n">pctdistance</span><span class="o">=</span><span class="mf">0.9</span><span class="p">,</span><span class="n">labels</span><span class="o">=</span><span class="n">labels</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Internal vs External Contributors&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/community_metrics_17_0.png" src="../_images/community_metrics_17_0.png" />
+</div>
+</div>
+<p>We have 108 (80.6%) external contributors and 26 (19.4%) internal contributors.</p>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="issues">
+<h1>Issues<a class="headerlink" href="#issues" title="Permalink to this headline">¶</a></h1>
+<p>We can also measure the size and growth of the community by analyzing the GitHub repository activities (issues and PRs) by tracking the GitHub issue activity across repositories such as number of issues created over time, number of issues closed over time, number of issues created by internal vs external contributors etc.</p>
+<p>We will fetch the data from the <code class="docutils literal notranslate"><span class="pre">issues</span></code> table which contains information pertaining to the issue activity across repositories such as issue creation time, issue closed time, repository ID, GitHub user ID etc.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">END_DATE</span> <span class="o">=</span> <span class="s1">&#39;2021-09-01&#39;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">issues</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">()</span>
+
+<span class="n">repo_query</span> <span class="o">=</span> <span class="n">salc</span><span class="o">.</span><span class="n">sql</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">             SET SCHEMA &#39;augur_data&#39;;</span>
+<span class="s2">             SELECT * FROM issues</span>
+<span class="s2">             WHERE repo_id IN </span><span class="si">{</span><span class="nb">tuple</span><span class="p">(</span><span class="n">repo_id_list</span><span class="p">)</span><span class="si">}</span><span class="s2"></span>
+<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
+
+<span class="n">issues</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_sql</span><span class="p">(</span><span class="n">repo_query</span><span class="p">,</span> <span class="n">con</span><span class="o">=</span><span class="n">engine</span><span class="p">)</span>
+<span class="n">issues</span> <span class="o">=</span> <span class="n">issues</span><span class="p">[</span><span class="n">issues</span><span class="p">[</span><span class="s1">&#39;created_at&#39;</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="n">END_DATE</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Retain only relvant columns of interest</span>
+<span class="n">issues_columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;issue_id&#39;</span><span class="p">,</span> <span class="s1">&#39;repo_id&#39;</span><span class="p">,</span> <span class="s1">&#39;gh_user_id&#39;</span><span class="p">,</span> <span class="s1">&#39;created_at&#39;</span><span class="p">,</span> <span class="s1">&#39;closed_at&#39;</span><span class="p">]</span>
+<span class="n">issues</span> <span class="o">=</span> <span class="n">issues</span><span class="p">[</span><span class="n">issues_columns</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Join repository details</span>
+<span class="n">issues_repo</span> <span class="o">=</span> <span class="n">issues</span><span class="o">.</span><span class="n">set_index</span><span class="p">(</span><span class="s1">&#39;repo_id&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">repolist</span><span class="o">.</span><span class="n">set_index</span><span class="p">(</span><span class="s1">&#39;repo_id&#39;</span><span class="p">))</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Join contributor details</span>
+<span class="n">issues_repo_cont</span> <span class="o">=</span> <span class="n">issues_repo</span><span class="o">.</span><span class="n">set_index</span><span class="p">(</span><span class="s1">&#39;gh_user_id&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">contributors</span><span class="o">.</span><span class="n">set_index</span><span class="p">(</span><span class="s1">&#39;gh_user_id&#39;</span><span class="p">))</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">issues_repo_cont</span> <span class="o">=</span> <span class="n">issues_repo_cont</span><span class="p">[</span><span class="n">issues_repo_cont</span><span class="p">[</span><span class="s1">&#39;repo_name&#39;</span><span class="p">]</span> <span class="o">!=</span> <span class="s2">&quot;alerts&quot;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">issues_repo_cont</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>gh_user_id</th>
+      <th>repo_id</th>
+      <th>issue_id</th>
+      <th>created_at</th>
+      <th>closed_at</th>
+      <th>repo_name</th>
+      <th>cntrb_id</th>
+      <th>cntrb_full_name</th>
+      <th>cntrb_internal</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>36604</td>
+      <td>25437</td>
+      <td>352816</td>
+      <td>2021-08-12 12:47:52</td>
+      <td>NaT</td>
+      <td>SRE</td>
+      <td>277150</td>
+      <td>Robert Bohne</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>36604</td>
+      <td>25448</td>
+      <td>353550</td>
+      <td>2021-08-08 10:16:17</td>
+      <td>NaT</td>
+      <td>support</td>
+      <td>277150</td>
+      <td>Robert Bohne</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>36604</td>
+      <td>25448</td>
+      <td>353551</td>
+      <td>2021-08-08 10:09:23</td>
+      <td>NaT</td>
+      <td>support</td>
+      <td>277150</td>
+      <td>Robert Bohne</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>36604</td>
+      <td>25448</td>
+      <td>353552</td>
+      <td>2021-08-08 09:50:27</td>
+      <td>NaT</td>
+      <td>support</td>
+      <td>277150</td>
+      <td>Robert Bohne</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>36604</td>
+      <td>25448</td>
+      <td>353553</td>
+      <td>2021-08-08 09:35:36</td>
+      <td>NaT</td>
+      <td>support</td>
+      <td>277150</td>
+      <td>Robert Bohne</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>18846</th>
+      <td>81101813</td>
+      <td>25448</td>
+      <td>353681</td>
+      <td>2021-04-22 23:31:24</td>
+      <td>NaT</td>
+      <td>support</td>
+      <td>277167</td>
+      <td>None</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>18847</th>
+      <td>81101813</td>
+      <td>25448</td>
+      <td>353688</td>
+      <td>2021-04-14 09:13:54</td>
+      <td>NaT</td>
+      <td>support</td>
+      <td>277167</td>
+      <td>None</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>18848</th>
+      <td>81101813</td>
+      <td>25448</td>
+      <td>353692</td>
+      <td>2021-04-13 11:19:20</td>
+      <td>2021-04-13 14:29:56</td>
+      <td>support</td>
+      <td>277167</td>
+      <td>None</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>18849</th>
+      <td>81101813</td>
+      <td>25450</td>
+      <td>354384</td>
+      <td>2021-04-23 16:18:50</td>
+      <td>2021-04-23 17:50:23</td>
+      <td>apps</td>
+      <td>277167</td>
+      <td>None</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>18850</th>
+      <td>84931428</td>
+      <td>25448</td>
+      <td>353634</td>
+      <td>2021-06-03 20:59:02</td>
+      <td>2021-06-08 18:56:16</td>
+      <td>support</td>
+      <td>277237</td>
+      <td>None</td>
+      <td>False</td>
+    </tr>
+  </tbody>
+</table>
+<p>2799 rows × 9 columns</p>
+</div></div></div>
+</div>
+<div class="section" id="issues-created-over-time">
+<h2>Issues Created Over Time<a class="headerlink" href="#issues-created-over-time" title="Permalink to this headline">¶</a></h2>
+<p>Lets visualize the number of issues created over time per repository.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">issues_repo_cont</span><span class="p">[[</span><span class="s1">&#39;repo_name&#39;</span><span class="p">,</span> <span class="s1">&#39;created_at&#39;</span><span class="p">,</span> <span class="s1">&#39;issue_id&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;repo_name&#39;</span><span class="p">,</span> <span class="s1">&#39;created_at&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">count</span><span class="p">()</span><span class="o">.</span><span class="n">plot</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">(</span><span class="n">rotation</span><span class="o">=</span><span class="mi">90</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Repository,Day&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;# Issues&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;# Issues Created Over Time per Repository&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/community_metrics_29_0.png" src="../_images/community_metrics_29_0.png" />
+</div>
+</div>
+<p>Now let’s try to visualize the number of monthly issues that were created across all repositories.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">issues_repo_time</span> <span class="o">=</span> <span class="n">issues_repo_cont</span><span class="p">[</span><span class="s1">&#39;repo_name&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="n">issues_repo_cont</span><span class="o">.</span><span class="n">created_at</span><span class="o">.</span><span class="n">dt</span><span class="o">.</span><span class="n">to_period</span><span class="p">(</span><span class="s2">&quot;M&quot;</span><span class="p">))</span><span class="o">.</span><span class="n">agg</span><span class="p">(</span><span class="s1">&#39;count&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">issues_repo_time</span><span class="o">.</span><span class="n">plot</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Number of Issues Created Over Time&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Month&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Count&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/community_metrics_32_0.png" src="../_images/community_metrics_32_0.png" />
+</div>
+</div>
+<p>We see that over the year (2020-2021), we had an increase in the number of issues being created indicating an active community.</p>
+<p>Now lets see the number of issues being created per repository.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">issues_repo_gb</span> <span class="o">=</span> <span class="n">issues_repo_cont</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;repo_name&#39;</span><span class="p">)</span>
+<span class="n">issues_repo</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">()</span>
+<span class="n">issues_repo</span><span class="p">[</span><span class="s1">&#39;internal&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">issues_repo_gb</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="p">[</span><span class="s1">&#39;cntrb_internal&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">())</span>
+<span class="n">issues_repo</span><span class="p">[</span><span class="s1">&#39;external&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">issues_repo_gb</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="nb">len</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="s1">&#39;cntrb_internal&#39;</span><span class="p">])</span> <span class="o">-</span> <span class="n">x</span><span class="p">[</span><span class="s1">&#39;cntrb_internal&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">issues_repo</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s1">&#39;internal&#39;</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s1">&#39;bar&#39;</span><span class="p">,</span> <span class="n">stacked</span><span class="o">=</span><span class="s1">&#39;True&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Number of PRs Created (Grouped by Repository)&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Repository&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Count&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/community_metrics_36_0.png" src="../_images/community_metrics_36_0.png" />
+</div>
+</div>
+<p>We see that the <code class="docutils literal notranslate"><span class="pre">alerts</span></code> repo has the highest number of issues being created. The <code class="docutils literal notranslate"><span class="pre">SRE,</span> <span class="pre">apps,</span> <span class="pre">support</span> <span class="pre">and</span> <span class="pre">operate-first</span></code> repositories are other repositories which are active.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">issues_repo_gb</span><span class="o">.</span><span class="n">gh_user_id</span><span class="o">.</span><span class="n">agg</span><span class="p">(</span><span class="s1">&#39;count&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">pie</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">35</span><span class="p">,</span><span class="mi">20</span><span class="p">),</span><span class="n">autopct</span><span class="o">=</span><span class="s1">&#39;</span><span class="si">%1.1f%%</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Issues Created Across Repositories&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/community_metrics_38_0.png" src="../_images/community_metrics_38_0.png" />
+</div>
+</div>
+<p>We see that 85% of issues are being created in the <code class="docutils literal notranslate"><span class="pre">alerts</span></code> repository.</p>
+<div class="section" id="issues-created-by-external-vs-internal-contributors">
+<h3>Issues Created by External vs Internal Contributors<a class="headerlink" href="#issues-created-by-external-vs-internal-contributors" title="Permalink to this headline">¶</a></h3>
+<p>Let’s see the distribution of issues opened by External and Internal contributors</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">issue_cntrb</span> <span class="o">=</span> <span class="n">issues_repo_cont</span><span class="p">[</span><span class="s1">&#39;issue_id&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="n">issues_repo_cont</span><span class="o">.</span><span class="n">cntrb_internal</span><span class="p">)</span><span class="o">.</span><span class="n">agg</span><span class="p">(</span><span class="s1">&#39;count&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">labels</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;External&quot;</span><span class="p">,</span><span class="s2">&quot;Internal&quot;</span><span class="p">]</span>
+<span class="n">issue_cntrb</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">pie</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span><span class="mi">8</span><span class="p">),</span><span class="n">autopct</span><span class="o">=</span><span class="s1">&#39;</span><span class="si">%1.1f%%</span><span class="s1">&#39;</span><span class="p">,</span><span class="n">startangle</span><span class="o">=</span><span class="mi">90</span><span class="p">,</span><span class="n">pctdistance</span><span class="o">=</span><span class="mf">0.9</span><span class="p">,</span><span class="n">labels</span><span class="o">=</span><span class="n">labels</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Issues Opened by External vs Internal Contributors&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/community_metrics_42_0.png" src="../_images/community_metrics_42_0.png" />
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="prs">
+<h1>PRs<a class="headerlink" href="#prs" title="Permalink to this headline">¶</a></h1>
+<p>We can also measure the size and growth of the community by analyzing the GitHub repository activities (issues and PRs) by tracking the GitHub PR activity across repositories such as number of PRs created over time, number of PRs closed over time, number of PRs created by internal vs external contributors etc.</p>
+<p>We will fetch the data from the <code class="docutils literal notranslate"><span class="pre">pull_requests</span></code> and <code class="docutils literal notranslate"><span class="pre">pull_request_meta</span></code> tables which contains information pertaining to the PR activity across repositories such as PR creation time, PR closed time, repository ID, PR ID etc.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pr</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">()</span>
+
+<span class="n">repo_query</span> <span class="o">=</span> <span class="n">salc</span><span class="o">.</span><span class="n">sql</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">             SET SCHEMA &#39;augur_data&#39;;</span>
+<span class="s2">             SELECT * FROM pull_requests</span>
+<span class="s2">             WHERE repo_id IN </span><span class="si">{</span><span class="nb">tuple</span><span class="p">(</span><span class="n">repo_id_list</span><span class="p">)</span><span class="si">}</span><span class="s2"></span>
+<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
+
+<span class="n">pr</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_sql</span><span class="p">(</span><span class="n">repo_query</span><span class="p">,</span> <span class="n">con</span><span class="o">=</span><span class="n">engine</span><span class="p">)</span>
+<span class="n">pr</span> <span class="o">=</span> <span class="n">pr</span><span class="p">[</span><span class="n">pr</span><span class="p">[</span><span class="s1">&#39;pr_created_at&#39;</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="n">END_DATE</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pr_meta</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">()</span>
+
+<span class="n">repo_query</span> <span class="o">=</span> <span class="n">salc</span><span class="o">.</span><span class="n">sql</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">             SET SCHEMA &#39;augur_data&#39;;</span>
+<span class="s2">             SELECT * FROM pull_request_meta</span>
+<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
+
+<span class="n">pr_meta</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_sql</span><span class="p">(</span><span class="n">repo_query</span><span class="p">,</span> <span class="n">con</span><span class="o">=</span><span class="n">engine</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Retain relevant columns</span>
+<span class="n">pr_columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;pull_request_id&#39;</span><span class="p">,</span> <span class="s1">&#39;pr_created_at&#39;</span><span class="p">,</span> <span class="s1">&#39;pr_closed_at&#39;</span><span class="p">,</span> <span class="s1">&#39;pr_merged_at&#39;</span><span class="p">,</span> <span class="s1">&#39;repo_id&#39;</span><span class="p">]</span>
+<span class="n">pr</span> <span class="o">=</span> <span class="n">pr</span><span class="p">[</span><span class="n">pr_columns</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pr_meta_columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;pull_request_id&#39;</span><span class="p">,</span> <span class="s1">&#39;cntrb_id&#39;</span><span class="p">]</span>
+<span class="n">pr_meta</span> <span class="o">=</span> <span class="n">pr_meta</span><span class="p">[</span><span class="n">pr_meta_columns</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Join repository details</span>
+<span class="n">pr_repo</span> <span class="o">=</span> <span class="n">pr</span><span class="o">.</span><span class="n">set_index</span><span class="p">(</span><span class="s1">&#39;repo_id&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">repolist</span><span class="o">.</span><span class="n">set_index</span><span class="p">(</span><span class="s1">&#39;repo_id&#39;</span><span class="p">))</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Join contributor id</span>
+<span class="n">pr_repo_cid</span> <span class="o">=</span> <span class="n">pr_repo</span><span class="o">.</span><span class="n">set_index</span><span class="p">(</span><span class="s1">&#39;pull_request_id&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">pr_meta</span><span class="o">.</span><span class="n">set_index</span><span class="p">(</span><span class="s1">&#39;pull_request_id&#39;</span><span class="p">))</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Join contributor details</span>
+<span class="n">pr_repo_cid_cont</span> <span class="o">=</span> <span class="n">pr_repo_cid</span><span class="o">.</span><span class="n">set_index</span><span class="p">(</span><span class="s1">&#39;cntrb_id&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">contributors</span><span class="o">.</span><span class="n">set_index</span><span class="p">(</span><span class="s1">&#39;cntrb_id&#39;</span><span class="p">))</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pr_repo_cid_cont</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>cntrb_id</th>
+      <th>pull_request_id</th>
+      <th>repo_id</th>
+      <th>pr_created_at</th>
+      <th>pr_closed_at</th>
+      <th>pr_merged_at</th>
+      <th>repo_name</th>
+      <th>cntrb_full_name</th>
+      <th>gh_user_id</th>
+      <th>cntrb_internal</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>277109</td>
+      <td>209022</td>
+      <td>25431</td>
+      <td>2021-03-17 15:31:10</td>
+      <td>2021-03-17 15:58:04</td>
+      <td>2021-03-17 15:58:04</td>
+      <td>alerts</td>
+      <td>Tom Coufal</td>
+      <td>7453394</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>277109</td>
+      <td>209023</td>
+      <td>25431</td>
+      <td>2021-05-03 12:42:07</td>
+      <td>2021-05-03 13:30:33</td>
+      <td>2021-05-03 13:30:33</td>
+      <td>alerts</td>
+      <td>Tom Coufal</td>
+      <td>7453394</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>277109</td>
+      <td>209025</td>
+      <td>25430</td>
+      <td>2021-05-12 08:59:18</td>
+      <td>2021-05-12 13:37:14</td>
+      <td>2021-05-12 13:37:14</td>
+      <td>community</td>
+      <td>Tom Coufal</td>
+      <td>7453394</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>277109</td>
+      <td>209035</td>
+      <td>25432</td>
+      <td>2021-03-22 11:07:03</td>
+      <td>2021-03-22 12:49:55</td>
+      <td>2021-03-22 12:49:55</td>
+      <td>installplan-operator</td>
+      <td>Tom Coufal</td>
+      <td>7453394</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>277109</td>
+      <td>209036</td>
+      <td>25432</td>
+      <td>2021-03-29 09:15:43</td>
+      <td>2021-04-09 13:38:48</td>
+      <td>2021-04-09 13:38:48</td>
+      <td>installplan-operator</td>
+      <td>Tom Coufal</td>
+      <td>7453394</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>3019</th>
+      <td>277240</td>
+      <td>210125</td>
+      <td>25450</td>
+      <td>2021-06-17 18:53:01</td>
+      <td>2021-06-18 13:43:08</td>
+      <td>2021-06-18 13:43:08</td>
+      <td>apps</td>
+      <td>None</td>
+      <td>17623061</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>3020</th>
+      <td>277240</td>
+      <td>210126</td>
+      <td>25450</td>
+      <td>2021-06-17 20:14:56</td>
+      <td>2021-06-22 15:48:52</td>
+      <td>2021-06-22 15:48:52</td>
+      <td>apps</td>
+      <td>None</td>
+      <td>17623061</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>3021</th>
+      <td>277241</td>
+      <td>209755</td>
+      <td>25450</td>
+      <td>2021-03-08 16:34:33</td>
+      <td>2021-03-11 17:32:26</td>
+      <td>2021-03-11 17:32:26</td>
+      <td>apps</td>
+      <td>Peter Smiley</td>
+      <td>29933079</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>3022</th>
+      <td>277241</td>
+      <td>209889</td>
+      <td>25450</td>
+      <td>2021-04-07 15:24:44</td>
+      <td>2021-04-07 15:50:38</td>
+      <td>2021-04-07 15:50:38</td>
+      <td>apps</td>
+      <td>Peter Smiley</td>
+      <td>29933079</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>3023</th>
+      <td>277241</td>
+      <td>209890</td>
+      <td>25450</td>
+      <td>2021-04-07 15:54:08</td>
+      <td>2021-04-12 14:10:27</td>
+      <td>2021-04-12 14:10:27</td>
+      <td>apps</td>
+      <td>Peter Smiley</td>
+      <td>29933079</td>
+      <td>False</td>
+    </tr>
+  </tbody>
+</table>
+<p>3024 rows × 10 columns</p>
+</div></div></div>
+</div>
+<div class="section" id="prs-created-over-time">
+<h2>PRs Created Over Time<a class="headerlink" href="#prs-created-over-time" title="Permalink to this headline">¶</a></h2>
+<p>Lets visualize the number of PRs created over time per repository.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pr_repo_cid_cont</span><span class="p">[[</span><span class="s1">&#39;repo_name&#39;</span><span class="p">,</span> <span class="s1">&#39;pr_created_at&#39;</span><span class="p">,</span> <span class="s1">&#39;pull_request_id&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;repo_name&#39;</span><span class="p">,</span> <span class="s1">&#39;pr_created_at&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">count</span><span class="p">()</span><span class="o">.</span><span class="n">plot</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">(</span><span class="n">rotation</span><span class="o">=</span><span class="mi">90</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Repository,Day&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;# PRs&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;# PRs Created Over Time per Repository&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/community_metrics_54_0.png" src="../_images/community_metrics_54_0.png" />
+</div>
+</div>
+<p>Let’s try to visualize the number of monthly PRs that were created across all repositories.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">prs_repo_time</span> <span class="o">=</span> <span class="n">pr_repo_cid_cont</span><span class="p">[</span><span class="s1">&#39;repo_name&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="n">pr_repo_cid_cont</span><span class="o">.</span><span class="n">pr_created_at</span><span class="o">.</span><span class="n">dt</span><span class="o">.</span><span class="n">to_period</span><span class="p">(</span><span class="s2">&quot;M&quot;</span><span class="p">))</span><span class="o">.</span><span class="n">agg</span><span class="p">(</span><span class="s1">&#39;count&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">prs_repo_time</span><span class="o">.</span><span class="n">plot</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Number of PRs Created Over Time&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Month&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Count&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/community_metrics_57_0.png" src="../_images/community_metrics_57_0.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pr_repo_cid_cont</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>cntrb_id</th>
+      <th>pull_request_id</th>
+      <th>repo_id</th>
+      <th>pr_created_at</th>
+      <th>pr_closed_at</th>
+      <th>pr_merged_at</th>
+      <th>repo_name</th>
+      <th>cntrb_full_name</th>
+      <th>gh_user_id</th>
+      <th>cntrb_internal</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>277109</td>
+      <td>209022</td>
+      <td>25431</td>
+      <td>2021-03-17 15:31:10</td>
+      <td>2021-03-17 15:58:04</td>
+      <td>2021-03-17 15:58:04</td>
+      <td>alerts</td>
+      <td>Tom Coufal</td>
+      <td>7453394</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>277109</td>
+      <td>209023</td>
+      <td>25431</td>
+      <td>2021-05-03 12:42:07</td>
+      <td>2021-05-03 13:30:33</td>
+      <td>2021-05-03 13:30:33</td>
+      <td>alerts</td>
+      <td>Tom Coufal</td>
+      <td>7453394</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>277109</td>
+      <td>209025</td>
+      <td>25430</td>
+      <td>2021-05-12 08:59:18</td>
+      <td>2021-05-12 13:37:14</td>
+      <td>2021-05-12 13:37:14</td>
+      <td>community</td>
+      <td>Tom Coufal</td>
+      <td>7453394</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>277109</td>
+      <td>209035</td>
+      <td>25432</td>
+      <td>2021-03-22 11:07:03</td>
+      <td>2021-03-22 12:49:55</td>
+      <td>2021-03-22 12:49:55</td>
+      <td>installplan-operator</td>
+      <td>Tom Coufal</td>
+      <td>7453394</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>277109</td>
+      <td>209036</td>
+      <td>25432</td>
+      <td>2021-03-29 09:15:43</td>
+      <td>2021-04-09 13:38:48</td>
+      <td>2021-04-09 13:38:48</td>
+      <td>installplan-operator</td>
+      <td>Tom Coufal</td>
+      <td>7453394</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>3019</th>
+      <td>277240</td>
+      <td>210125</td>
+      <td>25450</td>
+      <td>2021-06-17 18:53:01</td>
+      <td>2021-06-18 13:43:08</td>
+      <td>2021-06-18 13:43:08</td>
+      <td>apps</td>
+      <td>None</td>
+      <td>17623061</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>3020</th>
+      <td>277240</td>
+      <td>210126</td>
+      <td>25450</td>
+      <td>2021-06-17 20:14:56</td>
+      <td>2021-06-22 15:48:52</td>
+      <td>2021-06-22 15:48:52</td>
+      <td>apps</td>
+      <td>None</td>
+      <td>17623061</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>3021</th>
+      <td>277241</td>
+      <td>209755</td>
+      <td>25450</td>
+      <td>2021-03-08 16:34:33</td>
+      <td>2021-03-11 17:32:26</td>
+      <td>2021-03-11 17:32:26</td>
+      <td>apps</td>
+      <td>Peter Smiley</td>
+      <td>29933079</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>3022</th>
+      <td>277241</td>
+      <td>209889</td>
+      <td>25450</td>
+      <td>2021-04-07 15:24:44</td>
+      <td>2021-04-07 15:50:38</td>
+      <td>2021-04-07 15:50:38</td>
+      <td>apps</td>
+      <td>Peter Smiley</td>
+      <td>29933079</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>3023</th>
+      <td>277241</td>
+      <td>209890</td>
+      <td>25450</td>
+      <td>2021-04-07 15:54:08</td>
+      <td>2021-04-12 14:10:27</td>
+      <td>2021-04-12 14:10:27</td>
+      <td>apps</td>
+      <td>Peter Smiley</td>
+      <td>29933079</td>
+      <td>False</td>
+    </tr>
+  </tbody>
+</table>
+<p>3024 rows × 10 columns</p>
+</div></div></div>
+</div>
+<p>Now, let’s see the number of PRs created per repository.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">prs_repo_gb</span> <span class="o">=</span> <span class="n">pr_repo_cid_cont</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;repo_name&#39;</span><span class="p">)</span>
+<span class="n">prs_repo</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">()</span>
+<span class="n">prs_repo</span><span class="p">[</span><span class="s1">&#39;internal&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">prs_repo_gb</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="p">[</span><span class="s1">&#39;cntrb_internal&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">())</span>
+<span class="n">prs_repo</span><span class="p">[</span><span class="s1">&#39;external&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">prs_repo_gb</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="nb">len</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="s1">&#39;cntrb_internal&#39;</span><span class="p">])</span> <span class="o">-</span> <span class="n">x</span><span class="p">[</span><span class="s1">&#39;cntrb_internal&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">prs_repo</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s1">&#39;internal&#39;</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s1">&#39;bar&#39;</span><span class="p">,</span> <span class="n">stacked</span><span class="o">=</span><span class="s1">&#39;True&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Number of PRs Created (Grouped by Repository)&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Repository&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Count&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/community_metrics_61_0.png" src="../_images/community_metrics_61_0.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">prs_repo_gb</span><span class="o">.</span><span class="n">pull_request_id</span><span class="o">.</span><span class="n">agg</span><span class="p">(</span><span class="s1">&#39;count&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">pie</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">35</span><span class="p">,</span><span class="mi">20</span><span class="p">),</span><span class="n">autopct</span><span class="o">=</span><span class="s1">&#39;</span><span class="si">%1.1f%%</span><span class="s1">&#39;</span><span class="p">,</span><span class="n">startangle</span><span class="o">=</span><span class="mi">90</span><span class="p">,</span><span class="n">pctdistance</span><span class="o">=</span><span class="mf">0.9</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;PRs Opened across Repositories&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/community_metrics_62_0.png" src="../_images/community_metrics_62_0.png" />
+</div>
+</div>
+</div>
+<div class="section" id="prs-created-by-external-vs-internal-contributors">
+<h2>PRs Created By External vs Internal Contributors<a class="headerlink" href="#prs-created-by-external-vs-internal-contributors" title="Permalink to this headline">¶</a></h2>
+<p>Let’s see the distribution of PRs opened by External and Internal contributors</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pr_cntrb</span> <span class="o">=</span> <span class="n">pr_repo_cid_cont</span><span class="p">[</span><span class="s1">&#39;pull_request_id&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="n">pr_repo_cid_cont</span><span class="o">.</span><span class="n">cntrb_internal</span><span class="p">)</span><span class="o">.</span><span class="n">agg</span><span class="p">(</span><span class="s1">&#39;count&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">labels</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;External&quot;</span><span class="p">,</span><span class="s2">&quot;Internal&quot;</span><span class="p">]</span>
+<span class="n">pr_cntrb</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">pie</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span><span class="mi">8</span><span class="p">),</span><span class="n">autopct</span><span class="o">=</span><span class="s1">&#39;</span><span class="si">%1.1f%%</span><span class="s1">&#39;</span><span class="p">,</span><span class="n">startangle</span><span class="o">=</span><span class="mi">90</span><span class="p">,</span><span class="n">pctdistance</span><span class="o">=</span><span class="mf">0.9</span><span class="p">,</span><span class="n">labels</span><span class="o">=</span><span class="n">labels</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;PRs Opened by External vs Internal Contributors&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/community_metrics_65_0.png" src="../_images/community_metrics_65_0.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">irc</span> <span class="o">=</span> <span class="n">issues_repo_cont</span><span class="p">[[</span><span class="s1">&#39;issue_id&#39;</span><span class="p">,</span> <span class="s1">&#39;cntrb_internal&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;issue_id&#39;</span><span class="p">:</span><span class="s1">&#39;Contribution&#39;</span><span class="p">})</span>
+<span class="n">prc</span> <span class="o">=</span> <span class="n">pr_repo_cid_cont</span><span class="p">[[</span><span class="s1">&#39;pull_request_id&#39;</span><span class="p">,</span> <span class="s1">&#39;cntrb_internal&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;pull_request_id&#39;</span><span class="p">:</span><span class="s1">&#39;Contribution&#39;</span><span class="p">})</span>
+<span class="n">iprc</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">irc</span><span class="p">,</span> <span class="n">prc</span><span class="p">])</span>
+<span class="n">iprc_groups</span> <span class="o">=</span> <span class="n">iprc</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;cntrb_internal&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">agg</span><span class="p">(</span><span class="s1">&#39;count&#39;</span><span class="p">)[</span><span class="s1">&#39;Contribution&#39;</span><span class="p">]</span>
+
+<span class="n">labels</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;External&quot;</span><span class="p">,</span><span class="s2">&quot;Internal&quot;</span><span class="p">]</span>
+<span class="n">iprc_groups</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">pie</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span><span class="mi">8</span><span class="p">),</span><span class="n">autopct</span><span class="o">=</span><span class="s1">&#39;</span><span class="si">%1.1f%%</span><span class="s1">&#39;</span><span class="p">,</span><span class="n">startangle</span><span class="o">=</span><span class="mi">90</span><span class="p">,</span><span class="n">pctdistance</span><span class="o">=</span><span class="mf">0.9</span><span class="p">,</span><span class="n">labels</span><span class="o">=</span><span class="n">labels</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Internal vs External Contributions (PRs + issues)&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/community_metrics_66_0.png" src="../_images/community_metrics_66_0.png" />
+</div>
+</div>
+<p>This shows that 90.9% of contributions (PRs + issues) are made by internal contributors and 9.1% by external contributors</p>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="conclusion">
+<h1>Conclusion<a class="headerlink" href="#conclusion" title="Permalink to this headline">¶</a></h1>
+<p>In this notebook, we collected and visualized community metrics for the Operate First group repositories. We connected to the Augur database to fetch data about github contributions such as issues and PRs. The visualizations can be used to understand community engagement of the group.</p>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./metrics"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By Operate First Authors<br/>
+    
+        &copy; Copyright 2021.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>
