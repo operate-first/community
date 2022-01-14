@@ -94,3 +94,5 @@ Non-specific examples:
 * A PR that signals the completion of an important Epic worthy of making some noise about and including in a newsletter can be labeled `area/community`, `kind/news`, and `kind/marketing`.
 * An issue is related to the experience of users joining the project to become contributors is labeled `area/community`, `area/user`, `area/contributor`, `kind/experience`, and `kind/onboarding`.
 * A write-up on how to setup a clone of a repository for doing work intended to be contributed to the community would be labeled `area/contributor`, `kind/documentation`, `kind/onboarding`, and `kind/handbook`.
+
+test
