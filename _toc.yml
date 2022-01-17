@@ -1,5 +1,10 @@
 format: jb-book
 root: README.md
-chapters:
-  - file: glossary.md
-  - file: governance.md
+parts:
+  - caption: General
+    chapters:
+    - file: glossary.md
+    - file: governance.md
+  - caption: SIGs
+    chapters:
+    - file: sig-operations/charter.md
