@@ -6,7 +6,7 @@ We plan and keep track of our efforts on the [Community Project Board](https://g
 
 ## Bootstrapping
 
-This repository is the home to efforts to bring a formal _community architecture_ process to the Operate First initiative.
+This repository (https://github.com/operate-first/community) is the home to efforts to bring a formal _community architecture_ process to the Operate First initiative.
 The scope of this initiative is large enough with a multi-community impact to warrant going from an organic community effort to a managed community.
 This initiative is in the beginning stages (bootstrapping) of defining and performing this work.
 
