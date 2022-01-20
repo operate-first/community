@@ -7,4 +7,6 @@ parts:
     - file: governance.md
   - caption: SIGs
     chapters:
+    - file: sig-list.md
+    - file: liaisons.md
     - file: sig-operations/charter.md

@@ -23,7 +23,7 @@ The [charter](charter.md) defines the scope and governance of the Operations Spe
 The Chairs of the SIG run operations and processes governing the SIG.
 
 * Humair Khan (**[@HumairAK](https://github.com/HumairAK)**), Red Hat
-* Lars Kellog-Stedman (**[@larsk](https://github.com/larsk)**), Red Hat
+* Lars Kellogg-Stedman (**[@larsks](https://github.com/larsks)**), Red Hat
 
 ## Contact
 - Slack: [#operations](https://operatefirst.slack.com/messages/operations)

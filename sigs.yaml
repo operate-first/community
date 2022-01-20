@@ -12,8 +12,8 @@ sigs:
     - github: HumairAK
       name: Humair Khan
       company: Red Hat
-    - github: larsk
-      name: Lars Kellog-Stedman
+    - github: larsks
+      name: Lars Kellogg-Stedman
       company: Red Hat
   meetings:
   - description: SIG Operations meeting
