@@ -1,0 +1,34 @@
+sigs:
+- dir: sig-operations
+  name: Operations
+  mission_statement: >
+    The goal of this SIG is to enable management and operations for hardware and platform
+    tooling within the Operate First Community Cloud (op1st)
+
+  charter_link: charter.md
+  label: operations
+  leadership:
+    chairs:
+    - github: HumairAK
+      name: Humair Khan
+      company: Red Hat
+    - github: larsks
+      name: Lars Kellogg-Stedman
+      company: Red Hat
+  meetings:
+  - description: SIG Operations meeting
+    day: Tuesday
+    time: "10:00"
+    tz: EST
+    frequency: weekly
+    url: tbd
+  contact:
+    slack: operations
+    mailing_list: community@lists.operate-first.cloud
+  subprojects:
+  - name: tbd
+    owners:
+    - https://raw.githubusercontent.com/tbc/tbc/main/tbc/OWNERS
+workinggroups: []
+usergroups: []
+committees: []
