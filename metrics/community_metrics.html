@@ -473,6 +473,7 @@
 <span class="s2">                repo_name;</span>
 <span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
 <span class="n">repolist</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_sql</span><span class="p">(</span><span class="n">repo_query</span><span class="p">,</span> <span class="n">con</span><span class="o">=</span><span class="n">engine</span><span class="p">)</span>
+<span class="n">repolist</span> <span class="o">=</span> <span class="n">repolist</span><span class="o">.</span><span class="n">dropna</span><span class="p">()</span>
 <span class="n">display</span><span class="p">(</span><span class="n">repolist</span><span class="p">)</span>
 <span class="n">repolist</span><span class="o">.</span><span class="n">dtypes</span>
 </pre></div>
@@ -514,7 +515,7 @@
       <td>alertmanager-github-receiver</td>
       <td>25434</td>
       <td>m-lab/alertmanager-github-receiver</td>
-      <td>0</td>
+      <td>0.0</td>
       <td>https://github.com/operate-first/alertmanager-...</td>
     </tr>
     <tr>
@@ -524,7 +525,7 @@
       <td>alerts</td>
       <td>25431</td>
       <td>Parent not available</td>
-      <td>0</td>
+      <td>0.0</td>
       <td>https://github.com/operate-first/alerts</td>
     </tr>
     <tr>
@@ -534,7 +535,7 @@
       <td>apps</td>
       <td>25450</td>
       <td>Parent not available</td>
-      <td>0</td>
+      <td>0.0</td>
       <td>https://github.com/operate-first/apps</td>
     </tr>
     <tr>
@@ -544,7 +545,7 @@
       <td>argocd-apps</td>
       <td>25454</td>
       <td>Parent not available</td>
-      <td>0</td>
+      <td>0.0</td>
       <td>https://github.com/operate-first/argocd-apps</td>
     </tr>
     <tr>
@@ -554,7 +555,7 @@
       <td>blueprint</td>
       <td>25442</td>
       <td>Parent not available</td>
-      <td>0</td>
+      <td>0.0</td>
       <td>https://github.com/operate-first/blueprint</td>
     </tr>
     <tr>
@@ -564,7 +565,7 @@
       <td>common</td>
       <td>25436</td>
       <td>Parent not available</td>
-      <td>0</td>
+      <td>0.0</td>
       <td>https://github.com/operate-first/common</td>
     </tr>
     <tr>
@@ -574,7 +575,7 @@
       <td>community</td>
       <td>25430</td>
       <td>Parent not available</td>
-      <td>0</td>
+      <td>0.0</td>
       <td>https://github.com/operate-first/community</td>
     </tr>
     <tr>
@@ -584,7 +585,7 @@
       <td>community-handbook</td>
       <td>25455</td>
       <td>Parent not available</td>
-      <td>0</td>
+      <td>0.0</td>
       <td>https://github.com/operate-first/community-han...</td>
     </tr>
     <tr>
@@ -594,7 +595,7 @@
       <td>continuous-delivery</td>
       <td>25445</td>
       <td>Parent not available</td>
-      <td>0</td>
+      <td>0.0</td>
       <td>https://github.com/operate-first/continuous-de...</td>
     </tr>
     <tr>
@@ -604,7 +605,7 @@
       <td>continuous-deployment</td>
       <td>25453</td>
       <td>Parent not available</td>
-      <td>0</td>
+      <td>0.0</td>
       <td>https://github.com/operate-first/continuous-de...</td>
     </tr>
     <tr>
@@ -614,7 +615,7 @@
       <td>curator</td>
       <td>25443</td>
       <td>Parent not available</td>
-      <td>0</td>
+      <td>0.0</td>
       <td>https://github.com/operate-first/curator</td>
     </tr>
     <tr>
@@ -624,7 +625,7 @@
       <td>espresso-series</td>
       <td>25444</td>
       <td>Parent not available</td>
-      <td>0</td>
+      <td>0.0</td>
       <td>https://github.com/operate-first/espresso-series</td>
     </tr>
     <tr>
@@ -634,7 +635,7 @@
       <td>example-acm-install</td>
       <td>25440</td>
       <td>Parent not available</td>
-      <td>0</td>
+      <td>0.0</td>
       <td>https://github.com/operate-first/example-acm-i...</td>
     </tr>
     <tr>
@@ -644,7 +645,7 @@
       <td>hetzner-baremetal-openshift</td>
       <td>25451</td>
       <td>Parent not available</td>
-      <td>0</td>
+      <td>0.0</td>
       <td>https://github.com/operate-first/hetzner-barem...</td>
     </tr>
     <tr>
@@ -654,7 +655,7 @@
       <td>hitchhikers-guide</td>
       <td>25452</td>
       <td>Parent not available</td>
-      <td>0</td>
+      <td>0.0</td>
       <td>https://github.com/operate-first/hitchhikers-g...</td>
     </tr>
     <tr>
@@ -664,118 +665,118 @@
       <td>installplan-operator</td>
       <td>25432</td>
       <td>Parent not available</td>
-      <td>1</td>
+      <td>1.0</td>
       <td>https://github.com/operate-first/installplan-o...</td>
     </tr>
     <tr>
-      <th>16</th>
+      <th>6779</th>
       <td>operate-first</td>
       <td>25155</td>
       <td>odh-dashboard</td>
       <td>25447</td>
       <td>opendatahub-io/odh-dashboard</td>
-      <td>0</td>
+      <td>0.0</td>
       <td>https://github.com/operate-first/odh-dashboard</td>
     </tr>
     <tr>
-      <th>17</th>
+      <th>6780</th>
       <td>operate-first</td>
       <td>25155</td>
       <td>operate-first</td>
       <td>25433</td>
       <td>Parent not available</td>
-      <td>0</td>
+      <td>0.0</td>
       <td>https://github.com/operate-first/operate-first...</td>
     </tr>
     <tr>
-      <th>18</th>
+      <th>6781</th>
       <td>operate-first</td>
       <td>25155</td>
       <td>operate-first-twitter</td>
       <td>25441</td>
       <td>Parent not available</td>
-      <td>0</td>
+      <td>0.0</td>
       <td>https://github.com/operate-first/operate-first...</td>
     </tr>
     <tr>
-      <th>19</th>
+      <th>6782</th>
       <td>operate-first</td>
       <td>25155</td>
       <td>opfcli</td>
       <td>25449</td>
       <td>Parent not available</td>
-      <td>0</td>
+      <td>0.0</td>
       <td>https://github.com/operate-first/opfcli</td>
     </tr>
     <tr>
-      <th>20</th>
+      <th>6783</th>
       <td>operate-first</td>
       <td>25155</td>
       <td>SRE</td>
       <td>25437</td>
       <td>Parent not available</td>
-      <td>0</td>
+      <td>0.0</td>
       <td>https://github.com/operate-first/SRE</td>
     </tr>
     <tr>
-      <th>21</th>
+      <th>6784</th>
       <td>operate-first</td>
       <td>25155</td>
       <td>sre-apprenticeship</td>
       <td>25438</td>
       <td>Parent not available</td>
-      <td>0</td>
+      <td>0.0</td>
       <td>https://github.com/operate-first/sre-apprentic...</td>
     </tr>
     <tr>
-      <th>22</th>
+      <th>6785</th>
       <td>operate-first</td>
       <td>25155</td>
       <td>support</td>
       <td>25448</td>
       <td>Parent not available</td>
-      <td>0</td>
+      <td>0.0</td>
       <td>https://github.com/operate-first/support</td>
     </tr>
     <tr>
-      <th>23</th>
+      <th>6786</th>
       <td>operate-first</td>
       <td>25155</td>
       <td>template</td>
       <td>25439</td>
       <td>Parent not available</td>
-      <td>0</td>
+      <td>0.0</td>
       <td>https://github.com/operate-first/template</td>
     </tr>
     <tr>
-      <th>24</th>
+      <th>6787</th>
       <td>operate-first</td>
       <td>25155</td>
       <td>toolbox</td>
       <td>25435</td>
       <td>Parent not available</td>
-      <td>0</td>
+      <td>0.0</td>
       <td>https://github.com/operate-first/toolbox</td>
     </tr>
     <tr>
-      <th>25</th>
+      <th>6788</th>
       <td>operate-first</td>
       <td>25155</td>
       <td>workshop-apps</td>
       <td>25446</td>
       <td>Parent not available</td>
-      <td>0</td>
+      <td>0.0</td>
       <td>https://github.com/operate-first/workshop-apps</td>
     </tr>
   </tbody>
 </table>
-</div></div><div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>rg_name          object
-repo_group_id     int64
-repo_name        object
-repo_id           int64
-forked_from      object
-repo_archived     int64
-repo_git         object
+</div></div><div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>rg_name           object
+repo_group_id      int64
+repo_name         object
+repo_id            int64
+forked_from       object
+repo_archived    float64
+repo_git          object
 dtype: object
 </pre></div>
 </div>
@@ -1021,8 +1022,8 @@ dtype: object
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>False    108
-True      26
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>False    106
+True      28
 Name: cntrb_internal, dtype: int64
 </pre></div>
 </div>
@@ -1058,7 +1059,8 @@ Name: cntrb_internal, dtype: int64
 <p>We will fetch the data from the <code class="docutils literal notranslate"><span class="pre">issues</span></code> table which contains information pertaining to the issue activity across repositories such as issue creation time, issue closed time, repository ID, GitHub user ID etc.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">END_DATE</span> <span class="o">=</span> <span class="s1">&#39;2021-09-01&#39;</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">START_DATE</span> <span class="o">=</span> <span class="s1">&#39;2021-01-01&#39;</span>
+<span class="n">END_DATE</span> <span class="o">=</span> <span class="s1">&#39;2021-12-31&#39;</span>
 </pre></div>
 </div>
 </div>
@@ -1074,7 +1076,7 @@ Name: cntrb_internal, dtype: int64
 <span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
 
 <span class="n">issues</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_sql</span><span class="p">(</span><span class="n">repo_query</span><span class="p">,</span> <span class="n">con</span><span class="o">=</span><span class="n">engine</span><span class="p">)</span>
-<span class="n">issues</span> <span class="o">=</span> <span class="n">issues</span><span class="p">[</span><span class="n">issues</span><span class="p">[</span><span class="s1">&#39;created_at&#39;</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="n">END_DATE</span><span class="p">]</span>
+<span class="n">issues</span> <span class="o">=</span> <span class="n">issues</span><span class="p">[(</span><span class="n">issues</span><span class="p">[</span><span class="s1">&#39;created_at&#39;</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="n">START_DATE</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">issues</span><span class="p">[</span><span class="s1">&#39;created_at&#39;</span><span class="p">]</span><span class="o">&lt;=</span><span class="n">END_DATE</span><span class="p">)]</span>
 </pre></div>
 </div>
 </div>
@@ -1221,7 +1223,7 @@ Name: cntrb_internal, dtype: int64
       <td>...</td>
     </tr>
     <tr>
-      <th>18846</th>
+      <th>18382</th>
       <td>81101813</td>
       <td>25448</td>
       <td>353681</td>
@@ -1233,7 +1235,7 @@ Name: cntrb_internal, dtype: int64
       <td>False</td>
     </tr>
     <tr>
-      <th>18847</th>
+      <th>18383</th>
       <td>81101813</td>
       <td>25448</td>
       <td>353688</td>
@@ -1245,7 +1247,7 @@ Name: cntrb_internal, dtype: int64
       <td>False</td>
     </tr>
     <tr>
-      <th>18848</th>
+      <th>18384</th>
       <td>81101813</td>
       <td>25448</td>
       <td>353692</td>
@@ -1257,7 +1259,7 @@ Name: cntrb_internal, dtype: int64
       <td>False</td>
     </tr>
     <tr>
-      <th>18849</th>
+      <th>18385</th>
       <td>81101813</td>
       <td>25450</td>
       <td>354384</td>
@@ -1269,7 +1271,7 @@ Name: cntrb_internal, dtype: int64
       <td>False</td>
     </tr>
     <tr>
-      <th>18850</th>
+      <th>18386</th>
       <td>84931428</td>
       <td>25448</td>
       <td>353634</td>
@@ -1282,7 +1284,7 @@ Name: cntrb_internal, dtype: int64
     </tr>
   </tbody>
 </table>
-<p>2799 rows × 9 columns</p>
+<p>2335 rows × 9 columns</p>
 </div></div></div>
 </div>
 <div class="section" id="issues-created-over-time">
@@ -1407,7 +1409,7 @@ Name: cntrb_internal, dtype: int64
 <span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
 
 <span class="n">pr</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_sql</span><span class="p">(</span><span class="n">repo_query</span><span class="p">,</span> <span class="n">con</span><span class="o">=</span><span class="n">engine</span><span class="p">)</span>
-<span class="n">pr</span> <span class="o">=</span> <span class="n">pr</span><span class="p">[</span><span class="n">pr</span><span class="p">[</span><span class="s1">&#39;pr_created_at&#39;</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="n">END_DATE</span><span class="p">]</span>
+<span class="n">pr</span> <span class="o">=</span> <span class="n">pr</span><span class="p">[(</span><span class="n">pr</span><span class="p">[</span><span class="s1">&#39;pr_created_at&#39;</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="n">START_DATE</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">pr</span><span class="p">[</span><span class="s1">&#39;pr_created_at&#39;</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="n">END_DATE</span><span class="p">)]</span>
 </pre></div>
 </div>
 </div>
@@ -1584,7 +1586,7 @@ Name: cntrb_internal, dtype: int64
       <td>...</td>
     </tr>
     <tr>
-      <th>3019</th>
+      <th>2557</th>
       <td>277240</td>
       <td>210125</td>
       <td>25450</td>
@@ -1597,7 +1599,7 @@ Name: cntrb_internal, dtype: int64
       <td>False</td>
     </tr>
     <tr>
-      <th>3020</th>
+      <th>2558</th>
       <td>277240</td>
       <td>210126</td>
       <td>25450</td>
@@ -1610,7 +1612,7 @@ Name: cntrb_internal, dtype: int64
       <td>False</td>
     </tr>
     <tr>
-      <th>3021</th>
+      <th>2559</th>
       <td>277241</td>
       <td>209755</td>
       <td>25450</td>
@@ -1623,7 +1625,7 @@ Name: cntrb_internal, dtype: int64
       <td>False</td>
     </tr>
     <tr>
-      <th>3022</th>
+      <th>2560</th>
       <td>277241</td>
       <td>209889</td>
       <td>25450</td>
@@ -1636,7 +1638,7 @@ Name: cntrb_internal, dtype: int64
       <td>False</td>
     </tr>
     <tr>
-      <th>3023</th>
+      <th>2561</th>
       <td>277241</td>
       <td>209890</td>
       <td>25450</td>
@@ -1650,7 +1652,7 @@ Name: cntrb_internal, dtype: int64
     </tr>
   </tbody>
 </table>
-<p>3024 rows × 10 columns</p>
+<p>2562 rows × 10 columns</p>
 </div></div></div>
 </div>
 <div class="section" id="prs-created-over-time">
@@ -1810,7 +1812,7 @@ Name: cntrb_internal, dtype: int64
       <td>...</td>
     </tr>
     <tr>
-      <th>3019</th>
+      <th>2557</th>
       <td>277240</td>
       <td>210125</td>
       <td>25450</td>
@@ -1823,7 +1825,7 @@ Name: cntrb_internal, dtype: int64
       <td>False</td>
     </tr>
     <tr>
-      <th>3020</th>
+      <th>2558</th>
       <td>277240</td>
       <td>210126</td>
       <td>25450</td>
@@ -1836,7 +1838,7 @@ Name: cntrb_internal, dtype: int64
       <td>False</td>
     </tr>
     <tr>
-      <th>3021</th>
+      <th>2559</th>
       <td>277241</td>
       <td>209755</td>
       <td>25450</td>
@@ -1849,7 +1851,7 @@ Name: cntrb_internal, dtype: int64
       <td>False</td>
     </tr>
     <tr>
-      <th>3022</th>
+      <th>2560</th>
       <td>277241</td>
       <td>209889</td>
       <td>25450</td>
@@ -1862,7 +1864,7 @@ Name: cntrb_internal, dtype: int64
       <td>False</td>
     </tr>
     <tr>
-      <th>3023</th>
+      <th>2561</th>
       <td>277241</td>
       <td>209890</td>
       <td>25450</td>
@@ -1876,7 +1878,7 @@ Name: cntrb_internal, dtype: int64
     </tr>
   </tbody>
 </table>
-<p>3024 rows × 10 columns</p>
+<p>2562 rows × 10 columns</p>
 </div></div></div>
 </div>
 <p>Now, let’s see the number of PRs created per repository.</p>
