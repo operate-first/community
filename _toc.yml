@@ -5,6 +5,7 @@ parts:
     chapters:
     - file: glossary.md
     - file: governance.md
+    - file: open-source-services.md
   - caption: SIGs
     chapters:
     - file: sig-list.md
