@@ -1058,7 +1058,7 @@ Name: cntrb_internal, dtype: int64
 <p>We will fetch the data from the <code class="docutils literal notranslate"><span class="pre">issues</span></code> table which contains information pertaining to the issue activity across repositories such as issue creation time, issue closed time, repository ID, GitHub user ID etc.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">START_DATE</span> <span class="o">=</span> <span class="s1">&#39;2021-01-01&#39;</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">START_DATE</span> <span class="o">=</span> <span class="s1">&#39;2020-01-01&#39;</span>
 <span class="n">END_DATE</span> <span class="o">=</span> <span class="s1">&#39;2021-12-31&#39;</span>
 </pre></div>
 </div>
@@ -1222,7 +1222,7 @@ Name: cntrb_internal, dtype: int64
       <td>...</td>
     </tr>
     <tr>
-      <th>29097</th>
+      <th>29561</th>
       <td>89909507</td>
       <td>25450</td>
       <td>366550</td>
@@ -1234,7 +1234,7 @@ Name: cntrb_internal, dtype: int64
       <td>False</td>
     </tr>
     <tr>
-      <th>29098</th>
+      <th>29562</th>
       <td>89909507</td>
       <td>25450</td>
       <td>366390</td>
@@ -1246,7 +1246,7 @@ Name: cntrb_internal, dtype: int64
       <td>False</td>
     </tr>
     <tr>
-      <th>29099</th>
+      <th>29563</th>
       <td>89909507</td>
       <td>25450</td>
       <td>366551</td>
@@ -1258,7 +1258,7 @@ Name: cntrb_internal, dtype: int64
       <td>False</td>
     </tr>
     <tr>
-      <th>29100</th>
+      <th>29564</th>
       <td>89909507</td>
       <td>25452</td>
       <td>366847</td>
@@ -1270,7 +1270,7 @@ Name: cntrb_internal, dtype: int64
       <td>False</td>
     </tr>
     <tr>
-      <th>29101</th>
+      <th>29565</th>
       <td>89909507</td>
       <td>25452</td>
       <td>366865</td>
@@ -1283,7 +1283,7 @@ Name: cntrb_internal, dtype: int64
     </tr>
   </tbody>
 </table>
-<p>3511 rows × 9 columns</p>
+<p>3975 rows × 9 columns</p>
 </div></div></div>
 </div>
 <div class="section" id="issues-created-over-time">
@@ -1314,7 +1314,8 @@ Name: cntrb_internal, dtype: int64
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">issues_repo_time</span><span class="o">.</span><span class="n">plot</span><span class="p">()</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ax</span> <span class="o">=</span> <span class="n">issues_repo_time</span><span class="o">.</span><span class="n">plot</span><span class="p">()</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="n">pd</span><span class="o">.</span><span class="n">Timestamp</span><span class="p">(</span><span class="s1">&#39;2020-08-01&#39;</span><span class="p">),</span> <span class="n">pd</span><span class="o">.</span><span class="n">Timestamp</span><span class="p">(</span><span class="s1">&#39;2022-01-31&#39;</span><span class="p">))</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Number of Issues Created Over Time&quot;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Month&quot;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Count&quot;</span><span class="p">)</span>
@@ -1585,7 +1586,7 @@ Name: cntrb_internal, dtype: int64
       <td>...</td>
     </tr>
     <tr>
-      <th>2956</th>
+      <th>3418</th>
       <td>277250</td>
       <td>210592</td>
       <td>25441</td>
@@ -1598,7 +1599,7 @@ Name: cntrb_internal, dtype: int64
       <td>False</td>
     </tr>
     <tr>
-      <th>2957</th>
+      <th>3419</th>
       <td>277250</td>
       <td>210624</td>
       <td>25448</td>
@@ -1611,7 +1612,7 @@ Name: cntrb_internal, dtype: int64
       <td>False</td>
     </tr>
     <tr>
-      <th>2958</th>
+      <th>3420</th>
       <td>277258</td>
       <td>210718</td>
       <td>25445</td>
@@ -1624,7 +1625,7 @@ Name: cntrb_internal, dtype: int64
       <td>False</td>
     </tr>
     <tr>
-      <th>2959</th>
+      <th>3421</th>
       <td>277281</td>
       <td>210577</td>
       <td>25437</td>
@@ -1637,7 +1638,7 @@ Name: cntrb_internal, dtype: int64
       <td>False</td>
     </tr>
     <tr>
-      <th>2960</th>
+      <th>3422</th>
       <td>277284</td>
       <td>210598</td>
       <td>25446</td>
@@ -1651,7 +1652,7 @@ Name: cntrb_internal, dtype: int64
     </tr>
   </tbody>
 </table>
-<p>2961 rows × 10 columns</p>
+<p>3423 rows × 10 columns</p>
 </div></div></div>
 </div>
 <div class="section" id="prs-created-over-time">
@@ -1682,7 +1683,8 @@ Name: cntrb_internal, dtype: int64
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">prs_repo_time</span><span class="o">.</span><span class="n">plot</span><span class="p">()</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ax</span> <span class="o">=</span> <span class="n">prs_repo_time</span><span class="o">.</span><span class="n">plot</span><span class="p">()</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="n">pd</span><span class="o">.</span><span class="n">Timestamp</span><span class="p">(</span><span class="s1">&#39;2020-08-01&#39;</span><span class="p">),</span> <span class="n">pd</span><span class="o">.</span><span class="n">Timestamp</span><span class="p">(</span><span class="s1">&#39;2022-01-31&#39;</span><span class="p">))</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Number of PRs Created Over Time&quot;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Month&quot;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Count&quot;</span><span class="p">)</span>
@@ -1811,7 +1813,7 @@ Name: cntrb_internal, dtype: int64
       <td>...</td>
     </tr>
     <tr>
-      <th>2956</th>
+      <th>3418</th>
       <td>277250</td>
       <td>210592</td>
       <td>25441</td>
@@ -1824,7 +1826,7 @@ Name: cntrb_internal, dtype: int64
       <td>False</td>
     </tr>
     <tr>
-      <th>2957</th>
+      <th>3419</th>
       <td>277250</td>
       <td>210624</td>
       <td>25448</td>
@@ -1837,7 +1839,7 @@ Name: cntrb_internal, dtype: int64
       <td>False</td>
     </tr>
     <tr>
-      <th>2958</th>
+      <th>3420</th>
       <td>277258</td>
       <td>210718</td>
       <td>25445</td>
@@ -1850,7 +1852,7 @@ Name: cntrb_internal, dtype: int64
       <td>False</td>
     </tr>
     <tr>
-      <th>2959</th>
+      <th>3421</th>
       <td>277281</td>
       <td>210577</td>
       <td>25437</td>
@@ -1863,7 +1865,7 @@ Name: cntrb_internal, dtype: int64
       <td>False</td>
     </tr>
     <tr>
-      <th>2960</th>
+      <th>3422</th>
       <td>277284</td>
       <td>210598</td>
       <td>25446</td>
@@ -1877,7 +1879,7 @@ Name: cntrb_internal, dtype: int64
     </tr>
   </tbody>
 </table>
-<p>2961 rows × 10 columns</p>
+<p>3423 rows × 10 columns</p>
 </div></div></div>
 </div>
 <p>Now, let’s see the number of PRs created per repository.</p>
