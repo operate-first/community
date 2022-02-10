@@ -1,34 +1,50 @@
 sigs:
-- dir: sig-operations
-  name: Operations
-  mission_statement: >
-    The goal of this SIG is to enable management and operations for hardware and platform
-    tooling within the Operate First Community Cloud (op1st)
+  - dir: sig-operations
+    name: Operations
+    mission_statement: >
+      The goal of this SIG is to enable management and operations for hardware and platform
+      tooling within the Operate First Community Cloud (op1st)
 
-  charter_link: charter.md
-  label: operations
-  leadership:
-    chairs:
-    - github: HumairAK
-      name: Humair Khan
-      company: Red Hat
-    - github: larsks
-      name: Lars Kellogg-Stedman
-      company: Red Hat
-  meetings:
-  - description: SIG Operations meeting
-    day: Tuesday
-    time: "10:00"
-    tz: EST
-    frequency: weekly
-    url: tbd
-  contact:
-    slack: operations
-    mailing_list: community@lists.operate-first.cloud
-  subprojects:
-  - name: tbd
-    owners:
-    - https://raw.githubusercontent.com/tbc/tbc/main/tbc/OWNERS
+    charter_link: charter.md
+    label: operations
+    leadership:
+      chairs:
+        - github: HumairAK
+          name: Humair Khan
+          company: Red Hat
+        - github: larsks
+          name: Lars Kellogg-Stedman
+          company: Red Hat
+    meetings:
+      - description: SIG Operations meeting
+        day: Tuesday
+        time: "10:00"
+        tz: EST
+        frequency: weekly
+        url: tbd
+    contact:
+      slack: operations
+      mailing_list: community@lists.operate-first.cloud
+    subprojects:
+      - name: airgapped-ops
+        description: >
+          This is creating all the artifacts required for an aiggapped deployment of Open Data Hub
+          within the Operate First Community Cloud (op1st)
+        owners:
+          - https://raw.githubusercontent.com/operate-first/community/main/sig-operations/subprojects/airgapped-ops/OWNERS
+        meetings:
+          - description: Cluster Ops Meeting
+            day: Tuesday
+            time: "8:30"
+            tz: EST
+            frequency: Weekly
+            url: meet.google.com/wxh-pizv-vwt
+          - description: Cluster Ops meeting
+            day: Thursday
+            time: "8:30"
+            tz: EST
+            frequency: Weekly
+            url: meet.google.com/wxh-pizv-vwt
 workinggroups: []
 usergroups: []
 committees: []
