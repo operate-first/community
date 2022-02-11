@@ -48,17 +48,16 @@ subprojects, and resolve cross-subproject technical issues and decisions.
 {{- end }}
 
 ## Contact
+
 {{- if .Contact.Slack }}
 - Slack: [#{{.Contact.Slack}}](https://operatefirst.slack.com/messages/{{.Contact.Slack}})
 {{- end }}
+
 - [Mailing list]({{.Contact.MailingList}})
-{{- if .Label }}
-- [Open Community Issues/PRs](https://github.com/open-services-group/community/labels/sig%2F{{.Label}})
-{{- end }}
 {{- if .Contact.GithubTeams }}
 - GitHub Teams:
 {{- range .Contact.GithubTeams }}
-    - [@open-services-group/{{.Name}}](https://github.com/orgs/open-services-group/teams/{{.Name}}) {{- if .Description }} - {{.Description}} {{- end}}
+    - [@operate-first/{{.Name}}](https://github.com/orgs/operate-first/teams/{{.Name}}) {{- if .Description }} - {{.Description}} {{- end}}
 {{- end }}
 {{- end }}
 {{- if .Contact.Liaison.Name }}
@@ -91,7 +90,7 @@ The following [subprojects][subproject-definition] are owned by sig-{{.Label}}:
 {{- if .Contact.GithubTeams }}
   - GitHub Teams:
 {{- range .Contact.GithubTeams }}
-    - [@open-services-group/{{.Name}}](https://github.com/orgs/open-services-group/teams/{{.Name}}) {{- if .Description }} - {{.Description}}{{- end}}
+    - [@operate-first/{{.Name}}](https://github.com/orgs/operate-first/teams/{{.Name}}) {{- if .Description }} - {{.Description}}{{- end}}
 {{- end }}
 {{- end }}
 {{- end }}
@@ -110,4 +109,4 @@ The following [subprojects][subproject-definition] are owned by sig-{{.Label}}:
 {{- end }}
 {{- end }}
 
-[subproject-definition]: https://github.com/open-services-group/community/blob/master/governance.md#subprojects
+[subproject-definition]: https://github.com/operate-first/community/blob/master/governance.md#subprojects

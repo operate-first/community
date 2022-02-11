@@ -41,12 +41,12 @@ The [charter]({{.CharterLink}}) defines the scope and governance of the {{.Name}
 - Private Mailing List: {{.Contact.PrivateMailingList}}
 {{- end }}
 {{- if .Label }}
-- [Open Community Issues/PRs](https://github.com/open-services-group/community/labels/committee%2F{{.Label}})
+- [Open Community Issues/PRs](https://github.com/operate-first/common/labels/committee%2F{{.Label}})
 {{- end }}
 {{- if .Contact.GithubTeams }}
 - GitHub Teams:
 {{- range .Contact.GithubTeams }}
-    - [@open-services-group/{{.Name}}](https://github.com/orgs/open-services-group/teams/{{.Name}}) {{- if .Description }} - {{.Description}} {{- end}}
+    - [@operate-first/{{.Name}}](https://github.com/orgs/operate-first/teams/{{.Name}}) {{- if .Description }} - {{.Description}} {{- end}}
 {{- end }}
 {{- end }}
 {{- if .Contact.Liaison.Name }}
@@ -79,7 +79,7 @@ The following [subprojects][subproject-definition] are owned by the {{.Name}} Co
 {{- if .Contact.GithubTeams }}
   - GitHub Teams:
 {{- range .Contact.GithubTeams }}
-    - [@open-services-group/{{.Name}}](https://github.com/orgs/open-services-group/teams/{{.Name}}) {{- if .Description }} - {{.Description}}{{- end}}
+    - [@operate-first/{{.Name}}](https://github.com/orgs/operate-first/teams/{{.Name}}) {{- if .Description }} - {{.Description}}{{- end}}
 {{- end }}
 {{- end }}
 {{- end }}
@@ -98,4 +98,4 @@ The following [subprojects][subproject-definition] are owned by the {{.Name}} Co
 {{- end }}
 {{- end }}
 
-[subproject-definition]: https://github.com/open-services-group/community/blob/master/governance.md#subprojects
+[subproject-definition]: https://github.com/operate-first/community/blob/master/governance.md#subprojects
