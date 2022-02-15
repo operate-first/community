@@ -6,7 +6,7 @@ We plan and keep track of our efforts on the [Community Project Board](https://g
 
 ## Bootstrapping
 
-This repository is the home to efforts to bring a formal _community architecture_ process to the Operate First initiative.
+This repository (https://github.com/operate-first/community) is the home to efforts to bring a formal _community architecture_ process to the Operate First initiative.
 The scope of this initiative is large enough with a multi-community impact to warrant going from an organic community effort to a managed community.
 This initiative is in the beginning stages (bootstrapping) of defining and performing this work.
 
@@ -26,7 +26,7 @@ All commits to this repository should use a [pull request process](https://githu
 This means under normal conditions, no one should commit directly to the repo.
 Instead, they branch or fork the repo, make changes in the branch/fork, and then make a pull request against the main repo.
 
-Because content in this repo is not in its final form, we do not need as stringent a review process for accepting pull requests into this repo. This repo is for project work that appears in its finished form in locations such as https://operate-first.cloud, https://twitter.com/operate-first, the Operate First [community mailing list](https://listman.redhat.com/mailman/listinfo/operate-first), and so forth.
+Because content in this repo is not in its final form, we do not need as stringent a review process for accepting pull requests into this repo. This repo is for project work that appears in its finished form in locations such as https://operate-first.cloud, https://twitter.com/OperateFirst, the Operate First [community mailing list](https://listman.redhat.com/mailman/listinfo/operate-first), and so forth.
 This is generally not a final-form location, and we are often dumping in partially completed work to finish here openly.
 
 However, we want to follow the PR process for several reason:
