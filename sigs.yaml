@@ -49,6 +49,27 @@ sigs:
       and maintained in coordination with other Operate First sigs.
     owners:
     - https://raw.githubusercontent.com/operate-first/community/main/sig-operations/subprojects/ops-docs/OWNERS
-workinggroups: []
+workinggroups:
+- dir: wg-workload-overview
+  name: Workload Overview
+  mission_statement: >
+    The goal of this working group is to create a dashboard that shows an overview
+    of the workloads running on Operate First.
+
+  charter_link: charter.md
+  label: workload-overview
+  leadership:
+    chairs:
+    - github: 4n4nd
+      name: Anand Sanmukhani
+      company: Red Hat
+  meetings:
+  - description: Regular WG Meeting
+    day: Thursday
+    time: "11:30"
+    tz: ET (East Time)
+    frequency: weekly
+    url: https://meet.google.com/gxk-pjcx-wno
+  contact: {}
 usergroups: []
 committees: []
