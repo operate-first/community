@@ -52,6 +52,26 @@ sigs:
     mailing_list: community@lists.operate-first.cloud
   subprojects:
   - name: cluster-ops
+      description: Day to day operations of all the clusters that are part of the Operate First Cloud Offering.
+    owners:
+    - https://raw.githubusercontent.com/operate-first/community/main/sig-operations/subprojects/cluster-ops/OWNERS
+    meetings:
+    - description: Cluster Ops meeting
+      day: Tuesday
+      time: "8:30"
+      tz: EST
+      frequency: Weekly
+      url: meet.google.com/wxh-pizv-vwt
+    - description: Cluster Ops meeting
+      day: Thursday
+      time: "8:30"
+      tz: EST
+      frequency: Weekly
+      url: meet.google.com/wxh-pizv-vwt
+  - name: ops-docs
+    description: |-
+      Manage documentation for the Operate First Cloud offering. Ensure documentation is created
+      and maintained in coordination with other Operate First sigs.
     owners:
     - https://raw.githubusercontent.com/tbc/tbc/main/tbc/OWNERS
 workinggroups: []
