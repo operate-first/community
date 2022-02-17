@@ -45,8 +45,8 @@ sigs:
     day: Tuesday
     time: "10:00"
     tz: EST
-    frequency: weekly
-    url: tbd
+    frequency: Bi-Weekly
+    url: meet.google.com/zfj-woub-xwp
   contact:
     slack: operations
     mailing_list: community@lists.operate-first.cloud
