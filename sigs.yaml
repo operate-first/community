@@ -7,14 +7,17 @@ sigs:
   label: community
   leadership:
     chairs:
-    - github: tbd  # TODO: @quaid @schwesig 
-      name: tbd  # TODO: fill in
-      company: tbd # TODO fill in
+    - github: @quaid
+      name: Karsten Wade
+      company: Red Hat
+    - github: @schwesig
+      name: Thorsten Schwesig
+      company: Red Hat
   meetings:
   - description: SIG Community meeting
-    day: TBD
-    time: "AB:CD"
-    tz: ABC
+    day: Thursday
+    time: "18:00"
+    tz: UTC
     frequency: weekly
     url: tbd
   contact:
@@ -42,35 +45,15 @@ sigs:
     day: Tuesday
     time: "10:00"
     tz: EST
-    frequency: Bi-Weekly
-    url: meet.google.com/zfj-woub-xwp
+    frequency: weekly
+    url: tbd
   contact:
-    slack: sig-operations
+    slack: operations
+    mailing_list: community@lists.operate-first.cloud
   subprojects:
-  - name: cluster-ops
-    description: Day to day operations of all the clusters that are part of the Operate
-      First Cloud Offering.
+  - name: tbd
     owners:
-    - https://raw.githubusercontent.com/operate-first/community/main/sig-operations/subprojects/cluster-ops/OWNERS
-    meetings:
-    - description: Cluster Ops meeting
-      day: Tuesday
-      time: "8:30"
-      tz: EST
-      frequency: Weekly
-      url: meet.google.com/wxh-pizv-vwt
-    - description: Cluster Ops meeting
-      day: Thursday
-      time: "8:30"
-      tz: EST
-      frequency: Weekly
-      url: meet.google.com/wxh-pizv-vwt
-  - name: ops-docs
-    description: |-
-      Manage documentation for the Operate First Cloud offering. Ensure documentation is created
-      and maintained in coordination with other Operate First sigs.
-    owners:
-    - https://raw.githubusercontent.com/operate-first/community/main/sig-operations/subprojects/ops-docs/OWNERS
+    - https://raw.githubusercontent.com/tbc/tbc/main/tbc/OWNERS
 workinggroups: []
 usergroups: []
 committees: []
