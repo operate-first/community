@@ -51,7 +51,7 @@ sigs:
     slack: operations
     mailing_list: community@lists.operate-first.cloud
   subprojects:
-  - name: tbd
+  - name: cluster-ops
     owners:
     - https://raw.githubusercontent.com/tbc/tbc/main/tbc/OWNERS
 workinggroups: []
