@@ -1,7 +1,7 @@
 # SIG Community
 
 This SIG cares about all aspects of what is helpful and harmful to this open source software community.
-We understand that this project is a human endeavor, and it is our job to put people before practice, process, and even principle.
+We understand that this project is a human endeavor, and it is our job to put people before practice, process, and even progress.
 
 ## Scope
 
