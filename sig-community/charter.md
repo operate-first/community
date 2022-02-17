@@ -46,7 +46,8 @@ It may rather be maintained by an individual, or a single organization through i
 
 * Directing project infrastructure
 * Handling security discussions and responses, including having no role in embargoed security situations
-* Being the body that leads the project beyond the ratification of Governance 1.1, which will establish one or more leadership committees.
+* Stewarding changes to the Governance beyond the work for Governance 1.1 that establishes one or more leadership committees
+* Being the de facto body leading the Op1st project once those capabilities and responsibilities are instilled into one or more leadership committees.
 
 ## Stakeholders
 
