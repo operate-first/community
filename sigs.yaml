@@ -73,7 +73,7 @@ sigs:
       Manage documentation for the Operate First Cloud offering. Ensure documentation is created
       and maintained in coordination with other Operate First sigs.
     owners:
-    - https://raw.githubusercontent.com/tbc/tbc/main/tbc/OWNERS
+    - https://raw.githubusercontent.com/operate-first/community/main/sig-operations/subprojects/ops-docs/OWNERS
 workinggroups: []
 usergroups: []
 committees: []
