@@ -1,9 +1,9 @@
 # SIG Community
 
-## Scope
-
 This SIG cares about all aspects of what is helpful and harmful to this open source software community.
 We understand that this project is a human endeavor, and it is our job to put people before practice, process, and even principle.
+
+## Scope
 
 **What does it mean to support a community?**
 It means understanding and putting resources into whatever is important to people in this community.
