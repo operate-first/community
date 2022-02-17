@@ -45,7 +45,7 @@ It may rather be maintained by an individual, or a single organization through i
 ### Out of scope
 
 * Directing project infrastructure
-* Handling embargoed security discussions and responses
+* Handling security discussions and responses, including having no role in embargoed security situations
 * Being the body that leads the project beyond the ratification of Governance 1.1, which will establish one or more leadership committees.
 
 ## Stakeholders
