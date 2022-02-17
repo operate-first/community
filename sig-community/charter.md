@@ -16,7 +16,7 @@ An open source software community is a type of _community of practice_, and the 
 You can have a community without a project, which is really a social club.
 But you cannot have an open source project without a community.
 However, not all open source software is maintained by a project.
-It may rather be maintained by an individual, or a single organization by fiat.
+It may rather be maintained by an individual, or a single organization through its members (employees, students, researchers, etc.) being effectively the sole contributors.
 
 
 
