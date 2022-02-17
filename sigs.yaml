@@ -1,4 +1,26 @@
 sigs:
+- dir: sig-community
+  name: Community
+  mission_statement: >
+    The SIG's mission is to care about all aspects of the user and contributor community around the Operate First (Op1st) project.
+  charter_link: charter.md
+  label: community
+  leadership:
+    chairs:
+    - github: tbd  # TODO: @quaid @schwesig 
+      name: tbd  # TODO: fill in
+      company: tbd # TODO fill in
+  meetings:
+  - description: SIG Community meeting
+    day: TBD
+    time: "AB:CD"
+    tz: ABC
+    frequency: weekly
+    url: tbd
+  contact:
+    slack: https://operatefirst.slack.com/archives/C01RT0S2WKX
+    mailing_list: community@lists.operate-first.cloud
+  subprojects: {}  # TODO: fill in
 - dir: sig-operations
   name: Operations
   mission_statement: >
