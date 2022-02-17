@@ -22,6 +22,7 @@ It may rather be maintained by an individual, or a single organization through i
 
 ### In scope
 
+* Establishing a wide, diverse, and inclusive community of people and organizations from all backgrounds and situations.
 * Creating and maintaining an open source governance for the project
   - In particular establishing democratically elected overarching leadership or focus committees (Steering, Security, et al)
 * Establishing further SIGs to take over specific purviews from SIG Community
