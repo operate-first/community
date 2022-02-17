@@ -53,7 +53,7 @@ It may rather be maintained by an individual, or a single organization through i
 
 * Contributors, and by extension contributors' organizations
 * OpenInfra Foundation, via OpenInfra Labs relationship
-* MOC?
+* [Mass Open Cloud (MOC)](https://massopen.cloud/)
 * Open Source Developers (user persona)
 
 
