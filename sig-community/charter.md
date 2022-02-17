@@ -31,7 +31,7 @@ It may rather be maintained by an individual, or a single organization by fiat.
 * Care about and improve the user and contributor experience
 * Create and maintain user personas for the project
 * Establish a project-wide documentation approach
-* Establish project-wide communication norms
+* Establish and maintain project-wide communication norms and channels
 * User and contributor onboarding, i.e., the process for bringing new people into the project
 * Creating and maintaining project role definitions and responsibility/authority matrix
 * Keeping track of project and community health, including the use of metrics
