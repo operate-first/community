@@ -40,6 +40,7 @@ It may rather be maintained by an individual, or a single organization through i
 * Ownership and financing (domain names, other project assets)
 * Ensure project-wide transparency
 * Set project technical direction and maintain a development roadmap
+* Care about the website presence and other communication outlets, e.g. social media and mail
 
 ### Out of scope
 
