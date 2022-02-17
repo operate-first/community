@@ -48,7 +48,7 @@ sigs:
     frequency: Bi-Weekly
     url: meet.google.com/zfj-woub-xwp
   contact:
-    slack: operations
+    slack: sig-operations
     mailing_list: community@lists.operate-first.cloud
   subprojects:
   - name: cluster-ops
