@@ -10,4 +10,5 @@ parts:
     chapters:
     - file: sig-list.md
     - file: liaisons.md
+    - file: sig-community/charter.md
     - file: sig-operations/charter.md

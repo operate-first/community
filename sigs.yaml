@@ -7,14 +7,17 @@ sigs:
   label: community
   leadership:
     chairs:
-    - github: tbd  # TODO: @quaid @schwesig 
-      name: tbd  # TODO: fill in
-      company: tbd # TODO fill in
+    - github: quaid
+      name: Karsten Wade
+      company: Red Hat
+    - github: schwesig
+      name: Thorsten Schwesig
+      company: Red Hat
   meetings:
   - description: SIG Community meeting
-    day: TBD
-    time: "AB:CD"
-    tz: ABC
+    day: Thursday
+    time: "18:00"
+    tz: UTC
     frequency: weekly
     url: tbd
   contact:
@@ -46,6 +49,7 @@ sigs:
     url: meet.google.com/zfj-woub-xwp
   contact:
     slack: sig-operations
+    mailing_list: community@lists.operate-first.cloud
   subprojects:
   - name: cluster-ops
     description: Day to day operations of all the clusters that are part of the Operate
