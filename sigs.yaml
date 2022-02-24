@@ -7,10 +7,10 @@ sigs:
   label: community
   leadership:
     chairs:
-    - github: @quaid
+    - github: quaid
       name: Karsten Wade
       company: Red Hat
-    - github: @schwesig
+    - github: schwesig
       name: Thorsten Schwesig
       company: Red Hat
   meetings:
@@ -52,7 +52,8 @@ sigs:
     mailing_list: community@lists.operate-first.cloud
   subprojects:
   - name: cluster-ops
-      description: Day to day operations of all the clusters that are part of the Operate First Cloud Offering.
+    description: Day to day operations of all the clusters that are part of the Operate
+      First Cloud Offering.
     owners:
     - https://raw.githubusercontent.com/operate-first/community/main/sig-operations/subprojects/cluster-ops/OWNERS
     meetings:
