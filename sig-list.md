@@ -40,6 +40,7 @@ When the need arises, a [new SIG can be created](sig-wg-lifecycle.md)
 
 | Name | Stakeholder SIGs |Organizers | Contact | Meetings |
 |------|------------------|-----------|---------|----------|
+|[Workload Overview](wg-workload-overview/README.md)||* [Anand Sanmukhani](https://github.com/4n4nd), Red Hat<br>|* Regular WG Meeting: [Thursdays at 11:30 ET (East Time) (weekly)](https://meet.google.com/gxk-pjcx-wno)<br>
 ||||||
 ### Committees
 
