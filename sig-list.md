@@ -34,6 +34,7 @@ When the need arises, a [new SIG can be created](sig-wg-lifecycle.md)
 
 | Name | Label | Chairs | Contact | Meetings |
 |------|-------|--------|---------|----------|
+|[Community](sig-community/README.md)|community|* [Karsten Wade](https://github.com/quaid), Red Hat<br>* [Thorsten Schwesig](https://github.com/schwesig), Red Hat<br>||* SIG Community meeting: [Thursdays at 18:00 UTC (weekly)](tbd)<br>
 |[Operations](sig-operations/README.md)|operations|* [Humair Khan](https://github.com/HumairAK), Red Hat<br>* [Lars Kellogg-Stedman](https://github.com/larsks), Red Hat<br>||* SIG Operations meeting: [Tuesdays at 10:00 EST (Bi-Weekly)](meet.google.com/zfj-woub-xwp)<br>* (cluster-ops) Cluster Ops meeting: [Tuesdays at 8:30 EST (Weekly)](meet.google.com/wxh-pizv-vwt)<br>* (cluster-ops) Cluster Ops meeting: [Thursdays at 8:30 EST (Weekly)](meet.google.com/wxh-pizv-vwt)<br>
 ||||||
 ### Working Groups
