@@ -10,7 +10,10 @@ To understand how this file is generated, see https://git.k8s.io/community/gener
 --->
 # Operations Special Interest Group
 
-The goal of this SIG is to enable management and operations for hardware and platform tooling within the Operate First Community Cloud (op1st)
+The goal of this SIG is to enable management and operations for hardware and platform tooling within the Operate First Community Cloud (op1st).
+Meeting Agenda docs can be found [here](https://docs.google.com/document/d/1uEcLGP_sBSNwTLPOo_2Nu6oTqPytOTBt0c0_pVUQJwo/edit). See below for meeting details. Anyone can suggest new agenda items for the next meeting.
+Sig Operations does not have a single project board to track all on going work as the scope is fairly broad.
+However, you may track issues in key repos in the Operate-First github organization. These repos are: [apps](https://github.com/operate-first/apps/issues), [operations](https://github.com/operate-first/operations/issues), [support](https://github.com/operate-first/support/issues), [common](https://github.com/operate-first/common/issues), [opfcli](https://github.com/operate-first/opfcli)
 
 The [charter](charter.md) defines the scope and governance of the Operations Special Interest Group.
 
@@ -28,7 +31,7 @@ The Chairs of the SIG run operations and processes governing the SIG.
 ## Contact
 - Slack: [#sig-operations](https://operatefirst.slack.com/messages/sig-operations)
 
-- [Mailing list]()
+- [Mailing list](community@lists.operate-first.cloud)
 
 ## Subprojects
 

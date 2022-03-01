@@ -2,7 +2,9 @@ sigs:
 - dir: sig-community
   name: Community
   mission_statement: >
-    The SIG's mission is to care about all aspects of the user and contributor community around the Operate First (Op1st) project.
+    The SIG's mission is to care about all aspects of the user and contributor community
+    around the Operate First (Op1st) project.
+
   charter_link: charter.md
   label: community
   leadership:
@@ -23,12 +25,27 @@ sigs:
   contact:
     slack: https://operatefirst.slack.com/archives/C01RT0S2WKX
     mailing_list: community@lists.operate-first.cloud
-  subprojects: {}  # TODO: fill in
+  subprojects:
+  - name: example
+    owners:
+    - https://raw.githubusercontent.com/operate-first/community/main/OWNERS
 - dir: sig-operations
   name: Operations
   mission_statement: >
     The goal of this SIG is to enable management and operations for hardware and platform
-    tooling within the Operate First Community Cloud (op1st)
+    tooling within the Operate First Community Cloud (op1st).
+
+    Meeting Agenda docs can be found [here](https://docs.google.com/document/d/1uEcLGP_sBSNwTLPOo_2Nu6oTqPytOTBt0c0_pVUQJwo/edit).
+    See below for meeting details. Anyone can suggest new agenda items for the next
+    meeting.
+
+    Sig Operations does not have a single project board to track all on going work
+    as the scope is fairly broad.
+
+    However, you may track issues in key repos in the Operate-First github organization.
+    These repos are: [apps](https://github.com/operate-first/apps/issues), [operations](https://github.com/operate-first/operations/issues),
+    [support](https://github.com/operate-first/support/issues), [common](https://github.com/operate-first/common/issues),
+    [opfcli](https://github.com/operate-first/opfcli)
 
   charter_link: charter.md
   label: operations
@@ -58,14 +75,8 @@ sigs:
     - https://raw.githubusercontent.com/operate-first/community/main/sig-operations/subprojects/cluster-ops/OWNERS
     meetings:
     - description: Cluster Ops meeting
-      day: Tuesday
-      time: "8:30"
-      tz: EST
-      frequency: Weekly
-      url: meet.google.com/wxh-pizv-vwt
-    - description: Cluster Ops meeting
-      day: Thursday
-      time: "8:30"
+      day: Monday
+      time: "1:30"
       tz: EST
       frequency: Weekly
       url: meet.google.com/wxh-pizv-vwt
