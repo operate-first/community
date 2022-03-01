@@ -76,7 +76,7 @@ sigs:
     meetings:
     - description: Cluster Ops meeting
       day: Monday
-      time: "1:30"
+      time: "13:30"
       tz: EST
       frequency: Weekly
       url: meet.google.com/wxh-pizv-vwt
