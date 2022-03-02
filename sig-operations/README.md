@@ -41,8 +41,7 @@ Day to day operations of all the clusters that are part of the Operate First Clo
 - **Owners:**
   - [operate-first/community/sig-operations/subprojects/cluster-ops](https://github.com/operate-first/community/blob/main/sig-operations/subprojects/cluster-ops/OWNERS)
 - **Meetings:**
-  - Cluster Ops meeting: [Tuesdays at 8:30 EST](meet.google.com/wxh-pizv-vwt) (Weekly). [Convert to your timezone](http://www.thetimezoneconverter.com/?t=8:30&tz=EST).
-  - Cluster Ops meeting: [Thursdays at 8:30 EST](meet.google.com/wxh-pizv-vwt) (Weekly). [Convert to your timezone](http://www.thetimezoneconverter.com/?t=8:30&tz=EST).
+  - Cluster Ops meeting: [Mondays at 13:30 EST](meet.google.com/wxh-pizv-vwt) (Weekly). [Convert to your timezone](http://www.thetimezoneconverter.com/?t=13:30&tz=EST).
 ### ops-docs
 Manage documentation for the Operate First Cloud offering. Ensure documentation is created
 and maintained in coordination with other Operate First sigs.
