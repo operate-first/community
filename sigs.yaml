@@ -107,6 +107,22 @@ workinggroups:
     tz: ET (East Time)
     frequency: weekly
     url: https://meet.google.com/gxk-pjcx-wno
+- dir: wg-website
+  name: Website
+  mission_statement: |-
+    Enhance the user experience of the operate-first.cloud website.
+  leadership:
+    chairs:
+    - github: quaid
+      name: Karsten Wade
+      company: Red Hat
+  meetings:
+  - description: website meeting
+    day: Tuesday
+    time: "8:30"
+    tz: EST
+    frequency: Weekly
+    url: meet.google.com/....
 - dir: wg-documentation
   name: Documentation
   mission_statement: >
