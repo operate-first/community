@@ -5,6 +5,7 @@ approvers:
   - tumido
   - HumairAK
   - quaid
+  - schwesig
 
 reviewers:
   - hemajv
@@ -21,4 +22,10 @@ reviewers:
   - larsks
   - ipolonsk
   - quaid
-  - margarethaley
+  - schwesig
+  - bryanmontalvan
+  - coghlanRH
+  - Gregory-Pereira
+  - hpdempsey
+  - sallyom
+  - stefwrite
