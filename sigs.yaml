@@ -110,7 +110,7 @@ workinggroups:
 - dir: wg-documentation
   name: Documentation
   mission_statement: >
-    Define the different kinds of documentation,
+    Define the different kinds of documentation needed for new contributors of all kinds,
     analyze what we have and find a home for it.
     Training Path & Operation Docs & Community Handbook
   leadership:
