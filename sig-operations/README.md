@@ -18,7 +18,7 @@ However, you may track issues in key repos in the Operate-First github organizat
 The [charter](charter.md) defines the scope and governance of the Operations Special Interest Group.
 
 ## Meetings
-* SIG Operations meeting: [Tuesdays at 10:00 EST](meet.google.com/zfj-woub-xwp) (Bi-Weekly). [Convert to your timezone](http://www.thetimezoneconverter.com/?t=10:00&tz=EST).
+* SIG Operations meeting: [Tuesdays at 10:00 ET](https://meet.google.com/zfj-woub-xwp) (Bi-Weekly). [Convert to your timezone](https://www.thetimezoneconverter.com/?t=10:00&tz=ET).
 
 ## Leadership
 
@@ -41,12 +41,14 @@ Day to day operations of all the clusters that are part of the Operate First Clo
 - **Owners:**
   - [operate-first/community/sig-operations/subprojects/cluster-ops](https://github.com/operate-first/community/blob/main/sig-operations/subprojects/cluster-ops/OWNERS)
 - **Meetings:**
-  - Cluster Ops meeting: [Mondays at 13:30 EST](meet.google.com/wxh-pizv-vwt) (Weekly). [Convert to your timezone](http://www.thetimezoneconverter.com/?t=13:30&tz=EST).
+  - Cluster Ops meeting: [Mondays at 13:30 ET](https://meet.google.com/wxh-pizv-vwt) (Weekly). [Convert to your timezone](https://www.thetimezoneconverter.com/?t=13:30&tz=ET).
 ### ops-docs
 Manage documentation for the Operate First Cloud offering. Ensure documentation is created
 and maintained in coordination with other Operate First sigs.
 - **Owners:**
   - [operate-first/community/sig-operations/subprojects/ops-docs](https://github.com/operate-first/community/blob/main/sig-operations/subprojects/ops-docs/OWNERS)
+- **Meetings:**
+  - Ops-docs meeting: [Mondays at 14:00 ET](https://meet.google.com/dyi-zsya-tbc) (Bi-Weekly). [Convert to your timezone](https://www.thetimezoneconverter.com/?t=14:00&tz=ET).
 
 [subproject-definition]: https://github.com/operate-first/community/blob/master/governance.md#subprojects
 <!-- BEGIN CUSTOM CONTENT -->
