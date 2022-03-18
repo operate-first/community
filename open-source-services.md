@@ -14,7 +14,7 @@ This represents what we expect from any _service_ claiming to be Open Source.
 These requirements do not represent best practices, but are the bare minimum for Open Source development of services.
 Most Open Source models (beyond “throw it over the wall” behavior) are covered by these requirements in one way or another:
 
- 1. **All code and assets necessary to operate the service are shared under an open source license, and publicly accessible.**
+ 1. **All the service's code and assets necessary to operate the service are shared under an open source license, and publicly accessible.**
  2. **A public contributor can use the same workflow as a typical team member to make a change to the service.**
 
 For many projects the above seem obvious; this is how we generally work together on Open Source projects.
@@ -28,11 +28,13 @@ Thus we must address common questions about the requirements:
 
 ### Q: What “assets” should be Open Source?
 
-**A:** Make everything open by default, except where law, security, privacy, or common sense says otherwise.
+**A:** Make all parts of the service open by default, except where law, security, privacy, or common sense says otherwise.
 A general rule of thumb is if you commit it to a repository, it should be open.
 Assets that should not be shared are ones where you don’t have redistribution rights (such as a RHEL VM image, or private information, and personal identifiable information), or things that are actually secret: Don’t share keys, passwords, or tokens.
 
 If changing configuration is an activity that a typical team member does in order to change the service, then you should share that configuration publicly, in order to meet **requirement #2**.
+
+It is _not requried_ that all tooling dependencies and service dependencies used during the building, testing, deployment and operating of the service are themselves Open Source.
 
 It is _recommended_ that you include sufficient configuration to operate the service, or some base default version of configuration. Putting secrets in your configuration is a bad practice that should be avoided, regardless of Open Source.
 
