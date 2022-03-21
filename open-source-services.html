@@ -367,7 +367,7 @@ This represents what we expect from any <em>service</em> claiming to be Open Sou
 <p>These requirements do not represent best practices, but are the bare minimum for Open Source development of services.
 Most Open Source models (beyond “throw it over the wall” behavior) are covered by these requirements in one way or another:</p>
 <ol class="simple">
-<li><p><strong>All code and assets necessary to operate the service are shared under an open source license, and publicly accessible.</strong></p></li>
+<li><p><strong>All the service’s code and assets necessary to operate the service are shared under an open source license, and publicly accessible.</strong></p></li>
 <li><p><strong>A public contributor can use the same workflow as a typical team member to make a change to the service.</strong></p></li>
 </ol>
 <p>For many projects the above seem obvious; this is how we generally work together on Open Source projects.
@@ -380,10 +380,11 @@ Secondly, the requirements are a bare minimum, and best practices usually go bey
 Thus we must address common questions about the requirements:</p>
 <div class="section" id="q-what-assets-should-be-open-source">
 <h3>Q: What “assets” should be Open Source?<a class="headerlink" href="#q-what-assets-should-be-open-source" title="Permalink to this headline">¶</a></h3>
-<p><strong>A:</strong> Make everything open by default, except where law, security, privacy, or common sense says otherwise.
+<p><strong>A:</strong> Make all parts of the service open by default, except where law, security, privacy, or common sense says otherwise.
 A general rule of thumb is if you commit it to a repository, it should be open.
 Assets that should not be shared are ones where you don’t have redistribution rights (such as a RHEL VM image, or private information, and personal identifiable information), or things that are actually secret: Don’t share keys, passwords, or tokens.</p>
 <p>If changing configuration is an activity that a typical team member does in order to change the service, then you should share that configuration publicly, in order to meet <strong>requirement #2</strong>.</p>
+<p>It is <em>not requried</em> that all tooling dependencies and service dependencies used during the building, testing, deployment and operating of the service are themselves Open Source.</p>
 <p>It is <em>recommended</em> that you include sufficient configuration to operate the service, or some base default version of configuration. Putting secrets in your configuration is a bad practice that should be avoided, regardless of Open Source.</p>
 </div>
 <div class="section" id="q-should-tests-be-shared-with-the-code">
