@@ -82,4 +82,4 @@ The requirements together serve to enable others to change the service code so t
 
 If your project grows bigger, and has many participants, then forming a community with the typical components (communication venues, code of conduct, governance, etc.) is _recommended_, and brings significant further Open Source benefits.
 
-Among other things, having a community means sharing your documentation, issues, and a roadmap. It also means conducting most planning conversations about the service in the open, and not limiting participation to your team. Without these things, your community interaction will be more painful.
+Among other things, having a community means sharing your documentation, issues, and a roadmap. It also means conducting most planning conversations about the service in the open, and not limiting participation to your team. Without these things, your community interaction will be more painful as crossing the boundary between commuity and Red Hat private has a high context switching cost.
