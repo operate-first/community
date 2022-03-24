@@ -26,6 +26,10 @@ Due to the variety of services, projects, teams, and workflows there is a lot of
 Secondly, the requirements are a bare minimum, and best practices usually go beyond the requirements.
 Thus we must address common questions about the requirements:
 
+### Q: What defines a service?
+
+A service is software operated for the user. Software the user is operating for themself is not considered a service. A service is defined by the context in which the software is operated and all of the assets required to operate the software for the user in that context.
+
 ### Q: What “assets” should be Open Source?
 
 **A:** Make all parts of the service open by default, except where law, security, privacy, or common sense says otherwise.
