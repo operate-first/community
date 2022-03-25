@@ -4,7 +4,7 @@ A composite of influencers and users who have an interest in and impact on techn
 
 ## Motivated by
 
-Discovering and sharing new technologies and best practices 
+Discovering and sharing new technologies and best practices
 
 ## Unique initiatives or focus area
 

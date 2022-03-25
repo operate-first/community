@@ -12,7 +12,7 @@ Cloud native, AI, hybrid cloud, mobile, and edge
 
 ## Unique measures of Success
 
-Completion of initiatives and end-user satisfaction 
+Completion of initiatives and end-user satisfaction
 
 ## Messages
 

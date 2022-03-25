@@ -6,7 +6,7 @@ Students with the initiative to start their own contributions and have an active
 
 ## Motivated by
 
-Learning new skills that will help either with projects or improving their job opportunities. Also motivated by working in the community, after they have joined. 
+Learning new skills that will help either with projects or improving their job opportunities. Also motivated by working in the community, after they have joined.
 
 ## Unique initiatives or focus area
 
@@ -18,9 +18,9 @@ Internships (job opportunities), understanding open-source better, being a part 
 
 ## Messages
 
-> Operate First is an open-source initiative, and a place that supports student contributions and a place where students can make a difference. 
+> Operate First is an open-source initiative, and a place that supports student contributions and a place where students can make a difference.
 
-> Operate First gives you an opportunity to improve your resume with real-world experience. 
+> Operate First gives you an opportunity to improve your resume with real-world experience.
 
 ## Focus of community activities
 
