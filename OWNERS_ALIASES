@@ -5,6 +5,14 @@ aliases:
   sig-operations-leads:
     - HumairAK
     - larsks
+  sig-telemetry-leads:
+    - RS1999ent
+    - durandom
+  wg-documentation-leads:
+    - sallyom
+    - stefwrite
+  wg-website-leads:
+    - quaid
   wg-workload-overview-leads:
     - 4n4nd
 ## BEGIN CUSTOM CONTENT

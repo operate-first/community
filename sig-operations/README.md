@@ -19,7 +19,6 @@ The [charter](charter.md) defines the scope and governance of the Operations Spe
 
 ## Meetings
 * SIG Operations meeting: [Tuesdays at 10:00 EST](meet.google.com/zfj-woub-xwp) (Bi-Weekly). [Convert to your timezone](http://www.thetimezoneconverter.com/?t=10:00&tz=EST).
-  * [Meeting notes](https://www.google.com/url?q=https://docs.google.com/document/d/1uEcLGP_sBSNwTLPOo_2Nu6oTqPytOTBt0c0_pVUQJwo/edit?usp%3Dsharing&sa=D&source=calendar&ust=1647770268605141&usg=AOvVaw3W0K3bf-E3pC2ZNOiUmitq)
 
 ## Leadership
 
@@ -43,7 +42,6 @@ Day to day operations of all the clusters that are part of the Operate First Clo
   - [operate-first/community/sig-operations/subprojects/cluster-ops](https://github.com/operate-first/community/blob/main/sig-operations/subprojects/cluster-ops/OWNERS)
 - **Meetings:**
   - Cluster Ops meeting: [Mondays at 13:30 EST](meet.google.com/wxh-pizv-vwt) (Weekly). [Convert to your timezone](http://www.thetimezoneconverter.com/?t=13:30&tz=EST).
-     - [Meeting notes](https://docs.google.com/document/d/1QjZKlSKaAPUuq0OetR3uOp-Rm2Zo5qX5r5ReUoiETM4/edit#)
 ### ops-docs
 Manage documentation for the Operate First Cloud offering. Ensure documentation is created
 and maintained in coordination with other Operate First sigs.
