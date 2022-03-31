@@ -15,7 +15,7 @@ The SIG's mission is to foster discussion and research problem statements around
 The [charter](charter.md) defines the scope and governance of the Telemetry Special Interest Group.
 
 ## Meetings
-* SIG Telemetry meeting: [Tuesadays at 09:30 EST](https://bostonu.zoom.us/j/99523690124?pwd%3DMTc1dVhoeEo4MGhPaGx1eHF2MG00QT09&sa=D&source=calendar&ust=1646017334493225&usg=AOvVaw1U9-vrGPXsNEaOsP0JyY3R#success) (Monthly). [Convert to your timezone](http://www.thetimezoneconverter.com/?t=09:30&tz=EST).
+* SIG Telemetry meeting: [Tuesadays at 10:30 EST](meet.google.com/izf-xksf-mzd) (Monthly). [Convert to your timezone](http://www.thetimezoneconverter.com/?t=10:30&tz=EST).
   * [Meeting notes and Agenda](https://docs.google.com/document/d/17ArlqKA_DE3ZDSTMRIblS9bxXDw777k8RtMFdJPFr9M/edit).
 
 ## Leadership
