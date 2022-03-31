@@ -142,6 +142,30 @@ workinggroups:
     url: https://meet.google.com/...
     archive_url: https://docs.google.com/document/d/...
   contact: {}
+- dir: wg-fybrik
+  name: Fybrik
+  mission_statement: >
+    The goal of this working group is to implement Fybrik.io running on Operate First
+    and work with other projects to use and implement it.
+
+  label: fybrik
+  leadership:
+    chairs:
+    - github: flora177
+      name: Flora Gilboa-Solomon
+      company: IBM
+    - github: roytman
+      name: Alexey Roytman
+      company: IBM
+  meetings:
+  - description: Regular WG Meeting
+    day: Wednesday
+    time: "10:00"
+    tz: ET (East Time)
+    frequency: monthly - last Wed of the month
+    url: https://meet.google.com/sku-akry-mfw
+    archive_url: https://docs.google.com/document/d/18t390IUtTr8LXccT1NWMCoZNbDDd8B030vQeHHMmCbo/edit
+  contact: {}
 - dir: wg-website
   name: Website
   mission_statement: >-

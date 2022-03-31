@@ -43,6 +43,7 @@ When the need arises, a [new SIG can be created](sig-wg-lifecycle.md)
 | Name | Stakeholder SIGs |Organizers | Contact | Meetings |
 |------|------------------|-----------|---------|----------|
 |[Documentation](wg-documentation/README.md)||* [Sally O'Malley](https://github.com/sallyom), Red Hat<br>* [Stephanie E. Watson](https://github.com/stefwrite), Red Hat<br>|* Regular WG Meeting: [Wednesdays at 10:00 ET (East Time) (weekly)](https://meet.google.com/...)<br>
+|[Fybrik](wg-fybrik/README.md)||* [Flora Gilboa-Solomon](https://github.com/flora177), IBM<br>* [Alexey Roytman](https://github.com/roytman), IBM<br>|* Regular WG Meeting: [Wednesdays at 10:00 ET (East Time) (monthly - last Wed of the month)](https://meet.google.com/sku-akry-mfw)<br>
 |[Website](wg-website/README.md)||* [Karsten Wade](https://github.com/quaid), Red Hat<br>|* website meeting: [Tuesdays at 8:30 EST (Weekly)](meet.google.com/....)<br>
 |[Workload Overview](wg-workload-overview/README.md)||* [Anand Sanmukhani](https://github.com/4n4nd), Red Hat<br>|* Regular WG Meeting: [Thursdays at 11:30 ET (East Time) (weekly)](https://meet.google.com/gxk-pjcx-wno)<br>
 ||||||
