@@ -36,7 +36,7 @@ When the need arises, a [new SIG can be created](sig-wg-lifecycle.md)
 |------|-------|--------|---------|----------|
 |[Community](sig-community/README.md)|community|* [Karsten Wade](https://github.com/quaid), Red Hat<br>* [Thorsten Schwesig](https://github.com/schwesig), Red Hat<br>||* SIG Community meeting: [Thursdays at 18:00 UTC (weekly)](tbd)<br>
 |[Operations](sig-operations/README.md)|operations|* [Humair Khan](https://github.com/HumairAK), Red Hat<br>* [Lars Kellogg-Stedman](https://github.com/larsks), Red Hat<br>||* SIG Operations meeting: [Tuesdays at 10:00 EST (Bi-Weekly)](meet.google.com/zfj-woub-xwp)<br>* (cluster-ops) Cluster Ops meeting: [Mondays at 13:30 EST (Weekly)](meet.google.com/wxh-pizv-vwt)<br>
-|[Telemetry](sig-telemetry/README.md)|telemetry|* [Raja Sambasivan](https://github.com/RS1999ent), Tuft University<br>* [Marcel Hild](https://github.com/durandom), Red Hat<br>||* SIG Telemetry meeting: [Tuesadays at 09:30 EST (Monthly)](https://bostonu.zoom.us/j/99523690124?pwd%3DMTc1dVhoeEo4MGhPaGx1eHF2MG00QT09&sa=D&source=calendar&ust=1646017334493225&usg=AOvVaw1U9-vrGPXsNEaOsP0JyY3R#success)<br>
+|[Telemetry](sig-telemetry/README.md)|telemetry|* [Raja Sambasivan](https://github.com/RS1999ent), Tuft University<br>* [Marcel Hild](https://github.com/durandom), Red Hat<br>||* SIG Telemetry meeting: [Tuesadays at 10:30 EST (Monthly)](meet.google.com/izf-xksf-mzd)<br>
 ||||||
 ### Working Groups
 
