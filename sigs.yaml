@@ -86,7 +86,80 @@ sigs:
       and maintained in coordination with other Operate First sigs.
     owners:
     - https://raw.githubusercontent.com/operate-first/community/main/sig-operations/subprojects/ops-docs/OWNERS
+- dir: sig-telemetry
+  name: Telemetry
+  mission_statement: >
+    The SIG's mission is to foster discussion and research problem statements around
+    operational telemetry
+
+  charter_link: charter.md
+  label: telemetry
+  leadership:
+    chairs:
+    - github: RS1999ent
+      name: Raja Sambasivan
+      company: Tuft University
+    - github: durandom
+      name: Marcel Hild
+      company: Red Hat
+  meetings:
+  - description: SIG Telemetry meeting
+    day: Tuesaday
+    time: "09:30"
+    tz: EST
+    frequency: Monthly
+    url: https://bostonu.zoom.us/j/99523690124?pwd%3DMTc1dVhoeEo4MGhPaGx1eHF2MG00QT09&sa=D&source=calendar&ust=1646017334493225&usg=AOvVaw1U9-vrGPXsNEaOsP0JyY3R#success
+    archive_url: https://docs.google.com/document/d/17ArlqKA_DE3ZDSTMRIblS9bxXDw777k8RtMFdJPFr9M/edit
+  contact:
+    mailing_list: community@lists.operate-first.cloud
+  subprojects:
+  - name: example
+    owners:
+    - https://raw.githubusercontent.com/operate-first/community/main/OWNERS
 workinggroups:
+- dir: wg-documentation
+  name: Documentation
+  mission_statement: >
+    Define the different kinds of documentation needed for new contributors of all
+    kinds, analyze what we have and find a home for it. Training Path & Operation
+    Docs & Community Handbook
+
+  label: documentation
+  leadership:
+    chairs:
+    - github: sallyom
+      name: Sally O'Malley
+      company: Red Hat
+    - github: stefwrite
+      name: Stephanie E. Watson
+      company: Red Hat
+  meetings:
+  - description: Regular WG Meeting
+    day: Wednesday
+    time: "10:00"
+    tz: ET (East Time)
+    frequency: weekly
+    url: https://meet.google.com/...
+    archive_url: https://docs.google.com/document/d/...
+  contact: {}
+- dir: wg-website
+  name: Website
+  mission_statement: >-
+    Enhance the user experience of the operate-first.cloud website.
+  label: website
+  leadership:
+    chairs:
+    - github: quaid
+      name: Karsten Wade
+      company: Red Hat
+  meetings:
+  - description: website meeting
+    day: Tuesday
+    time: "8:30"
+    tz: EST
+    frequency: Weekly
+    url: meet.google.com/....
+  contact: {}
 - dir: wg-workload-overview
   name: Workload Overview
   mission_statement: >
@@ -107,68 +180,6 @@ workinggroups:
     tz: ET (East Time)
     frequency: weekly
     url: https://meet.google.com/gxk-pjcx-wno
-- dir: wg-website
-  name: Website
-  mission_statement: |-
-    Enhance the user experience of the operate-first.cloud website.
-  leadership:
-    chairs:
-    - github: quaid
-      name: Karsten Wade
-      company: Red Hat
-  meetings:
-  - description: website meeting
-    day: Tuesday
-    time: "8:30"
-    tz: EST
-    frequency: Weekly
-    url: meet.google.com/....
-- dir: wg-documentation
-  name: Documentation
-  mission_statement: >
-    Define the different kinds of documentation needed for new contributors of all kinds,
-    analyze what we have and find a home for it.
-    Training Path & Operation Docs & Community Handbook
-  leadership:
-    chairs:
-    - github: sallyom
-      name: Sally O'Malley
-      company: Red Hat
-    - github: stefwrite
-      name: Stephanie E. Watson
-      company: Red Hat
-  meetings:
-  - description: Regular WG Meeting
-    day: Wednesday
-    time: "10:00"
-    tz: ET (East Time)
-    frequency: weekly
-    url: https://meet.google.com/...
-    archive_url: https://docs.google.com/document/d/...
   contact: {}
-- dir: sig-telemetry
-  name: Telemetry
-  mission_statement: >
-    The SIG's mission is to foster discussion and research problem statements around operational telemetry
-  charter_link: charter.md
-  label: telemetry
-  leadership:
-    chairs:
-    - github: durandom
-      name: Marcel Hild
-      company: Red Hat
-    - github: RS1999ent
-      name: Raja Sambasivan
-      company: Tuft University
-  meetings:
-  - description: SIG Telemetry meeting
-    day: Tuesaday
-    time: "09:30"
-    tz: EST
-    frequency: Monthly
-    url: https://bostonu.zoom.us/j/99523690124?pwd%3DMTc1dVhoeEo4MGhPaGx1eHF2MG00QT09&sa=D&source=calendar&ust=1646017334493225&usg=AOvVaw1U9-vrGPXsNEaOsP0JyY3R#success
-    archive_url: https://docs.google.com/document/d/17ArlqKA_DE3ZDSTMRIblS9bxXDw777k8RtMFdJPFr9M/edit
-  contact:
-    mailing_list: community@lists.operate-first.cloud
 usergroups: []
 committees: []

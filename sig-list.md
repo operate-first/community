@@ -36,11 +36,14 @@ When the need arises, a [new SIG can be created](sig-wg-lifecycle.md)
 |------|-------|--------|---------|----------|
 |[Community](sig-community/README.md)|community|* [Karsten Wade](https://github.com/quaid), Red Hat<br>* [Thorsten Schwesig](https://github.com/schwesig), Red Hat<br>||* SIG Community meeting: [Thursdays at 18:00 UTC (weekly)](tbd)<br>
 |[Operations](sig-operations/README.md)|operations|* [Humair Khan](https://github.com/HumairAK), Red Hat<br>* [Lars Kellogg-Stedman](https://github.com/larsks), Red Hat<br>||* SIG Operations meeting: [Tuesdays at 10:00 EST (Bi-Weekly)](meet.google.com/zfj-woub-xwp)<br>* (cluster-ops) Cluster Ops meeting: [Mondays at 13:30 EST (Weekly)](meet.google.com/wxh-pizv-vwt)<br>
+|[Telemetry](sig-telemetry/README.md)|telemetry|* [Raja Sambasivan](https://github.com/RS1999ent), Tuft University<br>* [Marcel Hild](https://github.com/durandom), Red Hat<br>||* SIG Telemetry meeting: [Tuesadays at 09:30 EST (Monthly)](https://bostonu.zoom.us/j/99523690124?pwd%3DMTc1dVhoeEo4MGhPaGx1eHF2MG00QT09&sa=D&source=calendar&ust=1646017334493225&usg=AOvVaw1U9-vrGPXsNEaOsP0JyY3R#success)<br>
 ||||||
 ### Working Groups
 
 | Name | Stakeholder SIGs |Organizers | Contact | Meetings |
 |------|------------------|-----------|---------|----------|
+|[Documentation](wg-documentation/README.md)||* [Sally O'Malley](https://github.com/sallyom), Red Hat<br>* [Stephanie E. Watson](https://github.com/stefwrite), Red Hat<br>|* Regular WG Meeting: [Wednesdays at 10:00 ET (East Time) (weekly)](https://meet.google.com/...)<br>
+|[Website](wg-website/README.md)||* [Karsten Wade](https://github.com/quaid), Red Hat<br>|* website meeting: [Tuesdays at 8:30 EST (Weekly)](meet.google.com/....)<br>
 |[Workload Overview](wg-workload-overview/README.md)||* [Anand Sanmukhani](https://github.com/4n4nd), Red Hat<br>|* Regular WG Meeting: [Thursdays at 11:30 ET (East Time) (weekly)](https://meet.google.com/gxk-pjcx-wno)<br>
 ||||||
 ### Committees
