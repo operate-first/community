@@ -105,10 +105,10 @@ sigs:
   meetings:
   - description: SIG Telemetry meeting
     day: Tuesaday
-    time: "09:30"
+    time: "10:30"
     tz: EST
     frequency: Monthly
-    url: https://bostonu.zoom.us/j/99523690124?pwd%3DMTc1dVhoeEo4MGhPaGx1eHF2MG00QT09&sa=D&source=calendar&ust=1646017334493225&usg=AOvVaw1U9-vrGPXsNEaOsP0JyY3R#success
+    url: meet.google.com/izf-xksf-mzd
     archive_url: https://docs.google.com/document/d/17ArlqKA_DE3ZDSTMRIblS9bxXDw777k8RtMFdJPFr9M/edit
   contact:
     mailing_list: community@lists.operate-first.cloud
