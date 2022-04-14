@@ -40,7 +40,7 @@ It is _recommended_ that you include sufficient configuration to operate the ser
 
 **A:** Tests that are used during operation the service (as per **requirement #1**), and tests that used when run when making a change to the service (as per **requirement #2**), _must be shared publicly_ under an Open Source license.
 
-Tests that violate _legal restrictions_ cannot be shared publicly. Specifically: tests that include references to internal or customer names, urls, addresses, configuration or other data; tests for CVE, embargoed or private bugs; testing performance, failover, data recovery and compliance with security standards (like FIPS). 
+Tests that violate any of the _legal restrictions_ cannot be upstreamed. Specifically: tests not under open source license, tests that include references to company private or customer names, addresses, configuration or other data; tests for embargoed or private bugs.
 
 It is _recommended_ that other tests which are independent of the service and (eg: penetration tests) are Open Source, but this is not required.
 
