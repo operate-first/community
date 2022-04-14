@@ -42,7 +42,7 @@ It is _recommended_ that you include sufficient configuration to operate the ser
 
 Tests that violate any of the _legal restrictions_ cannot be upstreamed. Specifically: tests not under open source license, tests that include references to company private or customer names, addresses, configuration or other data; tests for embargoed or private bugs.
 
-It is _recommended_ that other tests which are independent of the service and (eg: penetration tests) are Open Source, but this is not required.
+It is _recommended_ other tests that are independent of the service (e.g. penetration tests) are Open Source, but this is not required.
 
 ### Q: Should anyone be able to trigger CI or test suites?
 
