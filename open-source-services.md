@@ -73,7 +73,7 @@ However, if a typical team member operates their own instance of the service in 
 It is a powerful, laudable goal for others to be able to operate an Open Source service, either by operating an instance on their own, or participating in operations of a common instance.
 [Operate First](https://www.operate-first.cloud/) is a project that enables this, and even provides infrastructure.
 
-### Q: Must all requirements for a service be Open Source too?
+### Q: Must all dependencies for a service be Open Source too?
 
 **A:** It is _not required_ that all dependencies of a service are Open Source, or have Open Source alternatives.
 For example, a service may interact with a proprietary authentication system, or run on a proprietary platform.
