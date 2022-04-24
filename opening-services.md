@@ -11,7 +11,7 @@ This document is a checklist how you can open an internal service to the public 
   * These repositories need to contain: complete service source-code, assets, and deployment scripts, and all need to be licensed under an Open Source license.
   * Since everything will be open, please make sure that you are not leaking any information to the public that should remain private: commit history could be such an example.
 
-* [ ] (optional) Set up Continuous Integration and Continuous Deployment for all the repositories created above.
+* [ ] (optional) Set up Continuous Integration and Continuous Deployment (CI/CD) for all the repositories created above.
 
 * [ ] Document contribution process.
   * [ ] Document local service setup.
