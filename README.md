@@ -16,6 +16,7 @@ All are welcome to contribute to this repository and our efforts.
 
 Details beyond this README file can be found in the `contributing.md` file.
 
+If you are interested in being involved in community projects and meetings make sure to join our [Slack](https://join.slack.com/t/operatefirst/shared_invite/zt-o2gn4wn8-O39g7sthTAuPCvaCNRnLww) and our [Operate First Community Google calender](https://calendar.google.com/calendar/u/0/embed?src=operate.first.community@gmail.com&ctz=America/New_York) to know when we meet.
 ## Processes
 
 Until there is a Community Handbook to gather this content within, all of the processes for interacting with this repository and work around it are contained in this section, or held in the `contributing.md` file.
