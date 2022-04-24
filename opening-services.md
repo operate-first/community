@@ -22,4 +22,4 @@ This document is a checklist how you can open an internal service to the public 
 
 * [ ] Document interaction with public instances: including development instance, staging/test, and production.
 
-* [ ] Make sure you comply with your internal guidelines for opening projects up.
+* [ ] Make sure you comply with your internal guidelines for Opening projects up.
