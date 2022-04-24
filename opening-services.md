@@ -20,6 +20,6 @@ This document is a checklist how you can open an internal service to the public 
 * [ ] Document operation of the service.
   * [ ] Secrets management.
 
-* [ ] Document interaction with public instances: including development instance, staging/test and production.
+* [ ] Document interaction with public instances: including development instance, staging/test, and production.
 
 * [ ] Make sure you comply with your internal guidelines for opening projects up.
