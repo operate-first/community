@@ -8,7 +8,7 @@ This document is a checklist how you can open an internal service to the public 
 
 * [ ] Create a repository on a gitforge of your choice (GitHub, Gitlab, or others) to host the source code.
   * Create as many as you want: you are free to separate deployment from the service's source code.
-  * These repositories need to contain: complete service source-code, assets, deployment scripts and all need to be licensed under an open source license.
+  * These repositories need to contain: complete service source-code, assets, and deployment scripts, and all need to be licensed under an Open Source license.
   * Since everything will be open, please make sure that you are not leaking any information to the public that should remain private: commit history could be such an example.
 
 * [ ] (optional) Set up Continuous Integration and Continuous Deployment for all the repositories created above.
