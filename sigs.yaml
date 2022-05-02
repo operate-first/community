@@ -166,6 +166,28 @@ workinggroups:
     url: https://meet.google.com/sku-akry-mfw
     archive_url: https://docs.google.com/document/d/18t390IUtTr8LXccT1NWMCoZNbDDd8B030vQeHHMmCbo/edit
   contact: {}
+- dir: wg-service-catalog-and-interactions
+  name: Service Catalog and Interactions
+  mission_statement: >-
+    Make service discovery and cloud management interactions easier
+  charter_link: charter.md
+  label: service-catalog-and-interactions
+  leadership:
+    chairs:
+    - github: HumairAK
+      name: Humair Khan
+      company: Red Hat
+    - github: tumido
+      name: Tom Coufal
+      company: Red Hat
+  meetings:
+  - description: Regular WG Meeting
+    day: Monday
+    time: "14:00"
+    tz: UTC
+    frequency: bi-weekly
+    url: https://meet.google.com/ywt-bxve-uvc
+  contact: {}
 - dir: wg-website
   name: Website
   mission_statement: >-
