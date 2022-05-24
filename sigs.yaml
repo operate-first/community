@@ -116,6 +116,30 @@ sigs:
   - name: example
     owners:
     - https://raw.githubusercontent.com/operate-first/community/main/OWNERS
+- dir: sig-data-science
+  name: Data Science
+  mission_statement: >
+    The Data Science SIG is responsible for all data science and machine learning related initiatives within the Operate First community.
+  charter_link: charter.md
+  label: data-science
+  leadership:
+    chairs:
+    - github: MichaelClifford
+      name: Michael Clifford
+      company: Red Hat
+    - github: unknown  # TODO Need TO FIND A CO-CHAIR
+      name: unknown
+      company: unknown
+  meetings:
+  - description: SIG Data Science meeting
+    day: Wednesday
+    time: "11:00"
+    tz: EST
+    frequency: Monthly
+    url: tbd
+    archive_url: tbd
+  contact:
+    mailing_list: community@lists.operate-first.cloud
 workinggroups:
 - dir: wg-documentation
   name: Documentation
