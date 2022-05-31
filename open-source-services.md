@@ -38,7 +38,7 @@ Assets that should not be shared are ones where you don’t have redistribution 
 
 If changing configuration is an activity that a typical team member does in order to change the service, then you should share that configuration publicly, in order to meet **requirement #2**.
 
-It is _not requried_ that all tooling dependencies and service dependencies used during the building, testing, deployment and operating of the service are themselves Open Source.
+It is _not required_ that all tooling dependencies and service dependencies used during the building, testing, deployment and operating of the service are themselves Open Source.
 
 It is _recommended_ that you include sufficient configuration to operate the service, or some base default version of configuration. Putting secrets in your configuration is a bad practice that should be avoided, regardless of Open Source.
 
