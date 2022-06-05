@@ -2,7 +2,7 @@
 
 This repository is used by all members of the Operate First community for managing the ongoing support and sustaining the community of persons and organizations around this initiative.
 
-We plan and keep track of our efforts on the [Community Project Board](https://github.com/orgs/operate-first/projects/16), which is drives the status of the [program management page](https://github.com/operate-first/community/blob/main/program-management-tracker.md).
+We plan and keep track of our efforts on the [Community Project Board](https://github.com/orgs/operate-first/projects/16), which is drives the status of the [program management page](https://github.com/operate-first/community/blob/main/program-management-tracker.md). Feel free to also follow our [blog](https://www.operate-first.cloud/blog/).
 
 ## Bootstrapping
 
@@ -23,11 +23,11 @@ Until there is a Community Handbook to gather this content within, all of the pr
 
 ### Reviewing pull requests for this repository
 
-All commits to this repository should use a [pull request process](https://github.com/operate-first/blueprint/blob/main/docs/adr/0016-pr-review.md#process) for most changes.
+All commits to this repository should use a [pull request process](https://github.com/operate-first/blueprint/blob/main/adr/0016-pr-review.md) for most changes.
 This means under normal conditions, no one should commit directly to the repo.
 Instead, they branch or fork the repo, make changes in the branch/fork, and then make a pull request against the main repo.
 
-Because content in this repo is not in its final form, we do not need as stringent a review process for accepting pull requests into this repo. This repo is for project work that appears in its finished form in locations such as https://operate-first.cloud, https://twitter.com/OperateFirst, the Operate First [community mailing list](https://listman.redhat.com/mailman/listinfo/operate-first), and so forth.
+Because content in this repo is not in its final form, we do not need as stringent a review process for accepting pull requests into this repo. This repo is for project work that appears in its finished form in locations such as https://operate-first.cloud, https://twitter.com/OperateFirst, the Operate First [community mailing list](https://lists.operate-first.cloud/admin/lists/community.lists.operate-first.cloud/), and so forth.
 This is generally not a final-form location, and we are often dumping in partially completed work to finish here openly.
 
 However, we want to follow the PR process for several reason:
@@ -57,7 +57,7 @@ We host our own deployment of Prow in Operate First available at [https://prow.o
 Supported commands are listed [here](https://prow.operate-first.cloud/command-help).
 We have also enabled Prow to consume on-repository configuration files.
 You can specify your config in [`.prow.yaml`](.prow.yaml).
-Additional centralized configuration can be found in the [thoth-application repository](https://github.com/thoth-station/thoth-application/tree/master/prow/overlays/cnv-prod).
+Additional centralized configuration can be found in the [thoth-application repository](https://github.com/thoth-station/thoth-application/tree/master/prow/overlays/smaug).
 
 ### Pre-commit
 This repository uses the project-wide pre-commit hooks.
