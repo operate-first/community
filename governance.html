@@ -4,11 +4,13 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Operate First Community Governance 1.0 &#8212; Operate First Community</title>
     
-  <link href="_static/css/theme.css" rel="stylesheet">
-  <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -18,20 +20,16 @@
   <link rel="preload" as="font" type="font/woff2" crossorigin
     href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
-    
-      
-
-    
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=62ba249389abaaa9ffc34bf36a076bdc1d65ee18" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
-    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
     
-  <link rel="preload" as="script" href="_static/js/index.be7d3bbb2ef33a8344ce.js">
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
 
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
@@ -39,12 +37,13 @@
     <script src="_static/doctools.js"></script>
     <script src="_static/clipboard.min.js"></script>
     <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=f31d14ad54b65d19161ba51d4ffff3a77ae00456"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script src="_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
 const thebe_selector = ".thebe,.cell"
 const thebe_selector_input = "pre"
@@ -63,7 +62,21 @@ const thebe_selector_output = ".output, .cell_output"
     <!-- Google Analytics -->
     
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
     
     <div class="container-fluid" id="banner"></div>
 
@@ -72,9 +85,10 @@ const thebe_selector_output = ".output, .cell_output"
     <div class="container-xl">
       <div class="row">
           
-<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
-    
-        <div class="navbar-brand-box">
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
     <a class="navbar-brand text-wrap" href="index.html">
       
         <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
@@ -92,14 +106,15 @@ const thebe_selector_output = ".output, .cell_output"
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
-        <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="README.html">
-   Operate First community planning repository
-  </a>
- </li>
-</ul>
-<p aria-level="2" class="caption" role="heading">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="README.html">
+                    Operate First community planning repository
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   General
  </span>
@@ -150,90 +165,180 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 
     </div>
-</nav> <!-- To handle the deprecated key -->
-
-<div class="navbar_extra_footer">
-  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
-</div>
-
-</div>
-
-
-          
-
-
-          
-<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
-    
-    <div class="topbar container-xl fixed-top">
-    <div class="topbar-contents row">
-        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
-        <div class="col pl-md-4 topbar-main">
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
             
-            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
-                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
-                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
-                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
-                <i class="fas fa-bars"></i>
-                <i class="fas fa-arrow-left"></i>
-                <i class="fas fa-arrow-up"></i>
-            </button>
-            
-            
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
-            class="fas fa-download"></i></button>
-
-    <div class="dropdown-buttons">
-        <!-- ipynb file if we had a myst markdown file -->
-        
-        <!-- Download raw file -->
-        <a class="dropdown-buttons" href="_sources/governance.md"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
-                data-placement="left">.md</button></a>
-        <!-- Download PDF via print -->
-        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
-                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
-    </div>
-</div>
-
-            <!-- Source interaction buttons -->
-
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
-        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
-    <div class="dropdown-buttons sourcebuttons">
-        <a class="repository-button"
-            href="https://github.com/operate-first/community"><button type="button" class="btn btn-secondary topbarbtn"
-                data-toggle="tooltip" data-placement="left" title="Source repository"><i
-                    class="fab fa-github"></i>repository</button></a>
-        <a class="issues-button"
-            href="https://github.com/operate-first/community/issues/new?title=Issue%20on%20page%20%2Fgovernance.html&body=Your%20issue%20content%20here."><button
-                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
-                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
-        
-    </div>
-</div>
-
-            <!-- Full screen (wrap in <a> to have style consistency -->
-
-<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-        title="Fullscreen mode"><i
-            class="fas fa-expand"></i></button></a>
-
-            <!-- Launch buttons -->
-
-        </div>
-
-        <!-- Table of contents -->
-        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
-            
-            <div class="tocsection onthispage pt-5 pb-3">
-                <i class="fas fa-list"></i> Contents
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
             </div>
-            <nav id="bd-toc-nav" aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/operate-first/community"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/operate-first/community/issues/new?title=Issue%20on%20page%20%2Fgovernance.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="_sources/governance.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#summmary">
    Summmary
@@ -346,12 +451,11 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
 </ul>
 
-            </nav>
-        </div>
-    </div>
+    </nav>
 </div>
-    <div id="main-content" class="row">
-        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
                 <h1>Operate First Community Governance 1.0</h1>
@@ -480,16 +584,17 @@ const thebe_selector_output = ".output, .cell_output"
                     </div>
                 </div>
             </div>
-            
+            <main id="main-content" role="main">
+                
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="operate-first-community-governance-1-0">
-<h1>Operate First Community Governance 1.0<a class="headerlink" href="#operate-first-community-governance-1-0" title="Permalink to this headline">¶</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="operate-first-community-governance-1-0">
+<h1>Operate First Community Governance 1.0<a class="headerlink" href="#operate-first-community-governance-1-0" title="Permalink to this headline">#</a></h1>
 <p>This document contains the initial governance (Governance 1.0) for the community-formed project around the <em><a class="reference external" href="https://openinfralabs.org/operate-first-manifesto/">Operate First concept</a></em>.
 In this document, the community and project are referred to by the shorthand <em>Op1st</em> (spoken as “op first”).</p>
 <p>It also has a roadmap for additions coming in the next iteration of the governance (Governance 1.1).</p>
-<div class="section" id="summmary">
-<h2>Summmary<a class="headerlink" href="#summmary" title="Permalink to this headline">¶</a></h2>
+<section id="summmary">
+<h2>Summmary<a class="headerlink" href="#summmary" title="Permalink to this headline">#</a></h2>
 <p>The community works in special interest groups (SIGs), that form around a common topic.</p>
 <p>SIGs are operated by consensus and can self-organize.
 One common organizational structure is for the group to appoint a chair and vice-chair by consensus.
@@ -500,17 +605,17 @@ For example, a future Technical Steering Committee might decide all overall tech
 <p>To start, we are initiating the Community SIG and the Operations SIG. All parts of the project fall under these SIGs.
 The SIGs then self-organize and decide to sub-divide into further SIGs and to form subprojects within one or more SIGs to actually do things.</p>
 <p>The subprojects are where the work happens, and the SIGs organize and guide their subprojects.</p>
-</div>
-<div class="section" id="op1st-community-governance-1-0-mvg">
-<h2>Op1st Community Governance 1.0 (MVG)<a class="headerlink" href="#op1st-community-governance-1-0-mvg" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="op1st-community-governance-1-0-mvg">
+<h2>Op1st Community Governance 1.0 (MVG)<a class="headerlink" href="#op1st-community-governance-1-0-mvg" title="Permalink to this headline">#</a></h2>
 <p>A healthy open source project is one that demonstrates open practices, uses open infrastructure, and cultivates an open culture with the goal of becoming more sustainable.</p>
-<div class="section" id="principles">
-<h3>Principles<a class="headerlink" href="#principles" title="Permalink to this headline">¶</a></h3>
+<section id="principles">
+<h3>Principles<a class="headerlink" href="#principles" title="Permalink to this headline">#</a></h3>
 <p>As a new community with a vision to grow, we are following in the footsteps of many massively scaled and successful projects. We want to take care to learn from those who came before us, while forging our own path into the challenges we’ve chosen to undertake.</p>
 <p>To stand up this Governance for a 1.0 good-enough minimal-viable-governance (MVG), we are looking to our key predecessors for some of our starting points.
 As an initial set of principles we are combining elements of the <a class="reference external" href="https://github.com/kubernetes/community/blob/master/governance.md#principles">Kubernetes community principles</a> and the <a class="reference external" href="https://openinfra.dev/four-opens/">OpenInfra Foundations Four Opens</a>.</p>
-<div class="section" id="op1st-community-principles-1-0">
-<h4>Op1st Community Principles 1.0<a class="headerlink" href="#op1st-community-principles-1-0" title="Permalink to this headline">¶</a></h4>
+<section id="op1st-community-principles-1-0">
+<h4>Op1st Community Principles 1.0<a class="headerlink" href="#op1st-community-principles-1-0" title="Permalink to this headline">#</a></h4>
 <p>Our mission requires us to use open source principles in ways beyond licensing the code we write, but at the core we are an open source community and want to adhere to the best possible principles for creating an open, welcoming, and inclusive community.</p>
 <p>These are the Op1st community principles we adhere to:</p>
 <ol class="simple">
@@ -538,15 +643,15 @@ Refer to the section on <a class="reference external" href="#community-groups">C
 The more diversity of voices at the decision table, the better our ability to improve conditions such as inclusion and equity.
 Sustainable comes through continuous improvement of those areas, such as through centering the agenda of those people most marginalized and at risk in each given context (which results in things being more accessible for everyone.)</p></li>
 </ol>
-</div>
-</div>
-<div class="section" id="code-of-conduct">
-<h3>Code of Conduct<a class="headerlink" href="#code-of-conduct" title="Permalink to this headline">¶</a></h3>
+</section>
+</section>
+<section id="code-of-conduct">
+<h3>Code of Conduct<a class="headerlink" href="#code-of-conduct" title="Permalink to this headline">#</a></h3>
 <p>We are using the <a class="reference external" href="https://openinfra.dev/legal/code-of-conduct">upstream OpenInfra Foundation Code of Conduct</a>(CoC).
 In creating the next Governance 1.1 we will have an actual process to make decisions as a community. We can then either formally ratify this same CoC, or the Community SIG can convene a cross-project working group to discuss and decide an inclusive and equitable process for a new code of conduct.</p>
-</div>
-<div class="section" id="community-membership">
-<h3>Community membership<a class="headerlink" href="#community-membership" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="community-membership">
+<h3>Community membership<a class="headerlink" href="#community-membership" title="Permalink to this headline">#</a></h3>
 <blockquote>
 <div><p>:notebook: <strong>Note</strong> This document is a work in progress, especially these membership guidelines</p>
 </div></blockquote>
@@ -598,22 +703,22 @@ It is never a full picture of one’s activities, but it is a useful and helpful
 </tr>
 </tbody>
 </table>
-</div>
-<div class="section" id="community-groups">
-<h3>Community groups<a class="headerlink" href="#community-groups" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="community-groups">
+<h3>Community groups<a class="headerlink" href="#community-groups" title="Permalink to this headline">#</a></h3>
 <p>The Op1st community is initiating Governance 1.0 with only one type of community group, Special Interest Groups (SIGs).
 The purpose of doing so is to empower SIGs to gather interested people around a subject area, then decide and implement that into governance.
 For example, one of the first acts of the Community SIG is to establish a milestone schedule for defining and holding elections for future steering committee(s).
 Governance 1.1 will therefore include details on new community groups (subprojects and working groups).</p>
-<div class="section" id="sigs">
-<h4>SIGs<a class="headerlink" href="#sigs" title="Permalink to this headline">¶</a></h4>
+<section id="sigs">
+<h4>SIGs<a class="headerlink" href="#sigs" title="Permalink to this headline">#</a></h4>
 <p>Special Interest Groups (SIGs) are persistent open groups that focus on a part of the project. SIGs must have open and transparent proceedings.
 Anyone is welcome to participate and contribute provided they follow the Op1st <a class="reference external" href="https://www.operate-first.cloud/code_of_conduct">Code of Conduct</a>.
 The purpose of a SIG is to own and develop a set of subprojects.</p>
 <p>A SIG can have its own policy for contribution, described in a README or CONTRIBUTING file in the SIG folder in this repo (e.g. sig-community/CONTRIBUTING.md), and its own mailing list, chat channel, etc.</p>
-</div>
-<div class="section" id="initiating-sigs">
-<h4>Initiating SIGs<a class="headerlink" href="#initiating-sigs" title="Permalink to this headline">¶</a></h4>
+</section>
+<section id="initiating-sigs">
+<h4>Initiating SIGs<a class="headerlink" href="#initiating-sigs" title="Permalink to this headline">#</a></h4>
 <p>In order to get things started in a way to encourage transparency and participation, we are going to only initiate two SIGs to start, the Community SIG (<code class="docutils literal notranslate"><span class="pre">sig-community</span></code>) and the Operations SIG (<code class="docutils literal notranslate"><span class="pre">sig-ops</span></code>).
 These two SIGs are immediately empowered through this governance to create new SIGs and/or subprojects.</p>
 <p>To create subprojects, a SIG only needs to have consensus within itself.</p>
@@ -625,16 +730,16 @@ These two SIGs are immediately empowered through this governance to create new S
 <li><p>With all SIGs in consensus, the new SIG is formally created.</p></li>
 </ol>
 <p>A similar process is followed when the Community SIG is ready to present recommendations for Governance 1.1 that creates committees.</p>
-</div>
-<div class="section" id="deprecating-sigs">
-<h4>Deprecating SIGs<a class="headerlink" href="#deprecating-sigs" title="Permalink to this headline">¶</a></h4>
+</section>
+<section id="deprecating-sigs">
+<h4>Deprecating SIGs<a class="headerlink" href="#deprecating-sigs" title="Permalink to this headline">#</a></h4>
 <p>This section is intentionally incomplete for the Governance 1.0.
 The reason is social: while it makes sense to have initiating a SIG to be relatively easy, we want to take more care with deprecating or closing a SIG.</p>
 <p>This is a topic the Community SIG can put on the priority agenda to resolve soon after forming, so the process is created within the space of community input and voices.</p>
 <p>If it is not resolved in a patch to 1.0 it must be delivered in the Governance 1.1 minor update.</p>
-</div>
-<div class="section" id="governance-1-1-potential-future-groups">
-<h4>Governance 1.1 potential future groups<a class="headerlink" href="#governance-1-1-potential-future-groups" title="Permalink to this headline">¶</a></h4>
+</section>
+<section id="governance-1-1-potential-future-groups">
+<h4>Governance 1.1 potential future groups<a class="headerlink" href="#governance-1-1-potential-future-groups" title="Permalink to this headline">#</a></h4>
 <p><a class="reference external" href="https://github.com/kubernetes/community#governance">These descriptions</a> are borrowed from <a class="reference external" href="https://github.com/kubernetes/community/blob/master/governance.md#community-groups">Kubernetes governance around community groups</a>.
 They are only placeholders for discussions, lightly edited.</p>
 <ul class="simple">
@@ -642,10 +747,10 @@ They are only placeholders for discussions, lightly edited.</p>
 <li><p><strong>Working Groups</strong> are temporary groups that are formed to address issues that cross SIG boundaries. Working groups do not own any code or other long term artifacts. Working groups can report back and act through involved SIGs.</p></li>
 <li><p><strong>User Groups</strong> are groups for facilitating communication and discovery of information related to topics that have long term relevance to large groups of Op1st users. They do not have ownership of parts of the Op1st code base, but they may contribute to other types of content and open works.</p></li>
 </ul>
-</div>
-</div>
-<div class="section" id="decision-making">
-<h3>Decision making<a class="headerlink" href="#decision-making" title="Permalink to this headline">¶</a></h3>
+</section>
+</section>
+<section id="decision-making">
+<h3>Decision making<a class="headerlink" href="#decision-making" title="Permalink to this headline">#</a></h3>
 <p>While the project is in the early stages, we are favoring a balance of including all voices and keeping a rapid pace of progress.
 To accomplish this balance, we are using a <em>consensus decision model</em> that gives time and space for everyone to voice concerns with the proposal.</p>
 <p>There are two types of consensus models we use, the lightweight and the full:</p>
@@ -663,8 +768,8 @@ Thus a single -1 vote can block achieving consensus, so it forces the group to t
 <p>SIGs decide by consensus within themselves whatever they are doing, and which model is used for a particular decisions.</p>
 <p>Anything needing wider discussion and approval goes to mailing list for either group or SIG roll-up consensus.</p>
 <p>When we are ready, we use this power to form a technical and/or overall steering committee, with corresponding election system.</p>
-<div class="section" id="consensus-decision-making">
-<h4>Consensus decision making<a class="headerlink" href="#consensus-decision-making" title="Permalink to this headline">¶</a></h4>
+<section id="consensus-decision-making">
+<h4>Consensus decision making<a class="headerlink" href="#consensus-decision-making" title="Permalink to this headline">#</a></h4>
 <p>One practice of meritocracy is the consensus-based decision model.
 From <a class="reference external" href="http://en.wikipedia.org/wiki/Consensus_decision-making">http://en.wikipedia.org/wiki/Consensus_decision-making</a>, “Consensus decision-making is a group decision making process that seeks the consent of all participants.”
 In practice, it is different from a majority-vote-wins approach.
@@ -699,18 +804,18 @@ A block is a -1 vote and must be accompanied with substantive arguments that are
 </ol>
 </li>
 </ol>
-</div>
-</div>
-<div class="section" id="use-of-architectural-decision-records-adr">
-<h3>Use of Architectural Decision Records (ADR)<a class="headerlink" href="#use-of-architectural-decision-records-adr" title="Permalink to this headline">¶</a></h3>
+</section>
+</section>
+<section id="use-of-architectural-decision-records-adr">
+<h3>Use of Architectural Decision Records (ADR)<a class="headerlink" href="#use-of-architectural-decision-records-adr" title="Permalink to this headline">#</a></h3>
 <p>Architectural decisions are design decisions with some level of architectural significance.
 At Op1st, we track architectural decisions using lightweight architectural decision records.
 More information on the format we follow is available at <a class="reference external" href="https://adr.github.io/madr/">https://adr.github.io/madr/</a>.</p>
 <p>ADR page: <a class="reference external" href="https://www.operate-first.cloud/blueprints/blueprint/">https://www.operate-first.cloud/blueprints/blueprint/</a></p>
 <p>ADR repository: <a class="reference external" href="https://github.com/operate-first/blueprint">https://github.com/operate-first/blueprint</a></p>
-</div>
-<div class="section" id="use-of-the-community-handbook">
-<h3>Use of the Community Handbook<a class="headerlink" href="#use-of-the-community-handbook" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="use-of-the-community-handbook">
+<h3>Use of the Community Handbook<a class="headerlink" href="#use-of-the-community-handbook" title="Permalink to this headline">#</a></h3>
 <p>The Community Handbook is intended to serve as a resource for all Operate First community contributors.
 It contains documentation on how to perform contributor-related tasks and encourages input and contributions from the community.
 The covenant of the Community Handbook is that if contributors must figure out a task for themselves, they should submit that solution to the handbook for the benefit of future contributors.</p>
@@ -718,29 +823,29 @@ The covenant of the Community Handbook is that if contributors must figure out a
 There is a core repository for structure, guidelines, and all content that does not fit or belong in another repository.</p>
 <p>Community Handbook page: <a class="reference external" href="https://www.operate-first.cloud/community-handbook/">https://www.operate-first.cloud/community-handbook/</a></p>
 <p>Community Handbook repository: <a class="reference external" href="https://github.com/operate-first/community-handbook">https://github.com/operate-first/community-handbook</a></p>
-</div>
-</div>
-<div class="section" id="governance-roadmap-1-1-and-beyond">
-<h2>Governance roadmap: 1.1 and beyond<a class="headerlink" href="#governance-roadmap-1-1-and-beyond" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="governance-roadmap-1-1-and-beyond">
+<h2>Governance roadmap: 1.1 and beyond<a class="headerlink" href="#governance-roadmap-1-1-and-beyond" title="Permalink to this headline">#</a></h2>
 <p>This section contains content being worked on for the next iteration, Governance 1.1.</p>
-<div class="section" id="addition-of-committees-subprojects-and-working-groups">
-<h3>Addition of committees, subprojects, and working Groups<a class="headerlink" href="#addition-of-committees-subprojects-and-working-groups" title="Permalink to this headline">¶</a></h3>
+<section id="addition-of-committees-subprojects-and-working-groups">
+<h3>Addition of committees, subprojects, and working Groups<a class="headerlink" href="#addition-of-committees-subprojects-and-working-groups" title="Permalink to this headline">#</a></h3>
 <p>It is the purview of the initiating Community SIG to manage the Governance 1.1 process, including the responsibility to decide which types of groups get added, how they are created and ended, and where future responsibility for these type of decisions shifts once Governance 1.1 is ratified.</p>
-</div>
-<div class="section" id="selecting-initial-technical-steering-committee">
-<h3>Selecting initial “Technical Steering Committee”<a class="headerlink" href="#selecting-initial-technical-steering-committee" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="selecting-initial-technical-steering-committee">
+<h3>Selecting initial “Technical Steering Committee”<a class="headerlink" href="#selecting-initial-technical-steering-committee" title="Permalink to this headline">#</a></h3>
 <p>TBD</p>
-</div>
-<div class="section" id="addition-of-project-values">
-<h3>Addition of project Values<a class="headerlink" href="#addition-of-project-values" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="addition-of-project-values">
+<h3>Addition of project Values<a class="headerlink" href="#addition-of-project-values" title="Permalink to this headline">#</a></h3>
 <p>TBD</p>
-</div>
-<div class="section" id="community-handbook-released-with-contributor-getting-started-information">
-<h3>Community Handbook RELEASED with contributor getting-started information<a class="headerlink" href="#community-handbook-released-with-contributor-getting-started-information" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="community-handbook-released-with-contributor-getting-started-information">
+<h3>Community Handbook RELEASED with contributor getting-started information<a class="headerlink" href="#community-handbook-released-with-contributor-getting-started-information" title="Permalink to this headline">#</a></h3>
 <p>TBD</p>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -764,9 +869,11 @@ There is a core repository for structure, guidelines, and all content that does 
 
               </div>
               
-            
-                <!-- Previous / next buttons -->
-<div class='prev-next-area'> 
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
     <a class='left-prev' id="prev-link" href="glossary.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
@@ -782,24 +889,28 @@ There is a core repository for structure, guidelines, and all content that does 
     <i class="fas fa-angle-right"></i>
     </a>
 </div>
-            
+            </footer>
         </div>
     </div>
-    <footer class="footer">
-  <p>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Operate First Authors<br/>
+  
+      &copy; Copyright 2022.<br/>
+</p>
+        </footer>
+    </div>
     
-      By Operate First Authors<br/>
-    
-        &copy; Copyright 2021.<br/>
-  </p>
-</footer>
-</main>
+</div>
 
 
       </div>
     </div>
   
-  <script src="_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
 
   </body>
 </html>
