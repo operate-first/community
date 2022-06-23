@@ -29,6 +29,36 @@ sigs:
   - name: example
     owners:
     - https://raw.githubusercontent.com/operate-first/community/main/OWNERS
+- dir: sig-data-science
+  name: Data Science
+  mission_statement: >
+    The Data Science SIG is responsible for all data science and machine learning
+    related initiatives within the Operate First community.
+
+  charter_link: charter.md
+  label: data-science
+  leadership:
+    chairs:
+    - github: MichaelClifford
+      name: Michael Clifford
+      company: Red Hat
+    - github: unknown
+      name: unknown
+      company: unknown
+  meetings:
+  - description: SIG Data Science meeting
+    day: Wednesday
+    time: "11:00"
+    tz: EST
+    frequency: Monthly
+    url: tbd
+    archive_url: tbd
+  contact:
+    mailing_list: community@lists.operate-first.cloud
+  subprojects:
+  - name: example
+    owners:
+    - https://raw.githubusercontent.com/operate-first/community/main/OWNERS
 - dir: sig-operations
   name: Operations
   mission_statement: >
@@ -116,30 +146,6 @@ sigs:
   - name: example
     owners:
     - https://raw.githubusercontent.com/operate-first/community/main/OWNERS
-- dir: sig-data-science
-  name: Data Science
-  mission_statement: >
-    The Data Science SIG is responsible for all data science and machine learning related initiatives within the Operate First community.
-  charter_link: charter.md
-  label: data-science
-  leadership:
-    chairs:
-    - github: MichaelClifford
-      name: Michael Clifford
-      company: Red Hat
-    - github: unknown  # TODO Need TO FIND A CO-CHAIR
-      name: unknown
-      company: unknown
-  meetings:
-  - description: SIG Data Science meeting
-    day: Wednesday
-    time: "11:00"
-    tz: EST
-    frequency: Monthly
-    url: tbd
-    archive_url: tbd
-  contact:
-    mailing_list: community@lists.operate-first.cloud
 workinggroups:
 - dir: wg-documentation
   name: Documentation
@@ -189,6 +195,34 @@ workinggroups:
     frequency: monthly - last Wed of the month
     url: https://meet.google.com/sku-akry-mfw
     archive_url: https://docs.google.com/document/d/18t390IUtTr8LXccT1NWMCoZNbDDd8B030vQeHHMmCbo/edit
+  contact: {}
+- dir: wg-meetup-transfer
+  name: Meetup Transfer
+  mission_statement: >
+    The goal of this working group is to manage the smooth and successful transfer
+    of the assets and processes for running the Operate First Data Science Community
+    Meetup from the Open Services Group to the Operate First organization.
+
+  charter_link: charter.md
+  label: meetup-transfer
+  leadership:
+    chairs:
+    - github: aakankshaduggal
+      name: Aakanksha Duggal
+      company: Red Hat
+    - github: michaelclifford
+      name: Michael Clifford
+      company: Red Hat
+    - github: quaid
+      name: Karsten Wade
+      company: Red Hat
+  meetings:
+  - description: Regular WG Meeting
+    day: Wednesday
+    time: "12:00"
+    tz: ET (East Time)
+    frequency: bi-weekly
+    url: meet.google.com/ngp-npcx-nws
   contact: {}
 - dir: wg-service-catalog-and-interactions
   name: Service Catalog and Interactions
