@@ -116,6 +116,17 @@ sigs:
       and maintained in coordination with other Operate First sigs.
     owners:
     - https://raw.githubusercontent.com/operate-first/community/main/sig-operations/subprojects/ops-docs/OWNERS
+  - name: osc-ops
+    description: Day to day operations of OSC clusters and services.
+    owners:
+    - https://raw.githubusercontent.com/operate-first/community/main/sig-operations/subprojects/osc-ops/OWNERS
+    meetings:
+    - description: Cluster Ops meeting
+      day: Wednesday
+      time: "14:00"
+      tz: EST
+      frequency: Weekly
+      url: meet.google.com/sbr-jgrj-quo
 - dir: sig-telemetry
   name: Telemetry
   mission_statement: >
