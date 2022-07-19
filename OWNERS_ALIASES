@@ -2,6 +2,9 @@ aliases:
   sig-community-leads:
     - quaid
     - schwesig
+  sig-data-science-leads:
+    - MichaelClifford
+    - unknown
   sig-operations-leads:
     - HumairAK
     - larsks

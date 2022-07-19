@@ -35,7 +35,8 @@ When the need arises, a [new SIG can be created](sig-wg-lifecycle.md)
 | Name | Label | Chairs | Contact | Meetings |
 |------|-------|--------|---------|----------|
 |[Community](sig-community/README.md)|community|* [Karsten Wade](https://github.com/quaid), Red Hat<br>* [Thorsten Schwesig](https://github.com/schwesig), Red Hat<br>||* SIG Community meeting: [Thursdays at 18:00 UTC (weekly)](tbd)<br>
-|[Operations](sig-operations/README.md)|operations|* [Humair Khan](https://github.com/HumairAK), Red Hat<br>* [Lars Kellogg-Stedman](https://github.com/larsks), Red Hat<br>||* SIG Operations meeting: [Tuesdays at 10:00 EST (Bi-Weekly)](meet.google.com/zfj-woub-xwp)<br>* (cluster-ops) Cluster Ops meeting: [Mondays at 13:30 EST (Weekly)](meet.google.com/wxh-pizv-vwt)<br>
+|[Data Science](sig-data-science/README.md)|data-science|* [Michael Clifford](https://github.com/MichaelClifford), Red Hat<br>* [unknown](https://github.com/unknown), unknown<br>||* SIG Data Science meeting: [Wednesdays at 11:00 EST (Monthly)](tbd)<br>
+|[Operations](sig-operations/README.md)|operations|* [Humair Khan](https://github.com/HumairAK), Red Hat<br>* [Lars Kellogg-Stedman](https://github.com/larsks), Red Hat<br>||* SIG Operations meeting: [Tuesdays at 10:00 EST (Bi-Weekly)](meet.google.com/zfj-woub-xwp)<br>* (cluster-ops) Cluster Ops meeting: [Mondays at 13:30 EST (Weekly)](meet.google.com/wxh-pizv-vwt)<br>* (osc-ops) Cluster Ops meeting: [Wednesdays at 14:00 EST (Weekly)](meet.google.com/sbr-jgrj-quo)<br>
 |[Telemetry](sig-telemetry/README.md)|telemetry|* [Raja Sambasivan](https://github.com/RS1999ent), Tuft University<br>* [Marcel Hild](https://github.com/durandom), Red Hat<br>||* SIG Telemetry meeting: [Tuesadays at 10:30 EST (Monthly)](meet.google.com/izf-xksf-mzd)<br>
 ||||||
 ### Working Groups
