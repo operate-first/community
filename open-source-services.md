@@ -46,7 +46,9 @@ It is _recommended_ that you include sufficient configuration to operate the ser
 
 **A:** Tests that are used during operation the service (as per **requirement #1**), and tests that used when run when making a change to the service (as per **requirement #2**), _must be shared publicly_ under an Open Source license.
 
-It is _recommended_ that tests which are independent of the service (eg: penetration tests or performance tests) are Open Source, but this is not required.
+Tests that violate any of the _legal restrictions_ cannot be upstreamed. Specifically: tests not under open source license, tests that include references to company private or customer names, addresses, configuration or other data; tests for embargoed or private bugs.
+
+It is _recommended_ other tests that are independent of the service (e.g. penetration tests) are Open Source, but this is not required.
 
 ### Q: Should anyone be able to trigger CI or test suites?
 
