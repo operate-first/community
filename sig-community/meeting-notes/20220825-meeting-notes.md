@@ -9,7 +9,7 @@
 1. Helping NERC
    1. OpenShift prod/upstream developer
    1. RHODS/ODH upstream developer
-   1. Include Kristi Nikolla as central point of contact 
+   1. Include Kristi Nikolla as central point of contact
 1. Affiliate links and page
    1. https://github.com/operate-first/operate-first.github.io/pull/186
    1. We could use columns to fit the links and logos in the footer, in a future iteration
