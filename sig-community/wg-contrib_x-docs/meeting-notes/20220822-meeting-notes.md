@@ -1,12 +1,12 @@
 ## 2022-08-22
-- Karsten Wade @quaid 
+- Karsten Wade @quaid
 - Thorsten Schwesig @schwesig
 
 ### Agenda and Notes:
 - Name change of the group
   - check and/ or change charter?
   - As closing WG task, open up the discussion about forming "Docs SIG"
-  - Proposals: 
+  - Proposals:
     - "Documentation WG"
     - "New User Docs WG"
     - "User and Contributor Docs WG"
