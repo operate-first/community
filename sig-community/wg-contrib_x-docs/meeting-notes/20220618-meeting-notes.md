@@ -1,7 +1,7 @@
 # 2022-07-18
 
 ## Attendees
-- Karsten Wade @quaid 
+- Karsten Wade @quaid
 - Thorsten Schwesig @schwesig
 
 ## Agenda and Notes:
