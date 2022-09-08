@@ -1,7 +1,7 @@
 ## 2022-07-25
 
 ### Attendees
-- Karsten Wade @quaid 
+- Karsten Wade @quaid
 - Thorsten Schwesig @schwesig
 
 ### Agenda and Notes:
@@ -19,7 +19,7 @@
             1. Update `/developer` page `Learning Resources` section [card](https://github.com/orgs/operate-first/projects/49#card-84496926)
             1. link to [Op1st community support](https://www.operate-first.cloud/community-handbook/support/README.md) is a 404, needs to be fixed to [?operate-first/support](https://github.com/operate-first/support
         1. Remove link to old website at bottom - [card](https://github.com/orgs/operate-first/projects/49#card-84496848)
-        1. Update and expand "Learning Resources" section - [card](https://github.com/orgs/operate-first/projects/49#card-84496926) 
+        1. Update and expand "Learning Resources" section - [card](https://github.com/orgs/operate-first/projects/49#card-84496926)
         1. remove source link from bottom of page [card](https://github.com/orgs/operate-first/projects/49#card-84496884)
 
 ### Actions
