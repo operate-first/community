@@ -19,6 +19,8 @@ The [charter](charter.md) defines the scope and governance of the Operations Spe
 
 ## Meetings
 * SIG Operations meeting: [Tuesdays at 10:00 EST](meet.google.com/zfj-woub-xwp) (Bi-Weekly). [Convert to your timezone](http://www.thetimezoneconverter.com/?t=10:00&tz=EST).
+* Operations office hours: [Mon-Thu at 11:00 EST](meet.google.com/kxx-rkuo-jvt
+) (daily). [Convert to your timezone](http://www.thetimezoneconverter.com/?t=11:00&tz=EST) - [Running notes](https://hackmd.io/e74NgvQxQNiXquAhdstntA)
 
 ## Leadership
 
