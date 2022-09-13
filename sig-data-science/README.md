@@ -8,23 +8,23 @@ This file is part of https://github.com/operate-first/community
 
 To understand how this file is generated, see https://git.k8s.io/community/generator/README.md
 --->
-# Telemetry Special Interest Group
+# Data Science Special Interest Group
 
-The SIG's mission is to foster discussion and research problem statements around operational telemetry
+The Data Science SIG is responsible for all data science and machine learning related initiatives within the Operate First community.
 
-The [charter](charter.md) defines the scope and governance of the Telemetry Special Interest Group.
+The [charter](charter.md) defines the scope and governance of the Data Science Special Interest Group.
 
 ## Meetings
-* SIG Telemetry meeting: [Tuesadays at 10:30 EST](https://meet.google.com/izf-xksf-mzd) (Monthly). [Convert to your timezone](http://www.thetimezoneconverter.com/?t=10:30&tz=EST).
-  * [Meeting notes and Agenda](https://docs.google.com/document/d/17ArlqKA_DE3ZDSTMRIblS9bxXDw777k8RtMFdJPFr9M/edit).
+* SIG Data Science meeting: [Wednesdays at 11:00 EST](tbd) (Monthly). [Convert to your timezone](http://www.thetimezoneconverter.com/?t=11:00&tz=EST).
+  * [Meeting notes and Agenda](tbd).
 
 ## Leadership
 
 ### Chairs
 The Chairs of the SIG run operations and processes governing the SIG.
 
-* Raja Sambasivan (**[@RS1999ent](https://github.com/RS1999ent)**), Tuft University
-* Marcel Hild (**[@durandom](https://github.com/durandom)**), Red Hat
+* Michael Clifford (**[@MichaelClifford](https://github.com/MichaelClifford)**), Red Hat
+* unknown (**[@unknown](https://github.com/unknown)**), unknown
 
 ## Contact
 
@@ -32,7 +32,7 @@ The Chairs of the SIG run operations and processes governing the SIG.
 
 ## Subprojects
 
-The following [subprojects][subproject-definition] are owned by sig-telemetry:
+The following [subprojects][subproject-definition] are owned by sig-data-science:
 ### example
 - **Owners:**
   - [operate-first/community](https://github.com/operate-first/community/blob/main/OWNERS)
