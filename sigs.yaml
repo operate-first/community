@@ -88,12 +88,18 @@ sigs:
       name: Lars Kellogg-Stedman
       company: Red Hat
   meetings:
+  - description: Operations office hours
+    day: Mon-Thu
+    time: "11:00"
+    tz: EST
+    frequency: Daily
+    url: https://meet.google.com/kxx-rkuo-jvt
   - description: SIG Operations meeting
     day: Tuesday
     time: "10:00"
     tz: EST
     frequency: Bi-Weekly
-    url: meet.google.com/zfj-woub-xwp
+    url: https://meet.google.com/zfj-woub-xwp
   contact:
     slack: sig-operations
     mailing_list: community@lists.operate-first.cloud
@@ -109,7 +115,7 @@ sigs:
       time: "13:30"
       tz: EST
       frequency: Weekly
-      url: meet.google.com/wxh-pizv-vwt
+      url: https://meet.google.com/wxh-pizv-vwt
   - name: ops-docs
     description: |-
       Manage documentation for the Operate First Cloud offering. Ensure documentation is created
@@ -138,7 +144,7 @@ sigs:
     time: "10:30"
     tz: EST
     frequency: Monthly
-    url: meet.google.com/izf-xksf-mzd
+    url: https://meet.google.com/izf-xksf-mzd
     archive_url: https://docs.google.com/document/d/17ArlqKA_DE3ZDSTMRIblS9bxXDw777k8RtMFdJPFr9M/edit
   contact:
     mailing_list: community@lists.operate-first.cloud
@@ -262,7 +268,7 @@ workinggroups:
     time: "8:30"
     tz: EST
     frequency: Weekly
-    url: meet.google.com/....
+    url: https://meet.google.com/....
   contact: {}
 - dir: wg-workload-overview
   name: Workload Overview
