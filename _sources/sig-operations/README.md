@@ -18,7 +18,8 @@ However, you may track issues in key repos in the Operate-First github organizat
 The [charter](charter.md) defines the scope and governance of the Operations Special Interest Group.
 
 ## Meetings
-* SIG Operations meeting: [Tuesdays at 10:00 EST](meet.google.com/zfj-woub-xwp) (Bi-Weekly). [Convert to your timezone](http://www.thetimezoneconverter.com/?t=10:00&tz=EST).
+* Operations office hours: [Mon-Thus at 11:00 EST](https://meet.google.com/kxx-rkuo-jvt) (Daily). [Convert to your timezone](http://www.thetimezoneconverter.com/?t=11:00&tz=EST).
+* SIG Operations meeting: [Tuesdays at 10:00 EST](https://meet.google.com/zfj-woub-xwp) (Bi-Weekly). [Convert to your timezone](http://www.thetimezoneconverter.com/?t=10:00&tz=EST).
 
 ## Leadership
 
@@ -41,7 +42,7 @@ Day to day operations of all the clusters that are part of the Operate First Clo
 - **Owners:**
   - [operate-first/community/sig-operations/subprojects/cluster-ops](https://github.com/operate-first/community/blob/main/sig-operations/subprojects/cluster-ops/OWNERS)
 - **Meetings:**
-  - Cluster Ops meeting: [Mondays at 13:30 EST](meet.google.com/wxh-pizv-vwt) (Weekly). [Convert to your timezone](http://www.thetimezoneconverter.com/?t=13:30&tz=EST).
+  - Cluster Ops meeting: [Mondays at 13:30 EST](https://meet.google.com/wxh-pizv-vwt) (Weekly). [Convert to your timezone](http://www.thetimezoneconverter.com/?t=13:30&tz=EST).
 ### ops-docs
 Manage documentation for the Operate First Cloud offering. Ensure documentation is created
 and maintained in coordination with other Operate First sigs.
