@@ -361,11 +361,6 @@ title="Print to PDF"
     </a>
     <ul class="nav section-nav flex-column">
      <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#sig-changes">
-       SIG changes
-      </a>
-     </li>
-     <li class="toc-h3 nav-item toc-entry">
       <a class="reference internal nav-link" href="#reviewing-pull-requests-for-this-repository">
        Reviewing pull requests for this repository
       </a>
@@ -438,11 +433,6 @@ title="Print to PDF"
     </a>
     <ul class="nav section-nav flex-column">
      <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#sig-changes">
-       SIG changes
-      </a>
-     </li>
-     <li class="toc-h3 nav-item toc-entry">
       <a class="reference internal nav-link" href="#reviewing-pull-requests-for-this-repository">
        Reviewing pull requests for this repository
       </a>
@@ -502,10 +492,6 @@ This initiative is in the beginning stages (bootstrapping) of defining and perfo
 <section id="processes">
 <h2>Processes<a class="headerlink" href="#processes" title="Permalink to this headline">#</a></h2>
 <p>Until there is a Community Handbook to gather this content within, all of the processes for interacting with this repository and work around it are contained in this section, or held in the <code class="docutils literal notranslate"><span class="pre">contributing.md</span></code> file.</p>
-<section id="sig-changes">
-<h3>SIG changes<a class="headerlink" href="#sig-changes" title="Permalink to this headline">#</a></h3>
-<p>If you make changes to the <code class="docutils literal notranslate"><span class="pre">sigs.yaml</span></code> file, please make sure to run <code class="docutils literal notranslate"><span class="pre">podman</span> <span class="pre">run</span> <span class="pre">--rm</span> <span class="pre">--volume</span> <span class="pre">$(pwd):/workdir:Z</span> <span class="pre">quay.io/open-services-group/community-tooling:v0.1.0-dev</span></code> to create the resulting markdown files.</p>
-</section>
 <section id="reviewing-pull-requests-for-this-repository">
 <h3>Reviewing pull requests for this repository<a class="headerlink" href="#reviewing-pull-requests-for-this-repository" title="Permalink to this headline">#</a></h3>
 <p>All commits to this repository should use a <a class="reference external" href="https://github.com/operate-first/blueprint/blob/main/adr/0016-pr-review.md">pull request process</a> for most changes.

@@ -21,10 +21,6 @@ If you are interested in being involved in community projects and meetings make 
 
 Until there is a Community Handbook to gather this content within, all of the processes for interacting with this repository and work around it are contained in this section, or held in the `contributing.md` file.
 
-### SIG changes
-
-If you make changes to the `sigs.yaml` file, please make sure to run `podman run --rm --volume $(pwd):/workdir:Z quay.io/open-services-group/community-tooling:v0.1.0-dev` to create the resulting markdown files.
-
 ### Reviewing pull requests for this repository
 
 All commits to this repository should use a [pull request process](https://github.com/operate-first/blueprint/blob/main/adr/0016-pr-review.md) for most changes.

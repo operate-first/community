@@ -12,7 +12,7 @@ To understand how this file is generated, see https://git.k8s.io/community/gener
 
 Enhance the user experience of the operate-first.cloud website.
 ## Meetings
-* website meeting: [Tuesdays at 8:30 EST](https://meet.google.com/....) (Weekly). [Convert to your timezone](http://www.thetimezoneconverter.com/?t=8:30&tz=EST).
+* website meeting: [Tuesdays at 8:30 EST](meet.google.com/....) (Weekly). [Convert to your timezone](http://www.thetimezoneconverter.com/?t=8:30&tz=EST).
 
 ## Organizers
 

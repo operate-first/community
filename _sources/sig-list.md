@@ -35,9 +35,8 @@ When the need arises, a [new SIG can be created](sig-wg-lifecycle.md)
 | Name | Label | Chairs | Contact | Meetings |
 |------|-------|--------|---------|----------|
 |[Community](sig-community/README.md)|community|* [Karsten Wade](https://github.com/quaid), Red Hat<br>* [Thorsten Schwesig](https://github.com/schwesig), Red Hat<br>||* SIG Community meeting: [Thursdays at 18:00 UTC (weekly)](tbd)<br>
-|[Data Science](sig-data-science/README.md)|data-science|* [Michael Clifford](https://github.com/MichaelClifford), Red Hat<br>* [unknown](https://github.com/unknown), unknown<br>||* SIG Data Science meeting: [Wednesdays at 11:00 EST (Monthly)](tbd)<br>
-|[Operations](sig-operations/README.md)|operations|* [Humair Khan](https://github.com/HumairAK), Red Hat<br>* [Lars Kellogg-Stedman](https://github.com/larsks), Red Hat<br>||* Operations office hours: [Mon-Thus at 11:00 EST (Daily)](https://meet.google.com/kxx-rkuo-jvt)<br>* SIG Operations meeting: [Tuesdays at 10:00 EST (Bi-Weekly)](https://meet.google.com/zfj-woub-xwp)<br>* (cluster-ops) Cluster Ops meeting: [Mondays at 13:30 EST (Weekly)](https://meet.google.com/wxh-pizv-vwt)<br>
-|[Telemetry](sig-telemetry/README.md)|telemetry|* [Raja Sambasivan](https://github.com/RS1999ent), Tuft University<br>* [Marcel Hild](https://github.com/durandom), Red Hat<br>||* SIG Telemetry meeting: [Tuesadays at 10:30 EST (Monthly)](https://meet.google.com/izf-xksf-mzd)<br>
+|[Operations](sig-operations/README.md)|operations|* [Humair Khan](https://github.com/HumairAK), Red Hat<br>* [Lars Kellogg-Stedman](https://github.com/larsks), Red Hat<br>||* SIG Operations meeting: [Tuesdays at 10:00 EST (Bi-Weekly)](meet.google.com/zfj-woub-xwp)<br>* (cluster-ops) Cluster Ops meeting: [Mondays at 13:30 EST (Weekly)](meet.google.com/wxh-pizv-vwt)<br>
+|[Telemetry](sig-telemetry/README.md)|telemetry|* [Raja Sambasivan](https://github.com/RS1999ent), Tuft University<br>* [Marcel Hild](https://github.com/durandom), Red Hat<br>||* SIG Telemetry meeting: [Tuesadays at 10:30 EST (Monthly)](meet.google.com/izf-xksf-mzd)<br>
 ||||||
 ### Working Groups
 
@@ -47,7 +46,7 @@ When the need arises, a [new SIG can be created](sig-wg-lifecycle.md)
 |[Fybrik](wg-fybrik/README.md)||* [Flora Gilboa-Solomon](https://github.com/flora177), IBM<br>* [Alexey Roytman](https://github.com/roytman), IBM<br>|* Regular WG Meeting: [Wednesdays at 10:00 ET (East Time) (monthly - last Wed of the month)](https://meet.google.com/sku-akry-mfw)<br>
 |[Meetup Transfer](wg-meetup-transfer/README.md)||* [Aakanksha Duggal](https://github.com/aakankshaduggal), Red Hat<br>* [Michael Clifford](https://github.com/michaelclifford), Red Hat<br>* [Karsten Wade](https://github.com/quaid), Red Hat<br>|* Regular WG Meeting: [Wednesdays at 12:00 ET (East Time) (bi-weekly)](meet.google.com/ngp-npcx-nws)<br>
 |[Service Catalog and Interactions](wg-service-catalog-and-interactions/README.md)||* [Humair Khan](https://github.com/HumairAK), Red Hat<br>* [Tom Coufal](https://github.com/tumido), Red Hat<br>|* Regular WG Meeting: [Mondays at 14:00 UTC (bi-weekly)](https://meet.google.com/ywt-bxve-uvc)<br>
-|[Website](wg-website/README.md)||* [Karsten Wade](https://github.com/quaid), Red Hat<br>|* website meeting: [Tuesdays at 8:30 EST (Weekly)](https://meet.google.com/....)<br>
+|[Website](wg-website/README.md)||* [Karsten Wade](https://github.com/quaid), Red Hat<br>|* website meeting: [Tuesdays at 8:30 EST (Weekly)](meet.google.com/....)<br>
 |[Workload Overview](wg-workload-overview/README.md)||* [Anand Sanmukhani](https://github.com/4n4nd), Red Hat<br>|* Regular WG Meeting: [Thursdays at 11:30 ET (East Time) (weekly)](https://meet.google.com/gxk-pjcx-wno)<br>
 ||||||
 ### Committees
