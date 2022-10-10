@@ -8,24 +8,21 @@ approvers:
   - schwesig
 
 reviewers:
-  - hemajv
-  - durandom
-  - oindrillac
-  - tumido
+  - Gregory-Pereira
   - HumairAK
-  - 4n4nd
-  - harshad16
-  - hemajv
-  - goern
-  - HumairAK
-  - tumido
-  - larsks
-  - ipolonsk
-  - quaid
-  - schwesig
   - bryanmontalvan
   - coghlanRH
-  - Gregory-Pereira
+  - durandom
+  - goern
+  - harshad16
+  - hemajv
   - hpdempsey
+  - ipolonsk
+  - knikolla
+  - larsks
+  - oindrillac
+  - quaid
   - sallyom
+  - schwesig
   - stefwrite
+  - tumido
