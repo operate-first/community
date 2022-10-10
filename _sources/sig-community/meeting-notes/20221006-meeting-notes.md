@@ -1,9 +1,9 @@
 ## 2022-10-06 - every-other-week meeting
 
 ### Attendees
-- Karsten Wade @quaid 
-- Thorsten Schwesig @schwesig 
-- Kristi Nikolla @knikolla 
+- Karsten Wade @quaid
+- Thorsten Schwesig @schwesig
+- Kristi Nikolla @knikolla
 
 ### Agenda and Notes:
 1. Decision: Closing Contribex Docs WG, rolling remaining work up to the Community SIG
@@ -41,7 +41,7 @@
   * [ ] info to mailing list
   * [ ] close/ clean/ move repos, boards, issues, PRs
   * [ ] update .MDs
-  * [ ] update .YAMLs 
+  * [ ] update .YAMLs
 * [ ] Document the "closing of a working group"-process
 * [ ] @quaid to email mailing list about closing these WGs
 * [ ] @schwesig  to email community@lists.operate-first.cloud about docs sprint (week Oct 10th to 14th)
