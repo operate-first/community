@@ -51,5 +51,3 @@ Link coming soon:  https://operate-first.cloud/community/open-source-service
 **Q:** Is OpenShiftDedicated an implementation of operate first for OpenShift?
 
 **A:** To some extent yes. By opening up most of the configuration and tooling being used to run OSD there is a direct feedback loop to OCP. But it’s still missing out on opportunities for direct contributions since there is no second or Nth deployment of OSD and it’s supporting services.
-
-[link](https://iquaid.org)
