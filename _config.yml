@@ -1,6 +1,6 @@
 title: Operate First Community
 author: Operate First Authors
-logo: img/icon.png
+logo: https://www.operate-first.cloud/static/opf-logo-b2b74c6d556f96066bf5836da3e43d61.png
 execute:
   execute_notebooks: 'off'
 repository:
