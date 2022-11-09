@@ -1,8 +1,8 @@
 title: Operate First Community
 author: Operate First Authors
-logo: img/icon.png
+logo: img/logo.png
 execute:
-  execute_notebooks: 'off'
+  execute_notebooks: "off"
 repository:
   url: https://github.com/operate-first/community
   path_to_book: .
