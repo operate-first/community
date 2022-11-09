@@ -3,9 +3,11 @@ root: README.md
 parts:
   - caption: General
     chapters:
+    - file: four-principles.md
     - file: glossary.md
     - file: governance.md
     - file: open-source-services.md
+    - file: social-media-guide.md
   - caption: SIGs
     chapters:
     - file: sig-list.md
