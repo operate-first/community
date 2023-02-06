@@ -1205,7 +1205,7 @@ Name: cntrb_internal, dtype: int64
 <span class="n">repo_query</span> <span class="o">=</span> <span class="n">salc</span><span class="o">.</span><span class="n">sql</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;&quot;&quot;</span>
 <span class="s2">             SET SCHEMA &#39;augur_data&#39;;</span>
 <span class="s2">             SELECT * FROM issues</span>
-<span class="s2">             WHERE repo_id IN </span><span class="si">{</span><span class="nb">tuple</span><span class="p">(</span><span class="n">repo_id_list</span><span class="p">)</span><span class="si">}</span><span class="s2"></span>
+<span class="s2">             WHERE repo_id IN </span><span class="si">{</span><span class="nb">tuple</span><span class="p">(</span><span class="n">repo_id_list</span><span class="p">)</span><span class="si">}</span>
 <span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
 
 <span class="n">issues</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_sql</span><span class="p">(</span><span class="n">repo_query</span><span class="p">,</span> <span class="n">con</span><span class="o">=</span><span class="n">engine</span><span class="p">)</span>
@@ -1539,7 +1539,7 @@ Name: cntrb_internal, dtype: int64
 <span class="n">repo_query</span> <span class="o">=</span> <span class="n">salc</span><span class="o">.</span><span class="n">sql</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;&quot;&quot;</span>
 <span class="s2">             SET SCHEMA &#39;augur_data&#39;;</span>
 <span class="s2">             SELECT * FROM pull_requests</span>
-<span class="s2">             WHERE repo_id IN </span><span class="si">{</span><span class="nb">tuple</span><span class="p">(</span><span class="n">repo_id_list</span><span class="p">)</span><span class="si">}</span><span class="s2"></span>
+<span class="s2">             WHERE repo_id IN </span><span class="si">{</span><span class="nb">tuple</span><span class="p">(</span><span class="n">repo_id_list</span><span class="p">)</span><span class="si">}</span>
 <span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
 
 <span class="n">pr</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_sql</span><span class="p">(</span><span class="n">repo_query</span><span class="p">,</span> <span class="n">con</span><span class="o">=</span><span class="n">engine</span><span class="p">)</span>
