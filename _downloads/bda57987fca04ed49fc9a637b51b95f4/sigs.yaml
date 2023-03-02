@@ -1,0 +1,295 @@
+sigs:
+- dir: sig-community
+  name: Community
+  mission_statement: >
+    The SIG's mission is to care about all aspects of the user and contributor community
+    around the Operate First (Op1st) project.
+
+  charter_link: charter.md
+  label: community
+  leadership:
+    chairs:
+    - github: quaid
+      name: Karsten Wade
+      company: Red Hat
+    - github: schwesig
+      name: Thorsten Schwesig
+      company: Red Hat
+  meetings:
+  - description: SIG Community meeting
+    day: Thursday
+    time: "18:00"
+    tz: UTC
+    frequency: weekly
+    url: tbd
+  contact:
+    slack: https://operatefirst.slack.com/archives/C01RT0S2WKX
+    mailing_list: community@lists.operate-first.cloud
+  subprojects:
+  - name: example
+    owners:
+    - https://raw.githubusercontent.com/operate-first/community/main/OWNERS
+- dir: sig-data-science
+  name: Data Science
+  mission_statement: >
+    The Data Science SIG is responsible for all data science and machine learning
+    related initiatives within the Operate First community.
+
+  charter_link: charter.md
+  label: data-science
+  leadership:
+    chairs:
+    - github: MichaelClifford
+      name: Michael Clifford
+      company: Red Hat
+    - github: unknown
+      name: unknown
+      company: unknown
+  meetings:
+  - description: SIG Data Science meeting
+    day: Wednesday
+    time: "11:00"
+    tz: EST
+    frequency: Monthly
+    url: tbd
+    archive_url: tbd
+  contact:
+    mailing_list: community@lists.operate-first.cloud
+  subprojects:
+  - name: example
+    owners:
+    - https://raw.githubusercontent.com/operate-first/community/main/OWNERS
+- dir: sig-operations
+  name: Operations
+  mission_statement: >
+    The goal of this SIG is to enable management and operations for hardware and platform
+    tooling within the Operate First Community Cloud (op1st).
+
+    Meeting Agenda docs can be found [here](https://docs.google.com/document/d/1uEcLGP_sBSNwTLPOo_2Nu6oTqPytOTBt0c0_pVUQJwo/edit).
+    See below for meeting details. Anyone can suggest new agenda items for the next
+    meeting.
+
+    Sig Operations does not have a single project board to track all on going work
+    as the scope is fairly broad.
+
+    However, you may track issues in key repos in the Operate-First github organization.
+    These repos are: [apps](https://github.com/operate-first/apps/issues), [operations](https://github.com/operate-first/operations/issues),
+    [support](https://github.com/operate-first/support/issues), [common](https://github.com/operate-first/common/issues),
+    [opfcli](https://github.com/operate-first/opfcli)
+
+  charter_link: charter.md
+  label: operations
+  leadership:
+    chairs:
+    - github: HumairAK
+      name: Humair Khan
+      company: Red Hat
+    - github: larsks
+      name: Lars Kellogg-Stedman
+      company: Red Hat
+  meetings:
+  - description: Operations office hours
+    day: Mon-Thu
+    time: "11:00"
+    tz: EST
+    frequency: Daily
+    url: https://meet.google.com/kxx-rkuo-jvt
+  - description: SIG Operations meeting
+    day: Tuesday
+    time: "10:00"
+    tz: EST
+    frequency: Bi-Weekly
+    url: https://meet.google.com/zfj-woub-xwp
+  contact:
+    slack: sig-operations
+    mailing_list: community@lists.operate-first.cloud
+  subprojects:
+  - name: cluster-ops
+    description: Day to day operations of all the clusters that are part of the Operate
+      First Cloud Offering.
+    owners:
+    - https://raw.githubusercontent.com/operate-first/community/main/sig-operations/subprojects/cluster-ops/OWNERS
+    meetings:
+    - description: Cluster Ops meeting
+      day: Monday
+      time: "13:30"
+      tz: EST
+      frequency: Weekly
+      url: https://meet.google.com/wxh-pizv-vwt
+  - name: ops-docs
+    description: |-
+      Manage documentation for the Operate First Cloud offering. Ensure documentation is created
+      and maintained in coordination with other Operate First sigs.
+    owners:
+    - https://raw.githubusercontent.com/operate-first/community/main/sig-operations/subprojects/ops-docs/OWNERS
+- dir: sig-telemetry
+  name: Telemetry
+  mission_statement: >
+    The SIG's mission is to foster discussion and research problem statements around
+    operational telemetry
+
+  charter_link: charter.md
+  label: telemetry
+  leadership:
+    chairs:
+    - github: RS1999ent
+      name: Raja Sambasivan
+      company: Tuft University
+    - github: durandom
+      name: Marcel Hild
+      company: Red Hat
+  meetings:
+  - description: SIG Telemetry meeting
+    day: Tuesaday
+    time: "10:30"
+    tz: EST
+    frequency: Monthly
+    url: https://meet.google.com/izf-xksf-mzd
+    archive_url: https://docs.google.com/document/d/17ArlqKA_DE3ZDSTMRIblS9bxXDw777k8RtMFdJPFr9M/edit
+  contact:
+    mailing_list: community@lists.operate-first.cloud
+  subprojects:
+  - name: example
+    owners:
+    - https://raw.githubusercontent.com/operate-first/community/main/OWNERS
+workinggroups:
+- dir: wg-documentation
+  name: Documentation
+  mission_statement: >
+    Define the different kinds of documentation needed for new contributors of all
+    kinds, analyze what we have and find a home for it. Training Path & Operation
+    Docs & Community Handbook
+
+  label: documentation
+  leadership:
+    chairs:
+    - github: sallyom
+      name: Sally O'Malley
+      company: Red Hat
+    - github: stefwrite
+      name: Stephanie E. Watson
+      company: Red Hat
+  meetings:
+  - description: Regular WG Meeting
+    day: Wednesday
+    time: "10:00"
+    tz: ET (East Time)
+    frequency: weekly
+    url: https://meet.google.com/...
+    archive_url: https://docs.google.com/document/d/...
+  contact: {}
+- dir: wg-fybrik
+  name: Fybrik
+  mission_statement: >
+    The goal of this working group is to implement Fybrik.io running on Operate First
+    and work with other projects to use and implement it.
+
+  label: fybrik
+  leadership:
+    chairs:
+    - github: flora177
+      name: Flora Gilboa-Solomon
+      company: IBM
+    - github: roytman
+      name: Alexey Roytman
+      company: IBM
+  meetings:
+  - description: Regular WG Meeting
+    day: Wednesday
+    time: "10:00"
+    tz: ET (East Time)
+    frequency: monthly - last Wed of the month
+    url: https://meet.google.com/sku-akry-mfw
+    archive_url: https://docs.google.com/document/d/18t390IUtTr8LXccT1NWMCoZNbDDd8B030vQeHHMmCbo/edit
+  contact: {}
+- dir: wg-meetup-transfer
+  name: Meetup Transfer
+  mission_statement: >
+    The goal of this working group is to manage the smooth and successful transfer
+    of the assets and processes for running the Operate First Data Science Community
+    Meetup from the Open Services Group to the Operate First organization.
+
+  charter_link: charter.md
+  label: meetup-transfer
+  leadership:
+    chairs:
+    - github: aakankshaduggal
+      name: Aakanksha Duggal
+      company: Red Hat
+    - github: michaelclifford
+      name: Michael Clifford
+      company: Red Hat
+    - github: quaid
+      name: Karsten Wade
+      company: Red Hat
+  meetings:
+  - description: Regular WG Meeting
+    day: Wednesday
+    time: "12:00"
+    tz: ET (East Time)
+    frequency: bi-weekly
+    url: meet.google.com/ngp-npcx-nws
+  contact: {}
+- dir: wg-service-catalog-and-interactions
+  name: Service Catalog and Interactions
+  mission_statement: >-
+    Make service discovery and cloud management interactions easier
+  charter_link: charter.md
+  label: service-catalog-and-interactions
+  leadership:
+    chairs:
+    - github: HumairAK
+      name: Humair Khan
+      company: Red Hat
+    - github: tumido
+      name: Tom Coufal
+      company: Red Hat
+  meetings:
+  - description: Regular WG Meeting
+    day: Monday
+    time: "14:00"
+    tz: UTC
+    frequency: bi-weekly
+    url: https://meet.google.com/ywt-bxve-uvc
+  contact: {}
+- dir: wg-website
+  name: Website
+  mission_statement: >-
+    Enhance the user experience of the operate-first.cloud website.
+  label: website
+  leadership:
+    chairs:
+    - github: quaid
+      name: Karsten Wade
+      company: Red Hat
+  meetings:
+  - description: website meeting
+    day: Tuesday
+    time: "8:30"
+    tz: EST
+    frequency: Weekly
+    url: https://meet.google.com/....
+  contact: {}
+- dir: wg-workload-overview
+  name: Workload Overview
+  mission_statement: >
+    The goal of this working group is to create a dashboard that shows an overview
+    of the workloads running on Operate First.
+
+  charter_link: charter.md
+  label: workload-overview
+  leadership:
+    chairs:
+    - github: 4n4nd
+      name: Anand Sanmukhani
+      company: Red Hat
+  meetings:
+  - description: Regular WG Meeting
+    day: Thursday
+    time: "11:30"
+    tz: ET (East Time)
+    frequency: weekly
+    url: https://meet.google.com/gxk-pjcx-wno
+  contact: {}
+usergroups: []
+committees: []
