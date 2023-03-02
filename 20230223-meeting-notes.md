@@ -1,10 +1,10 @@
-NOTE: Calendar entry is now changed to hold this meeting weekly; last week we forgot to hold the meeting because we hadn't changed the calendar invite.
+## 2023-02-23
 
 ### Attendees
 - Karsten Wade @quaid 
+- Bill Burns @billburnseh
 
 ### Agenda and Notes:
-1. Finish updating project board **DONE**
 1. Longer existing items
     1. Centralizing SIG Community as the main meeting to get Op1st things done and talked about
     1. Removing the stale/rotten watch by Sesheta on the SIG Community project board (to enable long-running tickets)
