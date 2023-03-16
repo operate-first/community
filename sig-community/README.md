@@ -15,7 +15,17 @@ The SIG's mission is to care about all aspects of the user and contributor commu
 The [charter](charter.md) defines the scope and governance of the Community Special Interest Group.
 
 ## Meetings
-* SIG Community meeting: [Thursdays at 18:00 UTC](tbd) (weekly). [Convert to your timezone](http://www.thetimezoneconverter.com/?t=18:00&tz=UTC).
+SIG Community meeting is every Thursday at 18:00 UTC (weekly). [Convert to your timezone](http://www.thetimezoneconverter.com/?t=18:00&tz=UTC).
+
+Video call link: https://meet.google.com/hkg-ufcs-vez
+
+Or dial: ‪(US) +1 636-324-2589‬ PIN: ‪405 842 473‬#
+
+More phone numbers: https://tel.meet/hkg-ufcs-vez?pin=7721650385992
+
+Or join via SIP: sip:7721650385992@gmeet.redhat.com
+
+This and other Operate First community meetings are listed on [this calendar](https://calendar.google.com/calendar/embed?src=operate.first.community%40gmail.com)
 
 ## Leadership
 
