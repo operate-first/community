@@ -8,6 +8,7 @@ parts:
     - file: governance.md
     - file: open-source-services.md
     - file: social-media-guide.md
+    - file: community-cloud-faq.md
   - caption: SIGs
     chapters:
     - file: sig-list.md
