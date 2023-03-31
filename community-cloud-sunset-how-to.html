@@ -343,7 +343,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -359,6 +361,15 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rosa">ROSA</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#nerc">NERC</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -370,6 +381,28 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="operate-first-community-cloud-sunset-how-to-notes">
 <h1>Operate First community cloud sunset how-to notes<a class="headerlink" href="#operate-first-community-cloud-sunset-how-to-notes" title="Permalink to this heading">#</a></h1>
+<section id="rosa">
+<h2>ROSA<a class="headerlink" href="#rosa" title="Permalink to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>Obtain an AWS account, connected to a credit card for billing or provided with AWS cloud credits for Open Source projects.
+You will need an AWS key to connect your OpenShift instance to.</p></li>
+<li><p>File a <a class="reference external" href="https://github.com/operate-first/community/issues/new?assignees=quaid%2C+cooktheryan&amp;labels=area%2Fcommunity%2C+kind%2Fdocumentation%2C+kind%2Fonboarding&amp;template=project-intake-or-migration-request.md&amp;title=Project+Name+%28Intake%7CMigration%29+request">migration issue here</a>. Tech lead Ryan Cook or a member of his team will work with you to use the no-cost ROSA tier being offered for these projects.</p></li>
+</ol>
+</section>
+<section id="nerc">
+<h2>NERC<a class="headerlink" href="#nerc" title="Permalink to this heading">#</a></h2>
+<p><strong>Note: This is not a free-for-all offering, you must be associated with a participating institution for easier connection.</strong>
+If you are not in a participating institution but are interested in the NERC, we will need to have a direct conversation about how to do that.
+You can open a ticket with this question <a class="reference external" href="https://github.com/operate-first/community/issues/new">here</a>.</p>
+<p>Refer to the NERC <a class="reference external" href="https://nerc.mghpcc.org/user-guides/">user guides</a> for the <a class="reference external" href="https://nerc-project.github.io/nerc-docs/get-started/user-onboarding-on-NERC/">User Onboarding Process Overview</a> that explains the process and roles involved.
+The <a class="reference external" href="https://nerc-project.github.io/nerc-docs/get-started/create-a-user-portal-account/">User Account Types</a> document explains roles and getting an account.</p>
+<ol class="arabic simple">
+<li><p><a class="reference external" href="https://regapp.mss.mghpcc.org/">Request a NERC account</a>, picking the <strong>General User</strong>* account type.</p></li>
+<li><p>File a <a class="reference external" href="https://github.com/operate-first/community/issues/new?assignees=quaid%2C+cooktheryan&amp;labels=area%2Fcommunity%2C+kind%2Fdocumentation%2C+kind%2Fonboarding&amp;template=project-intake-or-migration-request.md&amp;title=Project+Name+%28Intake%7CMigration%29+request">migration issue here</a>.</p></li>
+<li><p>You will be put in contact with Red Hat’s primary lead for intaking projects to NERC, who will perform a standard interview and NERC intake process for you.</p></li>
+<li><p>If you discover in this process there is a service needed that is not yet available, we’ll work with you to look for solutions.</p></li>
+</ol>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -412,6 +445,21 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rosa">ROSA</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#nerc">NERC</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
