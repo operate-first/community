@@ -9,6 +9,7 @@ parts:
     - file: open-source-services.md
     - file: social-media-guide.md
     - file: community-cloud-faq.md
+    - file: community-cloud-sunset-how-to.md
   - caption: SIGs
     chapters:
     - file: sig-list.md
