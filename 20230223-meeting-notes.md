@@ -1,7 +1,7 @@
 ## 2023-02-23
 
 ### Attendees
-- Karsten Wade @quaid 
+- Karsten Wade @quaid
 - Bill Burns @billburnseh
 
 ### Agenda and Notes:
@@ -20,7 +20,7 @@
         1. "Back to the lab"
         1. What does it really mean to be a community of practice?
             1. E.g. Can we work with Ansible and Project Wisdom to create a library of draft playbooks for a CoP to peer review?
-            1. 
+            1.
     1. SIG-SRE plan - https://github.com/operate-first/community/issues/238
     1. Status of all projects
     1. Working with Janus-idp - https://github.com/operate-first/community/issues/240
