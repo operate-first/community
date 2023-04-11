@@ -17,7 +17,6 @@ Operate First Community of Practice: the community that practices operating firs
 
 An Operate First Community Production Cloud: an environment in which you can operate first
 
-
 **Vision or motivation**
 
 // description of Operate First motivation and its impacts on developers, operators, and final product
@@ -67,9 +66,10 @@ Hear from the experience of an Operate First member on how our method ultimately
 **Get Involved**
 
 // describe and link various ways to get connected
-*   slack
-*   mailing lists
-    *   general mailing list ([Operate-first Info Page](https://listman.redhat.com/mailman/listinfo/operate-first))
-    *   MOC’s operate first mailing list ([Operate-first-users Info Page](https://mail.massopen.cloud/mailman/listinfo/operate-first-users))
-    *   open infra labs mailing list ([Openinfralabs Info Page](http://lists.opendev.org/cgi-bin/mailman/listinfo/openinfralabs))
-*   github links for operate first, open infra labs, anything else useful
+
+- slack
+- mailing lists
+  - general mailing list ([Operate-first Info Page](https://listman.redhat.com/mailman/listinfo/operate-first))
+  - MOC’s operate first mailing list ([Operate-first-users Info Page](https://mail.massopen.cloud/mailman/listinfo/operate-first-users))
+  - open infra labs mailing list ([Openinfralabs Info Page](http://lists.opendev.org/cgi-bin/mailman/listinfo/openinfralabs))
+- github links for operate first, open infra labs, anything else useful

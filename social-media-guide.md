@@ -2,12 +2,13 @@
 
 We aim to create content that encourages interaction, participation, and conversation.
 When posting to social media under Operate First, be sure to:
-* Ensure content is accurate
-* Proofread the post carefully
-* Provide links to related pages or resources
-* Verify that your links work
-* Request review on the content and gain approval before posting
-* Adhere to the Red Hat [Social Media Guidelines][1] and [Style Guide][2]
+
+- Ensure content is accurate
+- Proofread the post carefully
+- Provide links to related pages or resources
+- Verify that your links work
+- Request review on the content and gain approval before posting
+- Adhere to the Red Hat [Social Media Guidelines][1] and [Style Guide][2]
 
 ## General goals
 
@@ -21,19 +22,22 @@ When posting to social media under Operate First, be sure to:
 A variety of metrics can be used to measure the effectiveness of social media efforts for Operate First.
 
 #### Universal
-* Website traffic from social media
-* Likes
-* Comments
-* Posting cadence
+
+- Website traffic from social media
+- Likes
+- Comments
+- Posting cadence
 
 #### Twitter
-* Followers
-* Mentions
-* Retweets
+
+- Followers
+- Mentions
+- Retweets
 
 #### Youtube
-* Subscribers
-* Views
+
+- Subscribers
+- Views
 
 ## Twitter guidance
 
@@ -65,16 +69,17 @@ Additionally, provide a way of contacting the creator(s) or other Operate First 
 
 #### Description template
 
->In this video, we will ...
+> In this video, we will ...
 >
->Related links:
-> * Any specific repos, pages, guides or tutorials, etc
-> * [Operate First Website][5]
-> * [Operate First GitHub organization][6]
+> Related links:
 >
->Questions? Contact us in [slack][7] or leave a comment on this video!
+> - Any specific repos, pages, guides or tutorials, etc
+> - [Operate First Website][5]
+> - [Operate First GitHub organization][6]
 >
->Subscribe down below, and check us out on [Twitter][3] to keep up with all things Operate First.
+> Questions? Contact us in [slack][7] or leave a comment on this video!
+>
+> Subscribe down below, and check us out on [Twitter][3] to keep up with all things Operate First.
 
 ### Audience
 
