@@ -1,0 +1,773 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Operate-First: SIG/SRE Infrastructure Services &#8212; Operate First Community</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'sig-sre/proposal-infra-services';</script>
+    <link rel="shortcut icon" href="../_static/favicon.png"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="../README.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../README.html">
+                    Operate First community planning repository
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">General</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../glossary.html">Operate First Glossary</a></li>
+
+
+<li class="toctree-l1"><a class="reference internal" href="../governance.html">Operate First Community Governance 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../open-source-services.html">Minimum Open Source Requirements for Services</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../social-media-guide.html">Social media guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../community-cloud-faq.html">Operate First community cloud FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../community-cloud-sunset-how-to.html">Operate First community cloud sunset how-to notes</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">SIGs</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../sig-list.html">Special Interest Groups</a></li>
+
+
+<li class="toctree-l1"><a class="reference internal" href="../liaisons.html">Liaisons</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../sig-community/charter.html">SIG Community</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../sig-operations/charter.html">SIG Operations</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/operate-first/community" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/operate-first/community/issues/new?title=Issue%20on%20page%20%2Fsig-sre/proposal-infra-services.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/sig-sre/proposal-infra-services.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Operate-First: SIG/SRE Infrastructure Services</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">Introduction</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-operate-first-infrastructure-cluster-advantage">The Operate-First Infrastructure Cluster Advantage</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#seamless-collaboration">Seamless Collaboration</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#openly-operated-infrastructure-services">Openly-Operated Infrastructure Services</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#flexible-service-level-expectations-sles">Flexible Service Level Expectations (SLEs)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#scalable-and-reliable-performance">Scalable and Reliable Performance</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#community-driven-innovation">Community-Driven Innovation</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusion">Conclusion</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operate-first-sig-sre-infrastructure-services-itil-like-overview">Operate-First SIG/SRE Infrastructure Services - ITIL-like Overview</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#empowering-operate-first-sig-sre-infra-with-github-app-prow-tekton-and-argocd">Empowering Operate-First SIG/SRE Infra with GitHub App, Prow, Tekton, and ArgoCD</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Introduction</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#github-app-for-source-code-maintenance">GitHub App for Source Code Maintenance</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#prow-for-ci-cd-jobs">Prow for CI/CD Jobs</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tekton-for-ci-cd-pipelines">Tekton for CI/CD Pipelines</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#argocd-for-continuous-delivery-cd">ArgoCD for Continuous Delivery (CD)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#backstage-unsure-maybe-phase2">Backstage (unsure, maybe phase2??)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Conclusion</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#service-level-agreement-for-operate-first-sig-sre-infrastructure-services">Service Level Agreement for Operate-First SIG/SRE Infrastructure Services</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#service-level-expectations-sles">Service Level Expectations (SLEs)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#availability-and-uptime">Availability and Uptime</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#support-and-response-time">Support and Response Time</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#service-level-objectives-slos">Service Level Objectives (SLOs)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#maintenance-and-updates">Maintenance and Updates</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Conclusion</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#project-request-deploying-openshift-and-sig-sre-infrastructure-services-components">Project Request: Deploying OpenShift and SIG/SRE Infrastructure Services’ Components</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#project-purpose">Project Purpose</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#key-project-goals">Key Project Goals</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sizing-considerations">Sizing Considerations</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="operate-first-sig-sre-infrastructure-services">
+<h1>Operate-First: SIG/SRE Infrastructure Services<a class="headerlink" href="#operate-first-sig-sre-infrastructure-services" title="Permalink to this heading">#</a></h1>
+<section id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading">#</a></h2>
+<p>Are you an Open Source developer or organization looking to revolutionize the way you develop, operate, and manage your software? Look no further! Our OperateFirst SIG/SRE Infrastructure Cluster offers a unique approach that enhances collaboration, streamlines operations, and drives innovation. Discover how adopting Operate-First principles can empower your team and take your projects to new heights.</p>
+<p>SIG/SRE, the Special Interest Group (SIG) for Site Reliability Engineering (SRE) in the Operate First project focuses on a core part of the Operate First goal to improve managed services by fully Opening all aspects of the cloud environment. In particular, we focus on observability, managing fleets, incident response, operability, and similar core disciplines.</p>
+</section>
+<section id="the-operate-first-infrastructure-cluster-advantage">
+<h2>The Operate-First Infrastructure Cluster Advantage<a class="headerlink" href="#the-operate-first-infrastructure-cluster-advantage" title="Permalink to this heading">#</a></h2>
+<section id="seamless-collaboration">
+<h3>Seamless Collaboration<a class="headerlink" href="#seamless-collaboration" title="Permalink to this heading">#</a></h3>
+<p>By providing an Open Source-based service deployment, the Operate-First Infrastructure Cluster (OFIC | Op1stIC) encourages collaboration between developers, operators, SREs, and other Open Source practitioners. This ecosystem promotes the sharing of knowledge, best practices, and innovation, leading a to a more robust and efficient development process.</p>
+</section>
+<section id="openly-operated-infrastructure-services">
+<h3>Openly-Operated Infrastructure Services<a class="headerlink" href="#openly-operated-infrastructure-services" title="Permalink to this heading">#</a></h3>
+<p>Our infrastructure services are designed to be transparent and accessible, fostering a learning-while-in-production environment. Developers can gain valuable insights into operational considerations for their projects, enabling them to fine-tune their code and more easily contribute to a continuously improving infrastructure.</p>
+</section>
+<section id="flexible-service-level-expectations-sles">
+<h3>Flexible Service Level Expectations (SLEs)<a class="headerlink" href="#flexible-service-level-expectations-sles" title="Permalink to this heading">#</a></h3>
+<p>The Operate-First Infrastructure Cluster allows app teams to adapt the service level expectations according to their needs. Whether you need a higher uptime or customized support, our community-driven approach ensures that your team gets the desired level of service.</p>
+</section>
+<section id="scalable-and-reliable-performance">
+<h3>Scalable and Reliable Performance<a class="headerlink" href="#scalable-and-reliable-performance" title="Permalink to this heading">#</a></h3>
+<p>Our infrastructure cluster is built to scale as your projects grow. Developers and operators work hand-in-hand to maintain and optimize the SIG/SRE Infrastructure Services (CIS), delivering the performance and reliability you need for your projects.</p>
+</section>
+<section id="community-driven-innovation">
+<h3>Community-Driven Innovation<a class="headerlink" href="#community-driven-innovation" title="Permalink to this heading">#</a></h3>
+<p>By participating in the Operate-First community, your team will have access to a network of Open Source professionals, each contributing their unique expertise and perspective. This collective intelligence fuels innovation and accelerates problem-solving.</p>
+</section>
+</section>
+<section id="conclusion">
+<h2>Conclusion<a class="headerlink" href="#conclusion" title="Permalink to this heading">#</a></h2>
+<p>Embrace the future of Open Source development by joining the Operate-First Infrastructure Cluster. Experience unparalleled collaboration, openly-operated infrastructure services, and a scalable, reliable platform that evolves with your needs. Don’t miss the opportunity to be at the forefront of the Open Operations movement. Adopt the Operate-First principles and revolutionize the way you develop and manage your software today!</p>
+</section>
+<section id="operate-first-sig-sre-infrastructure-services-itil-like-overview">
+<h2>Operate-First SIG/SRE Infrastructure Services - ITIL-like Overview<a class="headerlink" href="#operate-first-sig-sre-infrastructure-services-itil-like-overview" title="Permalink to this heading">#</a></h2>
+<p>The following table presents an ITIL-like overview of the Operate-First SIG/SRE Infrastructure Services, highlighting the key aspects of service strategy, service design, service transition, service operation, and continual service improvement.</p>
+<table>
+  <tr>
+   <td><strong>ITIL Phase </strong>
+   </td>
+   <td><strong>Description</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>Service Strategy
+   </td>
+   <td>
+<ul>
+<li>Establish a community-driven approach to infrastructure management
+<li>Align infrastructure services with the needs and expectations of the community
+<li>Encourage collaboration and knowledge sharing between developers, operators, SREs, and other Open Source practitioners
+</li>
+</ul>
+   </td>
+  </tr>
+  <tr>
+   <td>Service Design
+   </td>
+   <td>
+<ul>
+<li>Utilize GitHub App for source code maintenance, issue tracking, and project management
+<li>Implement Prow for CI/CD jobs and Tekton for CI/CD pipelines&lt;br>- Use ArgoCD for continuous delivery
+<li>Establish service level expectations (SLEs) based on community needs and contribution
+<li>Ensure scalability and reliability of the infrastructure services
+</li>
+</ul>
+   </td>
+  </tr>
+  <tr>
+   <td>Service Transition
+   </td>
+   <td>
+<ul>
+<li>Onboard new projects and applications through a streamlined process
+<li>Utilize GitHub and Slack for seamless communication and collaboration
+<li>Continuously integrate, test, and deploy code changes using Prow, Tekton, and ArgoCD
+<li>Encourage documentation and knowledge transfer during transitions
+</li>
+</ul>
+   </td>
+  </tr>
+  <tr>
+   <td>Service Operation
+   </td>
+   <td>
+<ul>
+<li>Monitor and maintain the infrastructure services using community-driven efforts
+<li>Address issues and incidents through collaborative problem-solving
+<li>Utilize Slack channels for real-time communication and support
+<li>Ensure ongoing collaboration between app teams and operators to meet service level objectives (SLOs)
+</li>
+</ul>
+   </td>
+  </tr>
+  <tr>
+   <td>Continual Service Improvement
+   </td>
+   <td>
+<ul>
+<li>Regularly assess and adapt service level expectations (SLEs) and objectives (SLOs)
+<li>Encourage feedback from community members on infrastructure services
+<li> Learn from operational experiences and apply improvements to the infrastructure
+<li>Share best practices, documentation, and lessons learned with the community
+</li>
+</ul>
+   </td>
+  </tr>
+</table>
+<p>By adopting an ITIL-like approach, the Operate-First SIG/SRE Infrastructure Services ensures a structured, organized, and efficient management of the infrastructure services. This promotes collaboration, innovation, and continuous improvement within the community-driven cloud environment.</p>
+</section>
+<section id="empowering-operate-first-sig-sre-infra-with-github-app-prow-tekton-and-argocd">
+<h2>Empowering Operate-First SIG/SRE Infra with GitHub App, Prow, Tekton, and ArgoCD<a class="headerlink" href="#empowering-operate-first-sig-sre-infra-with-github-app-prow-tekton-and-argocd" title="Permalink to this heading">#</a></h2>
+<section id="id1">
+<h3>Introduction<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h3>
+<p>The Operate-First SIG/SRE Infrastructure Services (Infra) is committed to providing a robust and efficient development environment. To achieve this, the community incorporates various tools designed to streamline the development process and enhance collaboration. These tools include the GitHub App for source code maintenance, Prow for CI/CD jobs, Tekton for CI/CD pipelines, and ArgoCD for continuous delivery.</p>
+</section>
+<section id="github-app-for-source-code-maintenance">
+<h3>GitHub App for Source Code Maintenance<a class="headerlink" href="#github-app-for-source-code-maintenance" title="Permalink to this heading">#</a></h3>
+<p>The GitHub App is an essential component of the Operate-First SIG/SRE Infrastructure Services, providing a central platform for managing code repositories, issue tracking, and project management. With the GitHub App, developers can:</p>
+<ul class="simple">
+<li><p>Collaborate on code changes through pull requests</p></li>
+<li><p>Track revisions with version control</p></li>
+<li><p>Utilize issue tracking for bug reporting and feature requests</p></li>
+<li><p>Create and maintain documentation</p></li>
+</ul>
+</section>
+<section id="prow-for-ci-cd-jobs">
+<h3>Prow for CI/CD Jobs<a class="headerlink" href="#prow-for-ci-cd-jobs" title="Permalink to this heading">#</a></h3>
+<p>Prow, a Kubernetes-native CI/CD system, is used for managing CI/CD jobs within the Operate-First SIG/SRE Infra. Prow offers several benefits, including</p>
+<ul class="simple">
+<li><p>Seamless integration with GitHub, providing automatic triggering of jobs upon events such as pull requests and merges</p></li>
+<li><p>Scalable and extensible architecture that can handle a wide range of tasks</p></li>
+<li><p>Support for Kubernetes-native plugins and custom plugins</p></li>
+<li><p>Automation of tasks like code review, issue management, and testing</p></li>
+</ul>
+</section>
+<section id="tekton-for-ci-cd-pipelines">
+<h3>Tekton for CI/CD Pipelines<a class="headerlink" href="#tekton-for-ci-cd-pipelines" title="Permalink to this heading">#</a></h3>
+<p>Tekton is a Kubernetes-native framework for creating and managing CI/CD pipelines. In the Operate-First SIG/SRE Infra, Tekton plays a critical role in streamlining the development process, offering:</p>
+<ul class="simple">
+<li><p>Customizable and reusable pipelines that automate build, test, and deployment processes</p></li>
+<li><p>Integration with various tools and platforms, including GitHub and Prow</p></li>
+<li><p>Enhanced collaboration through shared pipeline components and tasks</p></li>
+<li><p>A cloud-native and scalable solution for managing CI/CD workflows</p></li>
+</ul>
+</section>
+<section id="argocd-for-continuous-delivery-cd">
+<h3>ArgoCD for Continuous Delivery (CD)<a class="headerlink" href="#argocd-for-continuous-delivery-cd" title="Permalink to this heading">#</a></h3>
+<p>ArgoCD is a declarative, Kubernetes-native continuous delivery tool that automates the deployment and management of applications. Within the Operate-First SIG/SRE Infra, ArgoCD offers:</p>
+<ul class="simple">
+<li><p>Simplified application deployment through GitOps, ensuring consistency across environments</p></li>
+<li><p>Support for Kubernetes-native manifests and Helm, Kustomize, and other templating systems</p></li>
+<li><p>Real-time monitoring and automatic synchronization of application states</p></li>
+<li><p>Role-Based Access Control (RBAC) for secure and controlled application management</p></li>
+</ul>
+</section>
+<section id="backstage-unsure-maybe-phase2">
+<h3>Backstage (unsure, maybe phase2??)<a class="headerlink" href="#backstage-unsure-maybe-phase2" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="id2">
+<h3>Conclusion<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h3>
+<p>By leveraging the GitHub App, Prow, Tekton, and ArgoCD, the Operate-First SIG/SRE Infrastructure Services (Infra) creates an efficient and collaborative development ecosystem. These tools enable developers to maintain source code, manage CI/CD jobs and pipelines, and automate continuous delivery, ultimately driving innovation and enhancing the quality of Open Source projects.</p>
+</section>
+</section>
+<section id="service-level-agreement-for-operate-first-sig-sre-infrastructure-services">
+<h2>Service Level Agreement for Operate-First SIG/SRE Infrastructure Services<a class="headerlink" href="#service-level-agreement-for-operate-first-sig-sre-infrastructure-services" title="Permalink to this heading">#</a></h2>
+<p>The Operate-First SIG/SRE Infrastructure Services (Infra) is dedicated to providing a reliable and transparent platform for Open Source developers and organizations. This Service Level Agreement (SLA) outlines the expectations and responsibilities of both the service maintainers and users to ensure a mutually beneficial relationship.</p>
+<section id="service-level-expectations-sles">
+<h3>Service Level Expectations (SLEs)<a class="headerlink" href="#service-level-expectations-sles" title="Permalink to this heading">#</a></h3>
+<p>The Operate-First SIG/SRE Infra operates under Service Level Expectations (SLEs) rather than traditional SLAs. SLEs are determined by the community itself and serve as guidelines for the expected quality of service. These expectations may vary based on the needs and contributions of the app teams and operators involved in maintaining the cloud infrastructure.</p>
+</section>
+<section id="availability-and-uptime">
+<h3>Availability and Uptime<a class="headerlink" href="#availability-and-uptime" title="Permalink to this heading">#</a></h3>
+<p>While the Operate-First SIG/SRE Infra aims to provide a high level of availability and uptime, specific guarantees are not provided due to the community-driven nature of the platform. However, the infrastructure team and app teams work collaboratively to minimize downtime and maintain a stable environment.</p>
+</section>
+<section id="support-and-response-time">
+<h3>Support and Response Time<a class="headerlink" href="#support-and-response-time" title="Permalink to this heading">#</a></h3>
+<p>The Operate-First SIG/SRE Infra offers community-based support, with response times depending on the availability and engagement of community members. While the infrastructure team and app teams actively work to address issues and provide assistance, formal response time guarantees are not provided.</p>
+</section>
+<section id="service-level-objectives-slos">
+<h3>Service Level Objectives (SLOs)<a class="headerlink" href="#service-level-objectives-slos" title="Permalink to this heading">#</a></h3>
+<p>Service Level Objectives (SLOs) are set in accordance with community needs and contributions. App teams looking for higher uptime or specific support can work with the community to establish and meet these SLOs.</p>
+</section>
+<section id="maintenance-and-updates">
+<h3>Maintenance and Updates<a class="headerlink" href="#maintenance-and-updates" title="Permalink to this heading">#</a></h3>
+<p>The Operate-First SIG/SRE Infra is maintained through collaborative efforts between operators, app teams, and other community members. Regular maintenance and updates are carried out to ensure the stability and security of the infrastructure. Users will be notified of any scheduled maintenance or updates that may impact their services.</p>
+</section>
+<section id="id3">
+<h3>Conclusion<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h3>
+<p>The Operate-First SIG/SRE Infrastructure Services (Infra) SLA is designed to provide a flexible and collaborative environment for Open Source developers and organizations. By fostering a community-driven approach, the platform encourages shared responsibility, knowledge exchange, and innovation, ultimately creating a stronger and more resilient infrastructure.</p>
+</section>
+</section>
+<section id="project-request-deploying-openshift-and-sig-sre-infrastructure-services-components">
+<h2>Project Request: Deploying OpenShift and SIG/SRE Infrastructure Services’ Components<a class="headerlink" href="#project-request-deploying-openshift-and-sig-sre-infrastructure-services-components" title="Permalink to this heading">#</a></h2>
+<section id="project-purpose">
+<h3>Project Purpose<a class="headerlink" href="#project-purpose" title="Permalink to this heading">#</a></h3>
+<p>The primary objective of this project is to deploy an OpenShift environment along with the necessary infrastructure components on a cluster of up to eight servers. This deployment will provide the Operate-First SIG/SRE Infrastructure Services with a robust, scalable, and efficient platform for Open Source developers and organizations to collaborate, develop, and deploy their applications. By leveraging the capabilities of OpenShift and the chosen infra components, the project aims to enhance the overall development and operational experience for the community members.</p>
+</section>
+<section id="key-project-goals">
+<h3>Key Project Goals<a class="headerlink" href="#key-project-goals" title="Permalink to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Set up servers with the required hardware and network configurations to support the OpenShift environment and infrastructure components.</p></li>
+<li><p>Deploy OpenShift to create a Kubernetes-based platform that enables seamless container orchestration, management, and scaling.</p></li>
+<li><p>Implement infrastructure components such as the GitHub App, Prow, Tekton, and ArgoCD to streamline source code maintenance, CI/CD jobs, CI/CD pipelines, and continuous delivery.</p></li>
+<li><p>Validate the successful deployment and functioning of OpenShift and infra components, ensuring that they meet the requirements and expectations of the Operate-First SIG/SRE Infrastructure Services.</p></li>
+<li><p>Document the deployment process, best practices, and lessons learned to assist future deployments and provide guidance for the community members.</p></li>
+</ol>
+</section>
+<section id="sizing-considerations">
+<h3>Sizing Considerations<a class="headerlink" href="#sizing-considerations" title="Permalink to this heading">#</a></h3>
+<p>Given the Operate First experience, we would like to request:</p>
+<p>8x PowerEdge R620, 128Gi memory, min 2 NIC, 300Gi storage, see <a class="reference external" href="https://console-openshift-console.apps.smaug.na.operate-first.cloud/k8s/ns/openshift-machine-api/metal3.io~v1alpha1~BareMetalHost/oct-03-04-compute/yaml">metal3.io~v1alpha1~BareMetalHost/oct-03-04-compute</a> for a good example</p>
+<p>By successfully deploying OpenShift and the required infrastructure components on the servers, the project will contribute to the ongoing growth and development of the Operate-First SIG/SRE Infrastructure Services. This deployment will enable a more efficient, collaborative, and innovative environment for Open Source developers and organizations.</p>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./sig-sre"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">Introduction</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-operate-first-infrastructure-cluster-advantage">The Operate-First Infrastructure Cluster Advantage</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#seamless-collaboration">Seamless Collaboration</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#openly-operated-infrastructure-services">Openly-Operated Infrastructure Services</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#flexible-service-level-expectations-sles">Flexible Service Level Expectations (SLEs)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#scalable-and-reliable-performance">Scalable and Reliable Performance</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#community-driven-innovation">Community-Driven Innovation</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusion">Conclusion</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operate-first-sig-sre-infrastructure-services-itil-like-overview">Operate-First SIG/SRE Infrastructure Services - ITIL-like Overview</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#empowering-operate-first-sig-sre-infra-with-github-app-prow-tekton-and-argocd">Empowering Operate-First SIG/SRE Infra with GitHub App, Prow, Tekton, and ArgoCD</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Introduction</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#github-app-for-source-code-maintenance">GitHub App for Source Code Maintenance</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#prow-for-ci-cd-jobs">Prow for CI/CD Jobs</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tekton-for-ci-cd-pipelines">Tekton for CI/CD Pipelines</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#argocd-for-continuous-delivery-cd">ArgoCD for Continuous Delivery (CD)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#backstage-unsure-maybe-phase2">Backstage (unsure, maybe phase2??)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Conclusion</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#service-level-agreement-for-operate-first-sig-sre-infrastructure-services">Service Level Agreement for Operate-First SIG/SRE Infrastructure Services</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#service-level-expectations-sles">Service Level Expectations (SLEs)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#availability-and-uptime">Availability and Uptime</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#support-and-response-time">Support and Response Time</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#service-level-objectives-slos">Service Level Objectives (SLOs)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#maintenance-and-updates">Maintenance and Updates</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Conclusion</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#project-request-deploying-openshift-and-sig-sre-infrastructure-services-components">Project Request: Deploying OpenShift and SIG/SRE Infrastructure Services’ Components</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#project-purpose">Project Purpose</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#key-project-goals">Key Project Goals</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sizing-considerations">Sizing Considerations</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Operate First Authors
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
